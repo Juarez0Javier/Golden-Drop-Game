@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://b78oda58h35rg"]
+
+[ext_resource type="PackedScene" uid="uid://pyucq8e7ng6d" path="res://Escenas/Personajes/pj_caja.tscn" id="1_bgcxy"]
+[ext_resource type="Texture2D" uid="uid://poap4fo5gano" path="res://Assets/Box.jpg" id="2_p2357"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t563t"]
+size = Vector2(795, 60)
+
+[node name="Nv1Taller" type="Node2D"]
+
+[node name="PJCaja" parent="." instance=ExtResource("1_bgcxy")]
+position = Vector2(2, -96)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-1, -2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(5, 36)
+shape = SubResource("RectangleShape2D_t563t")
+debug_color = Color(0.336012, 0.612402, 0.320836, 0.42)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1014, 30)
+shape = SubResource("RectangleShape2D_t563t")
+debug_color = Color(0.336012, 0.612402, 0.320836, 0.42)
+
+[node name="Box" type="Sprite2D" parent="."]
+position = Vector2(141, -67)
+scale = Vector2(0.204, 0.2105)
+texture = ExtResource("2_p2357")
