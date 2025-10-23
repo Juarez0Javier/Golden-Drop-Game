@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chqoavl57wq1v"
-path="res://.godot/imported/4.png-32db4a04c1c6bebdb1643f19baf7fed0.ctex"
+uid="uid://cdrhxec7fl1o3"
+path="res://.godot/imported/Rain Spritesheet.png-18370560bc0ad8988ec2d2d0686dfc83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Colleccionables/Fragmentos/4.png"
-dest_files=["res://.godot/imported/4.png-32db4a04c1c6bebdb1643f19baf7fed0.ctex"]
+source_file="res://Assets/Rain Spritesheet.png"
+dest_files=["res://.godot/imported/Rain Spritesheet.png-18370560bc0ad8988ec2d2d0686dfc83.ctex"]
 
 [params]
 

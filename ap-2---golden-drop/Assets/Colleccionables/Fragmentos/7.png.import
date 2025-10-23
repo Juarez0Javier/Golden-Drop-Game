@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfh5ffemkbaho"
-path="res://.godot/imported/7.png-b595f9578614002418f8c10d25b36230.ctex"
+path="res://.godot/imported/7.png-a07db6f6e90937974244c982040592bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/fracmentos/carton/7.png"
-dest_files=["res://.godot/imported/7.png-b595f9578614002418f8c10d25b36230.ctex"]
+source_file="res://Assets/Colleccionables/Fragmentos/7.png"
+dest_files=["res://.godot/imported/7.png-a07db6f6e90937974244c982040592bb.ctex"]
 
 [params]
 

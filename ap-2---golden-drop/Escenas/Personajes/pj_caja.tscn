@@ -20,6 +20,20 @@ size = Vector2(64, 43)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("10_pioco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qylc1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rl3yc")
+}],
+"loop": true,
+"name": &"Aterriza",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("2_ac1kc")
 }, {
 "duration": 1.0,
@@ -34,15 +48,23 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("12_u4y2j")
+}],
+"loop": true,
+"name": &"En Aire",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 2.0,
 "texture": ExtResource("5_ngxbn")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": ExtResource("6_amdm1")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": ExtResource("7_31xsm")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": ExtResource("8_g673p")
 }],
 "loop": true,
@@ -50,19 +72,16 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.2,
 "texture": ExtResource("10_pioco")
 }, {
-"duration": 1.0,
+"duration": 0.2,
 "texture": ExtResource("11_qylc1")
 }, {
-"duration": 1.0,
-"texture": ExtResource("12_u4y2j")
-}, {
-"duration": 1.0,
+"duration": 0.2,
 "texture": ExtResource("13_rl3yc")
 }],
-"loop": true,
+"loop": false,
 "name": &"Salto",
 "speed": 5.0
 }]
@@ -79,9 +98,11 @@ shape = SubResource("RectangleShape2D_o0nkk")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -55)
 scale = Vector2(0.5, 0.5)
-zoom = Vector2(2, 2)
+zoom = Vector2(1.5, 1.5)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(31, -31)
 sprite_frames = SubResource("SpriteFrames_vot3g")
 animation = &"Salto"
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

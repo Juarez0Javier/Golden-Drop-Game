@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://07h3xrxk7frj"]
+
+[ext_resource type="Script" path="res://Scripts/lluvia_effecto.gd" id="1_erakf"]
+[ext_resource type="Texture2D" uid="uid://cdrhxec7fl1o3" path="res://Assets/Rain Spritesheet.png" id="1_rwrbu"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+follow_viewport_enabled = true
+script = ExtResource("1_erakf")
+
+[node name="RainSpritesheet" type="Sprite2D" parent="."]
+position = Vector2(587, 343)
+scale = Vector2(2, 2)
+texture = ExtResource("1_rwrbu")
+hframes = 6
+vframes = 5
+
+[node name="DmgTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="DmgTimer" to="." method="_on_timer_timeout"]

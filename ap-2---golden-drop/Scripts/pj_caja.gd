@@ -33,6 +33,9 @@ func _physics_process(delta: float) -> void:
 				movimiento.x += int(velocidad/5)
 		elif Input.is_action_pressed("Mover Izquierda"):
 				movimiento.x -= int(velocidad/5)
+		else:
+			velocity.x = 0
+			sprite.play("En Aire")
 		 
 	#Gravdad
 	movimiento.y += gravedad
@@ -47,6 +50,11 @@ func _physics_process(delta: float) -> void:
 	##print(movimiento)
 	
 	move_and_slide()
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	if sprite.animation == "Salto":
+		sprite.play("En Aire")
+		pass
+		
 	
-	
-	
+	pass # Replace with function body.

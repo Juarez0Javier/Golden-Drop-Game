@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byph0qkifx6q8"
-path="res://.godot/imported/2.png-1d530a93d60bc83c283cdda0c1c94d40.ctex"
+path="res://.godot/imported/2.png-eb058dff764d44a714b55ed95a58a2ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/fracmentos/fuentes de calor/2.png"
-dest_files=["res://.godot/imported/2.png-1d530a93d60bc83c283cdda0c1c94d40.ctex"]
+source_file="res://Assets/Objetos/Fuentes de Calor/2.png"
+dest_files=["res://.godot/imported/2.png-eb058dff764d44a714b55ed95a58a2ab.ctex"]
 
 [params]
 
