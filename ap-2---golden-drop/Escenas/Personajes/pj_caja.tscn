@@ -1,9 +1,71 @@
-[gd_scene load_steps=3 format=3 uid="uid://pyucq8e7ng6d"]
+[gd_scene load_steps=15 format=3 uid="uid://pyucq8e7ng6d"]
 
 [ext_resource type="Script" path="res://Scripts/pj_caja.gd" id="1_6d0ci"]
+[ext_resource type="Texture2D" uid="uid://dtrk8pt7rv7gd" path="res://Assets/Prota/Camina/1.png" id="2_ac1kc"]
+[ext_resource type="Texture2D" uid="uid://386bixma58vs" path="res://Assets/Prota/Camina/2.png" id="3_7s0dw"]
+[ext_resource type="Texture2D" uid="uid://d32hwo8wa02ad" path="res://Assets/Prota/Camina/3.png" id="4_n0krt"]
+[ext_resource type="Texture2D" uid="uid://cgdwjvlji6ayi" path="res://Assets/Prota/Inmovil/1.png" id="5_ngxbn"]
+[ext_resource type="Texture2D" uid="uid://36xwohhictog" path="res://Assets/Prota/Inmovil/2.png" id="6_amdm1"]
+[ext_resource type="Texture2D" uid="uid://bdm5nicy6atdj" path="res://Assets/Prota/Inmovil/3.png" id="7_31xsm"]
+[ext_resource type="Texture2D" uid="uid://d4nke1dscl0o5" path="res://Assets/Prota/Inmovil/4.png" id="8_g673p"]
+[ext_resource type="Texture2D" uid="uid://b8rwsjw2sqgl5" path="res://Assets/Prota/Salto/2.png" id="10_pioco"]
+[ext_resource type="Texture2D" uid="uid://b0q7yakyycsmd" path="res://Assets/Prota/Salto/3.png" id="11_qylc1"]
+[ext_resource type="Texture2D" uid="uid://1qu6n06uomvg" path="res://Assets/Prota/Salto/5.png" id="12_u4y2j"]
+[ext_resource type="Texture2D" uid="uid://cln8frjwd51n8" path="res://Assets/Prota/Salto/4.png" id="13_rl3yc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o0nkk"]
-size = Vector2(28, 27)
+size = Vector2(64, 43)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vot3g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ac1kc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7s0dw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n0krt")
+}],
+"loop": true,
+"name": &"Caminar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ngxbn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_amdm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_31xsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_g673p")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_pioco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qylc1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_u4y2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rl3yc")
+}],
+"loop": true,
+"name": &"Salto",
+"speed": 5.0
+}]
 
 [node name="PJCaja" type="CharacterBody2D"]
 script = ExtResource("1_6d0ci")
@@ -11,10 +73,15 @@ script = ExtResource("1_6d0ci")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(14, -13.5)
+position = Vector2(32, -39.5)
 shape = SubResource("RectangleShape2D_o0nkk")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -55)
 scale = Vector2(0.5, 0.5)
 zoom = Vector2(2, 2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(31, -31)
+sprite_frames = SubResource("SpriteFrames_vot3g")
+animation = &"Salto"

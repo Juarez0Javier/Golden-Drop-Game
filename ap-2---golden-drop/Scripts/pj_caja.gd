@@ -5,22 +5,26 @@ var velocidaMax = 170
 var impulsoSalto = 600
 
 var gravedad = 15
+@onready var sprite = get_node("AnimatedSprite2D")
 
 func _physics_process(delta: float) -> void:
 	var movimiento = Vector2.ZERO
-		
-	#To stop X acceleration
-	
 	
 	##Movimiento en el Piso
 	if is_on_floor():
 		if Input.is_action_pressed("Mover Derecha"):
 			movimiento.x += velocidad
+			sprite.flip_h = false
+			sprite.play("Caminar")
 		elif Input.is_action_pressed("Mover Izquierda"):
 			movimiento.x -= velocidad
+			sprite.flip_h = true
+			sprite.play("Caminar")
 		else:
 			velocity.x = 0
+			sprite.play("Idle")
 		if Input.is_action_just_pressed("Saltar"):
+			sprite.play("Salto")
 			movimiento.y = impulsoSalto * (-1)
 	
 	##Movimiento en el Aire		
