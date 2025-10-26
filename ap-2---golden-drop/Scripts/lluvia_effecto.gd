@@ -9,5 +9,5 @@ func _ready():
 
 func _on_timer_timeout() -> void:
 	gamestate.vida -= 1
-	print(gamestate.vida)
+	#print(gamestate.vida)
 	pass # Replace with function body.

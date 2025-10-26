@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck7m6kvogdxot"]
+
+[ext_resource type="Script" path="res://Scripts/calor_objeto.gd" id="1_ycnpi"]
+[ext_resource type="Texture2D" uid="uid://byph0qkifx6q8" path="res://Assets/Objetos/Fuentes de Calor/2.png" id="2_kua6w"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y8ued"]
+radius = 35.0
+height = 120.0
+
+[node name="Calor (Barril)" type="Area2D"]
+script = ExtResource("1_ycnpi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_y8ued")
+
+[node name="LamparaSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_kua6w")
+
+[node name="HealTimer" type="Timer" parent="."]
+wait_time = 0.25
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="timeout" from="HealTimer" to="." method="_on_heal_timer_timeout"]

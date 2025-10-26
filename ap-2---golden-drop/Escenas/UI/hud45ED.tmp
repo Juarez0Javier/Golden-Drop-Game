@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://lksayot4piy4"]
+
+[ext_resource type="Script" path="res://Scripts/hud.gd" id="1_c028c"]
+[ext_resource type="Texture2D" uid="uid://csk6k86f5uisb" path="res://Assets/HUD/vida/DiscoVacio.png" id="2_c8sco"]
+[ext_resource type="Texture2D" uid="uid://wvcawtwmunk4" path="res://Assets/Prota/Daño/2.png" id="3_bk8p4"]
+[ext_resource type="Texture2D" uid="uid://bjjpace172neu" path="res://Assets/HUD/vida/DiscoLleno.png" id="3_f4bwj"]
+[ext_resource type="FontFile" uid="uid://cra0x4fskx23c" path="res://Assets/Fuentes/Pixelcastle-Regular.woff" id="4_5nrup"]
+[ext_resource type="Texture2D" uid="uid://b5n6r0omrxqla" path="res://Assets/Prota/Daño/4.png" id="4_ofcne"]
+[ext_resource type="Texture2D" uid="uid://cron7uuri1ri6" path="res://Assets/Prota/Daño/1.png" id="4_qlqao"]
+[ext_resource type="Texture2D" uid="uid://ba7vybse4ud31" path="res://Assets/Prota/Daño/5.png" id="5_53q0t"]
+[ext_resource type="Texture2D" uid="uid://crjtsfw63lu6o" path="res://Assets/Prota/Daño/6.png" id="6_rcf0h"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_c028c")
+vidaEstados = Array[Texture]([ExtResource("4_qlqao"), ExtResource("3_bk8p4"), ExtResource("4_ofcne"), ExtResource("5_53q0t"), ExtResource("6_rcf0h")])
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CollectLabel" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 22.0
+offset_right = 143.0
+offset_bottom = 46.0
+text = "Collecionables"
+
+[node name="Progresso Barra" type="TextureProgressBar" parent="Control"]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 439.0
+offset_right = 207.0
+offset_bottom = 619.0
+value = 100.0
+fill_mode = 3
+nine_patch_stretch = true
+texture_under = ExtResource("2_c8sco")
+texture_progress = ExtResource("3_f4bwj")
+
+[node name="TextureRect" type="TextureRect" parent="Control/Progresso Barra"]
+z_index = -1
+layout_mode = 0
+offset_left = 20.0
+offset_top = 41.0
+offset_right = 151.0
+offset_bottom = 169.0
+texture = ExtResource("4_qlqao")
+
+[node name="Label" type="Label" parent="Control/Progresso Barra"]
+layout_mode = 0
+offset_left = 34.0
+offset_top = 128.0
+offset_right = 166.0
+offset_bottom = 198.0
+theme_override_colors/font_color = Color(0.473551, 0.626172, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_5nrup")
+theme_override_font_sizes/font_size = 50
+text = "100%"

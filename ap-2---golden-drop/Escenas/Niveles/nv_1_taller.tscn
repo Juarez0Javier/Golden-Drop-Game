@@ -1,10 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://b78oda58h35rg"]
+[gd_scene load_steps=10 format=3 uid="uid://b78oda58h35rg"]
 
 [ext_resource type="Script" path="res://Scripts/gamestate.gd" id="1_7gv3n"]
 [ext_resource type="PackedScene" uid="uid://pyucq8e7ng6d" path="res://Escenas/Personajes/pj_caja.tscn" id="1_bgcxy"]
 [ext_resource type="Texture2D" uid="uid://q4ku4m31jpje" path="res://Assets/Fondos/b1.png" id="1_y57cr"]
 [ext_resource type="PackedScene" uid="uid://pn1f47dtv8xp" path="res://Escenas/Objetos/objetivo.tscn" id="3_k36yq"]
+[ext_resource type="PackedScene" uid="uid://ck7m6kvogdxot" path="res://Escenas/Objetos/calor_(barril).tscn" id="5_127x2"]
 [ext_resource type="PackedScene" uid="uid://07h3xrxk7frj" path="res://Escenas/Ambientes/lluvia_effecto.tscn" id="5_xhsvb"]
+[ext_resource type="PackedScene" uid="uid://eqfrg75et5ho" path="res://Escenas/Objetos/calor_(lampara).tscn" id="6_e8imf"]
+[ext_resource type="PackedScene" uid="uid://lksayot4piy4" path="res://Escenas/UI/hud.tscn" id="8_imjg1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t563t"]
 size = Vector2(795, 60)
@@ -14,31 +17,47 @@ size = Vector2(795, 60)
 [node name="GameState" type="Node" parent="."]
 script = ExtResource("1_7gv3n")
 
-[node name="Backdrop" type="Sprite2D" parent="."]
+[node name="Fondo" type="ParallaxBackground" parent="."]
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Fondo"]
+motion_mirroring = Vector2(712, 488)
+
+[node name="FondoNivel" type="Sprite2D" parent="Fondo/ParallaxLayer"]
 z_index = -5
 texture_filter = 2
-position = Vector2(599, 112)
-scale = Vector2(3.54073, 2.57172)
+scale = Vector2(2, 2)
 texture = ExtResource("1_y57cr")
+centered = false
+
+[node name="Lluvia Effecto" parent="." instance=ExtResource("5_xhsvb")]
 
 [node name="PJCaja" parent="." instance=ExtResource("1_bgcxy")]
 position = Vector2(-52, 3)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="DiseñoNivel" type="Node" parent="."]
+
+[node name="Plataformas" type="StaticBody2D" parent="DiseñoNivel"]
 position = Vector2(-1, -2)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DiseñoNivel/Plataformas"]
 position = Vector2(5, 36)
 shape = SubResource("RectangleShape2D_t563t")
 debug_color = Color(0.336012, 0.612402, 0.320836, 0.42)
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="DiseñoNivel/Plataformas"]
 position = Vector2(1014, 30)
 shape = SubResource("RectangleShape2D_t563t")
 debug_color = Color(0.336012, 0.612402, 0.320836, 0.42)
+
+[node name="Calor (Lampara)" parent="DiseñoNivel" instance=ExtResource("6_e8imf")]
+position = Vector2(111, -69)
+
+[node name="Calor (Barril)" parent="DiseñoNivel" instance=ExtResource("5_127x2")]
+position = Vector2(257, -25)
 
 [node name="Objetivo" parent="." instance=ExtResource("3_k36yq")]
 position = Vector2(-63, -96)
 scale = Vector2(1.00567, 1.01552)
 
-[node name="Lluvia Effecto" parent="." instance=ExtResource("5_xhsvb")]
+[node name="HUD" parent="." instance=ExtResource("8_imjg1")]

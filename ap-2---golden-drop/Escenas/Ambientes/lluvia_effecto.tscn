@@ -10,7 +10,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("RainSpritesheet:frame")
+tracks/0/path = NodePath("Lluvia Effecto:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -25,7 +25,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("RainSpritesheet:frame")
+tracks/0/path = NodePath("Lluvia Effecto:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -42,6 +42,7 @@ _data = {
 }
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
+layer = 100
 script = ExtResource("1_erakf")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
@@ -49,7 +50,7 @@ z_as_relative = false
 scale = Vector2(0.995768, 0.983712)
 motion_scale = Vector2(0, 0)
 
-[node name="RainSpritesheet" type="Sprite2D" parent="ParallaxLayer"]
+[node name="Lluvia Effecto" type="Sprite2D" parent="ParallaxLayer"]
 z_index = 5
 position = Vector2(1.00421, -12.1987)
 scale = Vector2(1.86225, 1.86225)
@@ -57,7 +58,6 @@ texture = ExtResource("1_rwrbu")
 centered = false
 hframes = 5
 vframes = 5
-frame = 14
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ParallaxLayer"]
 reset_on_save = false
