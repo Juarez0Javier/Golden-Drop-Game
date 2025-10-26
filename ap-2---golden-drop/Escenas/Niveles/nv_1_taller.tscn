@@ -11,13 +11,13 @@ size = Vector2(795, 60)
 
 [node name="Nv1Taller" type="Node2D"]
 
-[node name="Lluvia Effecto" parent="." instance=ExtResource("5_xhsvb")]
-
 [node name="GameState" type="Node" parent="."]
 script = ExtResource("1_7gv3n")
 
 [node name="Backdrop" type="Sprite2D" parent="."]
-position = Vector2(236, -99)
+z_index = -5
+texture_filter = 2
+position = Vector2(599, 112)
 scale = Vector2(3.54073, 2.57172)
 texture = ExtResource("1_y57cr")
 
@@ -40,3 +40,5 @@ debug_color = Color(0.336012, 0.612402, 0.320836, 0.42)
 [node name="Objetivo" parent="." instance=ExtResource("3_k36yq")]
 position = Vector2(-63, -96)
 scale = Vector2(1.00567, 1.01552)
+
+[node name="Lluvia Effecto" parent="." instance=ExtResource("5_xhsvb")]
