@@ -14,6 +14,7 @@ script = ExtResource("1_ycnpi")
 position = Vector2(0, -6)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_y8ued")
+debug_color = Color(0.792157, 0.47451, 0.333333, 0.419608)
 
 [node name="LamparaSprite" type="Sprite2D" parent="."]
 texture_filter = 1

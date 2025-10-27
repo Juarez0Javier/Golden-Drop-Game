@@ -90,7 +90,7 @@ position = Vector2(-48, 61)
 scale = Vector2(1.8, 1.8)
 sprite_frames = SubResource("SpriteFrames_pni1k")
 animation = &"Idle"
-frame_progress = 0.136405
+frame_progress = 0.331141
 
 [node name="GotaLabel" type="AnimatedSprite2D" parent="Control"]
 texture_filter = 1
@@ -98,7 +98,7 @@ position = Vector2(1054, 71)
 scale = Vector2(1.8, 1.8)
 sprite_frames = SubResource("SpriteFrames_sjp6f")
 animation = &"Idle"
-frame_progress = 0.268269
+frame_progress = 0.829136
 
 [node name="Progresso Barra" type="TextureProgressBar" parent="Control"]
 texture_filter = 1

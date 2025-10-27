@@ -2,22 +2,14 @@ extends Area2D
 
 @onready var gamestate = get_node("../../../GameState")
 
-var enRango = false
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == gamestate.pjcaja.name:
-		enRango = true
-		$HealTimer.start()
+		gamestate.enRefugio = true
 	pass # Replace with function body.
 
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.name == gamestate.pjcaja.name:
-		enRango = false
-		$HealTimer.stop()
-	pass # Replace with function body.
-
-
-func _on_heal_timer_timeout() -> void:
-	gamestate.humedad -= 1
+		gamestate.enRefugio = false
 	pass # Replace with function body.

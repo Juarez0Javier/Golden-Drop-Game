@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://hqja60f7ac2r"]
+
+[ext_resource type="Script" path="res://Scripts/refugio.gd" id="1_jivmd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cnvbd"]
+size = Vector2(145, 53)
+
+[node name="Refugio" type="Area2D"]
+script = ExtResource("1_jivmd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_cnvbd")
+debug_color = Color(0.647625, 0.665257, 0.696241, 0.42)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

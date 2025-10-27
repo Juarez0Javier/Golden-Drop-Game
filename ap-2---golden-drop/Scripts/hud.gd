@@ -38,7 +38,9 @@ func _process(_delta: float) -> void:
 	##Controlando Gota
 	if gamestate.gotaD == true:
 		$"Control/GotaLabel".visible = true
-	
+	else:
+		$"Control/GotaLabel".visible = false
+		
 	pass
 	
 	

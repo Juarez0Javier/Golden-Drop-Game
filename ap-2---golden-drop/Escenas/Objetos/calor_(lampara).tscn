@@ -12,6 +12,7 @@ script = ExtResource("2_3i5l6")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 47.5)
 shape = SubResource("RectangleShape2D_co040")
+debug_color = Color(0.79063, 0.472883, 0.331663, 0.42)
 
 [node name="LamparaSprite" type="Sprite2D" parent="."]
 texture_filter = 1

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://i48jg2hh8775"]
+
+[ext_resource type="Script" path="res://Scripts/checkpoint.gd" id="1_dlfjs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pdw7j"]
+
+[node name="Checkpoint" type="Area2D"]
+script = ExtResource("1_dlfjs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, -10)
+shape = SubResource("RectangleShape2D_pdw7j")
+debug_color = Color(0, 0.649946, 0.120336, 0.42)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

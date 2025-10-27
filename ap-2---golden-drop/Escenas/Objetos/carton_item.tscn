@@ -82,6 +82,7 @@ crtVar = Array[Texture]([ExtResource("2_j7eky"), ExtResource("3_l0q6c"), ExtReso
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -4)
 shape = SubResource("RectangleShape2D_2gci1")
+debug_color = Color(0.647864, 0.379587, 0.904505, 0.42)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1

@@ -1,10 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://pn1f47dtv8xp"]
+[gd_scene load_steps=3 format=3 uid="uid://pn1f47dtv8xp"]
+
+[ext_resource type="Script" path="res://Scripts/objetivo.gd" id="1_qy3qj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdy5q"]
 
 [node name="Objetivo" type="Area2D"]
+script = ExtResource("1_qy3qj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(10, -10)
 scale = Vector2(0.985816, 1.06061)
 shape = SubResource("RectangleShape2D_fdy5q")
+debug_color = Color(0.936507, 0.423119, 0.643518, 0.42)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

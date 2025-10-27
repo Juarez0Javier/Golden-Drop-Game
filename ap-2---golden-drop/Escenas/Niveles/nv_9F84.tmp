@@ -1,10 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://b78oda58h35rg"]
+[gd_scene load_steps=15 format=3 uid="uid://b78oda58h35rg"]
 
 [ext_resource type="Script" path="res://Scripts/gamestate.gd" id="1_7gv3n"]
 [ext_resource type="PackedScene" uid="uid://pyucq8e7ng6d" path="res://Escenas/Personajes/pj_caja.tscn" id="1_bgcxy"]
 [ext_resource type="Texture2D" uid="uid://q4ku4m31jpje" path="res://Assets/Fondos/b1.png" id="1_y57cr"]
 [ext_resource type="PackedScene" uid="uid://pn1f47dtv8xp" path="res://Escenas/Objetos/objetivo.tscn" id="3_k36yq"]
-[ext_resource type="PackedScene" uid="uid://b8vahwyu3vnbl" path="res://Escenas/Ambientes/piso.tscn" id="5_1yo8i"]
 [ext_resource type="PackedScene" uid="uid://ck7m6kvogdxot" path="res://Escenas/Objetos/calor_(barril).tscn" id="5_127x2"]
 [ext_resource type="PackedScene" uid="uid://07h3xrxk7frj" path="res://Escenas/Ambientes/lluvia_effecto.tscn" id="5_xhsvb"]
 [ext_resource type="PackedScene" uid="uid://eqfrg75et5ho" path="res://Escenas/Objetos/calor_(lampara).tscn" id="6_e8imf"]
@@ -12,7 +11,13 @@
 [ext_resource type="PackedScene" uid="uid://lksayot4piy4" path="res://Escenas/UI/hud.tscn" id="8_imjg1"]
 [ext_resource type="PackedScene" uid="uid://i48jg2hh8775" path="res://Escenas/Objetos/checkpoint.tscn" id="9_i1yvd"]
 [ext_resource type="PackedScene" uid="uid://cyykw8k17qyam" path="res://Escenas/Objetos/carton_item.tscn" id="9_upa4b"]
-[ext_resource type="PackedScene" uid="uid://hqja60f7ac2r" path="res://Escenas/Ambientes/refugio.tscn" id="12_1fnsp"]
+[ext_resource type="Script" path="res://Scripts/refugio.gd" id="11_4pyqm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t563t"]
+size = Vector2(795, 60)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cnvbd"]
+size = Vector2(145, 53)
 
 [node name="Nv1Taller" type="Node2D"]
 
@@ -35,95 +40,66 @@ centered = false
 [node name="Lluvia Effecto" parent="." instance=ExtResource("5_xhsvb")]
 
 [node name="PJCaja" parent="." instance=ExtResource("1_bgcxy")]
-position = Vector2(-435, 4)
+position = Vector2(-52, 3)
 
 [node name="DiseñoNivel" type="Node2D" parent="."]
 
 [node name="Plataformas" type="Node2D" parent="DiseñoNivel"]
 
-[node name="Piso" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(-245, 39)
-scale = Vector2(-2.54083, -1.0042)
+[node name="Piso" type="StaticBody2D" parent="DiseñoNivel/Plataformas"]
+position = Vector2(-1, -2)
 
-[node name="Piso2" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(600, 43)
-scale = Vector2(3.10892, -1.21862)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DiseñoNivel/Plataformas/Piso"]
+position = Vector2(5, 36)
+shape = SubResource("RectangleShape2D_t563t")
+debug_color = Color(0.336012, 0.612402, 0.320836, 0.42)
 
-[node name="Piso3" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(-763, -49)
-scale = Vector2(0.848123, 1.67542)
-
-[node name="Piso4" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(-1020, -156)
-scale = Vector2(-0.716769, 1.97708)
-
-[node name="Piso6" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(-228, -392)
-scale = Vector2(1.94754, 1.6212)
-
-[node name="Piso7" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(151, -475)
-scale = Vector2(0.592704, 1.93814)
-
-[node name="Piso5" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(-706, -296)
-scale = Vector2(-0.99375, 1.69151)
-
-[node name="Refugio" parent="DiseñoNivel/Plataformas" instance=ExtResource("12_1fnsp")]
-position = Vector2(-378, -22)
-scale = Vector2(0.820097, 1)
-
-[node name="Refugio2" parent="DiseñoNivel/Plataformas" instance=ExtResource("12_1fnsp")]
-position = Vector2(-64, -21)
-scale = Vector2(1.39256, 1)
-
-[node name="Refugio4" parent="DiseñoNivel/Plataformas" instance=ExtResource("12_1fnsp")]
-position = Vector2(651, -13)
-scale = Vector2(0.452336, 1)
-
-[node name="Refugio3" parent="DiseñoNivel/Plataformas" instance=ExtResource("12_1fnsp")]
-position = Vector2(-426, -460)
-scale = Vector2(0.672559, 1)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="DiseñoNivel/Plataformas/Piso"]
+position = Vector2(1014, 30)
+shape = SubResource("RectangleShape2D_t563t")
+debug_color = Color(0.336012, 0.612402, 0.320836, 0.42)
 
 [node name="Calor" type="Node2D" parent="DiseñoNivel"]
 
 [node name="Calor (Lampara)" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
-position = Vector2(-75, -298)
+position = Vector2(83, -137)
 scale = Vector2(2, 2)
 
 [node name="Calor (Barril)" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
-position = Vector2(472, -24)
+position = Vector2(257, -25)
 
 [node name="Colecc" type="Node2D" parent="DiseñoNivel"]
 
-[node name="CartonItem4" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(-812, -384)
-
 [node name="CartonItem" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(144, -89)
+position = Vector2(672, -70)
 
 [node name="CartonItem2" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(232, -35)
-
-[node name="CartonItem5" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(325, -563)
+position = Vector2(745, -78)
 
 [node name="CartonItem3" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(649, -60)
+position = Vector2(761, -39)
 
 [node name="GotaItem" parent="DiseñoNivel/Colecc" instance=ExtResource("8_1p4va")]
-position = Vector2(147, -563)
+position = Vector2(360, -188)
 
-[node name="Control" type="Node2D" parent="DiseñoNivel"]
+[node name="Control" type="Node" parent="DiseñoNivel"]
 
 [node name="Checkpoint" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
-position = Vector2(-435, 3)
+position = Vector2(-19, -5)
 
 [node name="Checkpoint2" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
-position = Vector2(-472, -444)
+position = Vector2(1400, -12)
 
 [node name="Objetivo" parent="DiseñoNivel/Control" instance=ExtResource("3_k36yq")]
-position = Vector2(977, -5)
+position = Vector2(-934, -127)
 scale = Vector2(1.00567, 1.01552)
+
+[node name="Refugio" type="Area2D" parent="DiseñoNivel/Control"]
+position = Vector2(-178, -20)
+script = ExtResource("11_4pyqm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DiseñoNivel/Control/Refugio"]
+position = Vector2(-62.5, -7.5)
+shape = SubResource("RectangleShape2D_cnvbd")
 
 [node name="HUD" parent="." instance=ExtResource("8_imjg1")]

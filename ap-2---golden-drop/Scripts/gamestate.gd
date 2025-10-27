@@ -1,16 +1,19 @@
 extends Node
 
 @onready var pjcaja = get_node("../PJCaja")
-@onready var objetivo = get_node("../Objetivo")
 
 var humedad = 0
 var humedadSet = 0
+
+var enRefugio = false
+
 var cartones = 0
 var gotaD = false
+var chekpointUlt = null
+var collUlti = []
 
 
 func _ready():
-	objetivo.body_entered.connect(_on_objetivo_body_entered)
 	pass
 	
 func _process(_delta: float):
@@ -18,11 +21,26 @@ func _process(_delta: float):
 	humedad = clamp(humedad,0,100)
 	
 	if humedad == 100:
-		get_tree().quit()
+		reset()
 	pass
+
+func ganar():
+	get_tree().quit()
+
+func reset():
 	
-func _on_objetivo_body_entered(body: Node2D):
-	if body.name == "PJCaja":
-		get_tree().quit()
+	pjcaja.position = chekpointUlt.position 
+	
+	for coll in collUlti:
+		if coll.name.find("Carton") != -1:
+			print("Found ya!")
+			cartones -= 1
+		if coll.name.find("Gota") != -1:
+			gotaD = false
+		coll.enablePickup()
+		
+	collUlti.clear()
+	
+	humedad = 0
 	pass
 	
