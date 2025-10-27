@@ -8,6 +8,6 @@ func _ready():
 	pass
 
 func _on_timer_timeout() -> void:
-	gamestate.vida -= 1
+	gamestate.humedad += 1
 	#print(gamestate.vida)
 	pass # Replace with function body.

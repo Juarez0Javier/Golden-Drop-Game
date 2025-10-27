@@ -1,7 +1,7 @@
 extends Area2D
 
-@onready var pjcaja = get_node("../../PJCaja")
-@onready var gamestate = get_node("../../GameState")
+@onready var pjcaja = get_node("../../../PJCaja")
+@onready var gamestate = get_node("../../../GameState")
 
 var enRango = false
 
@@ -20,5 +20,5 @@ func _on_body_exited(body: Node2D) -> void:
 
 
 func _on_heal_timer_timeout() -> void:
-	gamestate.vida += 1
+	gamestate.humedad -= 1
 	pass # Replace with function body.

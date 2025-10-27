@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b78oda58h35rg"]
+[gd_scene load_steps=12 format=3 uid="uid://b78oda58h35rg"]
 
 [ext_resource type="Script" path="res://Scripts/gamestate.gd" id="1_7gv3n"]
 [ext_resource type="PackedScene" uid="uid://pyucq8e7ng6d" path="res://Escenas/Personajes/pj_caja.tscn" id="1_bgcxy"]
@@ -7,7 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://ck7m6kvogdxot" path="res://Escenas/Objetos/calor_(barril).tscn" id="5_127x2"]
 [ext_resource type="PackedScene" uid="uid://07h3xrxk7frj" path="res://Escenas/Ambientes/lluvia_effecto.tscn" id="5_xhsvb"]
 [ext_resource type="PackedScene" uid="uid://eqfrg75et5ho" path="res://Escenas/Objetos/calor_(lampara).tscn" id="6_e8imf"]
+[ext_resource type="PackedScene" uid="uid://djpb4cjdxnqbi" path="res://Escenas/Objetos/gota_item.tscn" id="8_1p4va"]
 [ext_resource type="PackedScene" uid="uid://lksayot4piy4" path="res://Escenas/UI/hud.tscn" id="8_imjg1"]
+[ext_resource type="PackedScene" uid="uid://cyykw8k17qyam" path="res://Escenas/Objetos/carton_item.tscn" id="9_upa4b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t563t"]
 size = Vector2(795, 60)
@@ -25,7 +27,7 @@ motion_mirroring = Vector2(712, 488)
 
 [node name="FondoNivel" type="Sprite2D" parent="Fondo/ParallaxLayer"]
 z_index = -5
-texture_filter = 2
+texture_filter = 1
 scale = Vector2(2, 2)
 texture = ExtResource("1_y57cr")
 centered = false
@@ -50,11 +52,25 @@ position = Vector2(1014, 30)
 shape = SubResource("RectangleShape2D_t563t")
 debug_color = Color(0.336012, 0.612402, 0.320836, 0.42)
 
-[node name="Calor (Lampara)" parent="DiseñoNivel" instance=ExtResource("6_e8imf")]
-position = Vector2(111, -69)
+[node name="Calor" type="Node" parent="DiseñoNivel"]
 
-[node name="Calor (Barril)" parent="DiseñoNivel" instance=ExtResource("5_127x2")]
+[node name="Calor (Lampara)" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
+position = Vector2(83, -137)
+scale = Vector2(2, 2)
+
+[node name="Calor (Barril)" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
 position = Vector2(257, -25)
+
+[node name="Colecc" type="Node" parent="DiseñoNivel"]
+
+[node name="CartonItem" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(798, -81)
+
+[node name="CartonItem2" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(676, -39)
+
+[node name="GotaItem" parent="DiseñoNivel/Colecc" instance=ExtResource("8_1p4va")]
+position = Vector2(-147, -58)
 
 [node name="Objetivo" parent="." instance=ExtResource("3_k36yq")]
 position = Vector2(-63, -96)

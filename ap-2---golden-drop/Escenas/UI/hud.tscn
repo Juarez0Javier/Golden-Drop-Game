@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://lksayot4piy4"]
+[gd_scene load_steps=18 format=3 uid="uid://lksayot4piy4"]
 
 [ext_resource type="Script" path="res://Scripts/hud.gd" id="1_c028c"]
 [ext_resource type="Texture2D" uid="uid://csk6k86f5uisb" path="res://Assets/HUD/vida/DiscoVacio.png" id="2_c8sco"]
@@ -9,6 +9,52 @@
 [ext_resource type="Texture2D" uid="uid://cron7uuri1ri6" path="res://Assets/Prota/Daño/1.png" id="4_qlqao"]
 [ext_resource type="Texture2D" uid="uid://ba7vybse4ud31" path="res://Assets/Prota/Daño/5.png" id="5_53q0t"]
 [ext_resource type="Texture2D" uid="uid://crjtsfw63lu6o" path="res://Assets/Prota/Daño/6.png" id="6_rcf0h"]
+[ext_resource type="Texture2D" uid="uid://h5203gnak5mv" path="res://Assets/HUD/cartones obtenidos/1.png" id="7_gelwp"]
+[ext_resource type="Texture2D" uid="uid://cbwv456cq4e63" path="res://Assets/HUD/cartones obtenidos/2.png" id="8_h1t5c"]
+[ext_resource type="Texture2D" uid="uid://ck2h4ss3b72jg" path="res://Assets/HUD/gotas obtenidas/1.png" id="8_klfo6"]
+[ext_resource type="Texture2D" uid="uid://innn2gid0qpr" path="res://Assets/HUD/gotas obtenidas/2.png" id="9_bu47a"]
+[ext_resource type="Texture2D" uid="uid://cjg6nsspr46wl" path="res://Assets/HUD/cartones obtenidos/3.png" id="9_glndk"]
+[ext_resource type="Texture2D" uid="uid://x0ge4nhcdot1" path="res://Assets/HUD/gotas obtenidas/3.png" id="10_hjbkr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pni1k"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": ExtResource("7_gelwp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_h1t5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_glndk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_h1t5c")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sjp6f"]
+animations = [{
+"frames": [{
+"duration": 3.0,
+"texture": ExtResource("8_klfo6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bu47a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hjbkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bu47a")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_c028c")
@@ -22,21 +68,45 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CollectLabel" type="Label" parent="Control"]
+[node name="CartonLabel" type="Label" parent="Control"]
+texture_filter = 1
 layout_mode = 0
-offset_left = 33.0
-offset_top = 22.0
-offset_right = 143.0
-offset_bottom = 46.0
-text = "Collecionables"
+offset_left = 110.0
+offset_top = 16.0
+offset_right = 231.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.775063, 0.775063, 0.775063, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_5nrup")
+theme_override_font_sizes/font_size = 75
+text = "x 0
+"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Control/CartonLabel"]
+texture_filter = 1
+position = Vector2(-48, 61)
+scale = Vector2(1.8, 1.8)
+sprite_frames = SubResource("SpriteFrames_pni1k")
+animation = &"Idle"
+frame_progress = 0.136405
+
+[node name="GotaLabel" type="AnimatedSprite2D" parent="Control"]
+texture_filter = 1
+position = Vector2(1054, 71)
+scale = Vector2(1.8, 1.8)
+sprite_frames = SubResource("SpriteFrames_sjp6f")
+animation = &"Idle"
+frame_progress = 0.268269
 
 [node name="Progresso Barra" type="TextureProgressBar" parent="Control"]
+texture_filter = 1
 layout_mode = 0
-offset_left = 27.0
+offset_left = 26.0
 offset_top = 439.0
-offset_right = 207.0
+offset_right = 206.0
 offset_bottom = 619.0
-value = 100.0
 fill_mode = 3
 nine_patch_stretch = true
 texture_under = ExtResource("2_c8sco")
@@ -44,6 +114,7 @@ texture_progress = ExtResource("3_f4bwj")
 
 [node name="TextureRect" type="TextureRect" parent="Control/Progresso Barra"]
 z_index = -1
+texture_filter = 1
 layout_mode = 0
 offset_left = 20.0
 offset_top = 41.0
@@ -52,6 +123,7 @@ offset_bottom = 169.0
 texture = ExtResource("4_qlqao")
 
 [node name="Label" type="Label" parent="Control/Progresso Barra"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 34.0
 offset_top = 128.0

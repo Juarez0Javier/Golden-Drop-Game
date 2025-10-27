@@ -16,6 +16,7 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_y8ued")
 
 [node name="LamparaSprite" type="Sprite2D" parent="."]
+texture_filter = 1
 texture = ExtResource("2_kua6w")
 
 [node name="HealTimer" type="Timer" parent="."]

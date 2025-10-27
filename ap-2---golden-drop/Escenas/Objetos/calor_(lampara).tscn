@@ -4,16 +4,17 @@
 [ext_resource type="Script" path="res://Scripts/calor_objeto.gd" id="2_3i5l6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_co040"]
-size = Vector2(70, 33)
+size = Vector2(70, 77)
 
 [node name="Calor (Lampara)" type="Area2D"]
 script = ExtResource("2_3i5l6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 25.5)
+position = Vector2(1, 47.5)
 shape = SubResource("RectangleShape2D_co040")
 
 [node name="LamparaSprite" type="Sprite2D" parent="."]
+texture_filter = 1
 texture = ExtResource("1_ea6vf")
 
 [node name="HealTimer" type="Timer" parent="."]
