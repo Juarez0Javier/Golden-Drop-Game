@@ -14,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cln8frjwd51n8" path="res://Assets/Prota/Salto/4.png" id="13_rl3yc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o0nkk"]
-size = Vector2(64, 43)
+size = Vector2(64, 38)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vot3g"]
 animations = [{
@@ -92,13 +92,13 @@ script = ExtResource("1_6d0ci")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(32, -39.5)
+position = Vector2(32, -42)
 shape = SubResource("RectangleShape2D_o0nkk")
 
 [node name="Player Camara" type="Camera2D" parent="."]
 position = Vector2(0, -138)
 scale = Vector2(0.5, 0.5)
-zoom = Vector2(1.5, 1.5)
+zoom = Vector2(2, 2)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1

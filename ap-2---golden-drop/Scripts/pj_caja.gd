@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var velocidad = 12
+var velocidad = 12.0
 var velocidaMax = 170
 var impulsoSalto = 600
 
