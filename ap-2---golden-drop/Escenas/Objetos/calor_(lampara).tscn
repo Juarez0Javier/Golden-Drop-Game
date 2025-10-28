@@ -1,26 +1,92 @@
-[gd_scene load_steps=4 format=3 uid="uid://eqfrg75et5ho"]
+[gd_scene load_steps=8 format=3 uid="uid://eqfrg75et5ho"]
 
-[ext_resource type="Texture2D" uid="uid://dt5m2tonxxspa" path="res://Assets/Objetos/Fuentes de Calor/1.png" id="1_ea6vf"]
 [ext_resource type="Script" path="res://Scripts/calor_objeto.gd" id="2_3i5l6"]
+[ext_resource type="Texture2D" uid="uid://bm2buroit48n" path="res://Assets/Objetos/Fuentes de Calor/luz/1.png" id="2_mpe3m"]
+[ext_resource type="Texture2D" uid="uid://7qhqrhfjxyqi" path="res://Assets/Objetos/Fuentes de Calor/luz/4.png" id="3_ykjg1"]
+[ext_resource type="Texture2D" uid="uid://dnty4wus15grv" path="res://Assets/Objetos/Fuentes de Calor/luz/3.png" id="4_hfj0n"]
+[ext_resource type="Texture2D" uid="uid://dqnfdb87n7i2d" path="res://Assets/Objetos/Fuentes de Calor/luz/2.png" id="5_nnxup"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bojns"]
 size = Vector2(60, 315.5)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_p5cdf"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("3_ykjg1")
+}, {
+"duration": 0.5,
+"texture": ExtResource("2_mpe3m")
+}, {
+"duration": 0.5,
+"texture": ExtResource("4_hfj0n")
+}],
+"loop": false,
+"name": &"Apagar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("5_nnxup")
+}, {
+"duration": 0.5,
+"texture": ExtResource("2_mpe3m")
+}, {
+"duration": 0.5,
+"texture": ExtResource("3_ykjg1")
+}],
+"loop": false,
+"name": &"Encender",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 30.0,
+"texture": ExtResource("2_mpe3m")
+}, {
+"duration": 0.5,
+"texture": ExtResource("5_nnxup")
+}, {
+"duration": 0.5,
+"texture": ExtResource("2_mpe3m")
+}, {
+"duration": 0.5,
+"texture": ExtResource("3_ykjg1")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_nnxup")
+}],
+"loop": true,
+"name": &"Idle Apagado",
+"speed": 5.0
+}]
+
 [node name="Calor (Lampara)" type="Area2D"]
 script = ExtResource("2_3i5l6")
+curaMax = 25
+cooldown = 20
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 168.25)
 shape = SubResource("RectangleShape2D_bojns")
 debug_color = Color(0.79063, 0.472883, 0.331663, 0.42)
 
-[node name="LamparaSprite" type="Sprite2D" parent="."]
+[node name="HeatSprite" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-texture = ExtResource("1_ea6vf")
+sprite_frames = SubResource("SpriteFrames_p5cdf")
+animation = &"Idle Apagado"
 
 [node name="HealTimer" type="Timer" parent="."]
 wait_time = 0.25
 
+[node name="Cooldown" type="Timer" parent="."]
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="animation_finished" from="HeatSprite" to="." method="_on_heat_sprite_animation_finished"]
 [connection signal="timeout" from="HealTimer" to="." method="_on_heal_timer_timeout"]
+[connection signal="timeout" from="Cooldown" to="." method="_on_cooldown_timeout"]

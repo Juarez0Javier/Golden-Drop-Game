@@ -371,7 +371,6 @@ texture = ExtResource("1_y57cr")
 centered = false
 
 [node name="Lluvia Effecto" parent="." instance=ExtResource("5_xhsvb")]
-"dañoLluvia" = 2
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_set = SubResource("TileSet_ccigy")
@@ -429,12 +428,12 @@ scale = Vector2(0.672559, 1)
 
 [node name="Calor" type="Node2D" parent="DiseñoNivel"]
 
-[node name="Calor (Lampara)" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
-position = Vector2(-75, -298)
-scale = Vector2(2, 2)
-
 [node name="Calor (Barril)" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
-position = Vector2(471, -24)
+position = Vector2(-379, -459)
+
+[node name="Calor (Lampara)" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
+position = Vector2(-130, -211)
+scale = Vector2(2.37601, 1.52)
 
 [node name="Colecc" type="Node2D" parent="DiseñoNivel"]
 

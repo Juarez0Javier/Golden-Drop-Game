@@ -1,14 +1,85 @@
-[gd_scene load_steps=4 format=3 uid="uid://ck7m6kvogdxot"]
+[gd_scene load_steps=10 format=3 uid="uid://ck7m6kvogdxot"]
 
 [ext_resource type="Script" path="res://Scripts/calor_objeto.gd" id="1_ycnpi"]
-[ext_resource type="Texture2D" uid="uid://byph0qkifx6q8" path="res://Assets/Objetos/Fuentes de Calor/2.png" id="2_kua6w"]
+[ext_resource type="Texture2D" uid="uid://5tn1t6fimtwp" path="res://Assets/Objetos/Fuentes de Calor/fuego/1.png" id="2_vgwod"]
+[ext_resource type="Texture2D" uid="uid://dsf026hdsai48" path="res://Assets/Objetos/Fuentes de Calor/fuego/2.png" id="3_selcu"]
+[ext_resource type="Texture2D" uid="uid://5xq5ktsp6ia4" path="res://Assets/Objetos/Fuentes de Calor/fuego/3.png" id="4_ttj21"]
+[ext_resource type="Texture2D" uid="uid://2ys8sxw0sff2" path="res://Assets/Objetos/Fuentes de Calor/fuego/4.png" id="5_3xk4k"]
+[ext_resource type="Texture2D" uid="uid://cwvc3fbycugh" path="res://Assets/Objetos/Fuentes de Calor/fuego/5.png" id="6_bq43n"]
+[ext_resource type="Texture2D" uid="uid://cu23qjix86164" path="res://Assets/Objetos/Fuentes de Calor/fuego/6.png" id="7_62tvh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y8ued"]
 radius = 35.0
 height = 120.0
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_cd1og"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ttj21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3xk4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ttj21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bq43n")
+}],
+"loop": false,
+"name": &"Apagar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_3xk4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ttj21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3xk4k")
+}],
+"loop": false,
+"name": &"Encender",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vgwod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_selcu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ttj21")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_bq43n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_62tvh")
+}, {
+"duration": 2.0,
+"texture": ExtResource("6_bq43n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_62tvh")
+}],
+"loop": true,
+"name": &"Idle Apagado",
+"speed": 5.0
+}]
+
 [node name="Calor (Barril)" type="Area2D"]
 script = ExtResource("1_ycnpi")
+curaMax = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -6)
@@ -16,13 +87,19 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_y8ued")
 debug_color = Color(0.792157, 0.47451, 0.333333, 0.419608)
 
-[node name="LamparaSprite" type="Sprite2D" parent="."]
+[node name="HeatSprite" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-texture = ExtResource("2_kua6w")
+sprite_frames = SubResource("SpriteFrames_cd1og")
+animation = &"Idle"
 
 [node name="HealTimer" type="Timer" parent="."]
 wait_time = 0.25
 
+[node name="Cooldown" type="Timer" parent="."]
+wait_time = 5.0
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="animation_finished" from="HeatSprite" to="." method="_on_heat_sprite_animation_finished"]
 [connection signal="timeout" from="HealTimer" to="." method="_on_heal_timer_timeout"]
+[connection signal="timeout" from="Cooldown" to="." method="_on_cooldown_timeout"]

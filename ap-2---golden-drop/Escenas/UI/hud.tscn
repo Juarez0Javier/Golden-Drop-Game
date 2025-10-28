@@ -4,11 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://csk6k86f5uisb" path="res://Assets/HUD/vida/DiscoVacio.png" id="2_c8sco"]
 [ext_resource type="Texture2D" uid="uid://wvcawtwmunk4" path="res://Assets/Prota/Daño/2.png" id="3_bk8p4"]
 [ext_resource type="Texture2D" uid="uid://bjjpace172neu" path="res://Assets/HUD/vida/DiscoLleno.png" id="3_f4bwj"]
-[ext_resource type="FontFile" uid="uid://cra0x4fskx23c" path="res://Assets/Fuentes/Pixelcastle-Regular.woff" id="4_5nrup"]
 [ext_resource type="Texture2D" uid="uid://b5n6r0omrxqla" path="res://Assets/Prota/Daño/4.png" id="4_ofcne"]
 [ext_resource type="Texture2D" uid="uid://cron7uuri1ri6" path="res://Assets/Prota/Daño/1.png" id="4_qlqao"]
 [ext_resource type="Texture2D" uid="uid://ba7vybse4ud31" path="res://Assets/Prota/Daño/5.png" id="5_53q0t"]
 [ext_resource type="Texture2D" uid="uid://crjtsfw63lu6o" path="res://Assets/Prota/Daño/6.png" id="6_rcf0h"]
+[ext_resource type="FontFile" uid="uid://c3rii55j7x2gs" path="res://Assets/Fuentes/medieval-pixel.ttf" id="7_4k8oe"]
 [ext_resource type="Texture2D" uid="uid://h5203gnak5mv" path="res://Assets/HUD/cartones obtenidos/1.png" id="7_gelwp"]
 [ext_resource type="Texture2D" uid="uid://cbwv456cq4e63" path="res://Assets/HUD/cartones obtenidos/2.png" id="8_h1t5c"]
 [ext_resource type="Texture2D" uid="uid://ck2h4ss3b72jg" path="res://Assets/HUD/gotas obtenidas/1.png" id="8_klfo6"]
@@ -71,22 +71,22 @@ grow_vertical = 2
 [node name="CartonLabel" type="Label" parent="Control"]
 texture_filter = 1
 layout_mode = 0
-offset_left = 110.0
-offset_top = 16.0
-offset_right = 231.0
-offset_bottom = 124.0
+offset_left = 108.0
+offset_top = 31.0
+offset_right = 226.0
+offset_bottom = 99.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0.775063, 0.775063, 0.775063, 1)
 theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("4_5nrup")
-theme_override_font_sizes/font_size = 75
+theme_override_fonts/font = ExtResource("7_4k8oe")
+theme_override_font_sizes/font_size = 90
 text = "x 0
 "
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Control/CartonLabel"]
 texture_filter = 1
-position = Vector2(-48, 61)
+position = Vector2(-47, 37)
 scale = Vector2(1.8, 1.8)
 sprite_frames = SubResource("SpriteFrames_pni1k")
 animation = &"Idle"
@@ -125,13 +125,13 @@ texture = ExtResource("4_qlqao")
 [node name="Label" type="Label" parent="Control/Progresso Barra"]
 texture_filter = 1
 layout_mode = 0
-offset_left = 34.0
-offset_top = 128.0
-offset_right = 166.0
-offset_bottom = 198.0
+offset_left = 41.0
+offset_top = 153.0
+offset_right = 146.0
+offset_bottom = 192.0
 theme_override_colors/font_color = Color(0.473551, 0.626172, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("4_5nrup")
+theme_override_fonts/font = ExtResource("7_4k8oe")
 theme_override_font_sizes/font_size = 50
 text = "100%"
