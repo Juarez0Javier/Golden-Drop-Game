@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cra0x4fskx23c"
-path="res://.godot/imported/Pixelcastle-Regular.woff-65ed8fc92b9a2a9fb759772da14189ad.fontdata"
+uid="uid://cje5jgrhw1eg8"
+path="res://.godot/imported/Pixelcastle-Regular.woff2-7253e63e9c61665b44bc97bf55aafcaa.fontdata"
 
 [deps]
 
-source_file="res://Assets/Fuentes/Pixelcastle-Regular.woff"
-dest_files=["res://.godot/imported/Pixelcastle-Regular.woff-65ed8fc92b9a2a9fb759772da14189ad.fontdata"]
+source_file="res://Assets/fonts/Pixelcastle-Regular.woff2"
+dest_files=["res://.godot/imported/Pixelcastle-Regular.woff2-7253e63e9c61665b44bc97bf55aafcaa.fontdata"]
 
 [params]
 
@@ -22,18 +22,13 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 hinting=1
-subpixel_positioning=1
+subpixel_positioning=4
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]
 Compress=null
 compress=true
-preload=[{
-"chars": [],
-"glyphs": [],
-"name": "New Configuration",
-"size": Vector2i(16, 0)
-}]
+preload=[]
 language_support={}
 script_support={}
 opentype_features={}

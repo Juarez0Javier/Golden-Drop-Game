@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c3rii55j7x2gs"
-path="res://.godot/imported/medieval-pixel.ttf-0374ed25606c66d01adeee530cbcb9bf.fontdata"
+uid="uid://chpe1rmaux77"
+path="res://.godot/imported/Pixelcastle-Regular.otf-283b6e284b804450886d1c3c093851ed.fontdata"
 
 [deps]
 
-source_file="res://Assets/Fuentes/medieval-pixel.ttf"
-dest_files=["res://.godot/imported/medieval-pixel.ttf-0374ed25606c66d01adeee530cbcb9bf.fontdata"]
+source_file="res://Assets/fonts/Pixelcastle-Regular.otf"
+dest_files=["res://.godot/imported/Pixelcastle-Regular.otf-283b6e284b804450886d1c3c093851ed.fontdata"]
 
 [params]
 
@@ -22,7 +22,7 @@ msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
 hinting=1
-subpixel_positioning=1
+subpixel_positioning=4
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]
