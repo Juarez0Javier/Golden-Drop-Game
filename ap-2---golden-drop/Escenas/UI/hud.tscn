@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://cron7uuri1ri6" path="res://Assets/Prota/Daño/1.png" id="4_qlqao"]
 [ext_resource type="Texture2D" uid="uid://ba7vybse4ud31" path="res://Assets/Prota/Daño/5.png" id="5_53q0t"]
 [ext_resource type="Texture2D" uid="uid://crjtsfw63lu6o" path="res://Assets/Prota/Daño/6.png" id="6_rcf0h"]
-[ext_resource type="FontFile" uid="uid://c3rii55j7x2gs" path="res://Assets/Fuentes/medieval-pixel.ttf" id="7_4k8oe"]
 [ext_resource type="Texture2D" uid="uid://h5203gnak5mv" path="res://Assets/HUD/cartones obtenidos/1.png" id="7_gelwp"]
+[ext_resource type="FontFile" uid="uid://c1rjhde3e55r6" path="res://Assets/fuentes/fuente para numero/medieval-pixel.ttf" id="7_rxcm1"]
 [ext_resource type="Texture2D" uid="uid://cbwv456cq4e63" path="res://Assets/HUD/cartones obtenidos/2.png" id="8_h1t5c"]
 [ext_resource type="Texture2D" uid="uid://ck2h4ss3b72jg" path="res://Assets/HUD/gotas obtenidas/1.png" id="8_klfo6"]
 [ext_resource type="Texture2D" uid="uid://innn2gid0qpr" path="res://Assets/HUD/gotas obtenidas/2.png" id="9_bu47a"]
@@ -79,7 +79,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0.775063, 0.775063, 0.775063, 1)
 theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("7_4k8oe")
+theme_override_fonts/font = ExtResource("7_rxcm1")
 theme_override_font_sizes/font_size = 90
 text = "x 0
 "
@@ -132,6 +132,6 @@ offset_bottom = 192.0
 theme_override_colors/font_color = Color(0.473551, 0.626172, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("7_4k8oe")
+theme_override_fonts/font = ExtResource("7_rxcm1")
 theme_override_font_sizes/font_size = 50
 text = "100%"

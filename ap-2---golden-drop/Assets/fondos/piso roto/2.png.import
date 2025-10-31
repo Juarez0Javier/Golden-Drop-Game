@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfdenxhx1emom"
-path="res://.godot/imported/2.png-bb257acb340e1c52c183f05c9935223b.ctex"
+path="res://.godot/imported/2.png-4904c71846a692e5701a875cb6ce35f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/fondos/piso roto/2.png"
-dest_files=["res://.godot/imported/2.png-bb257acb340e1c52c183f05c9935223b.ctex"]
+source_file="res://Assets/Fondos/piso roto/2.png"
+dest_files=["res://.godot/imported/2.png-4904c71846a692e5701a875cb6ce35f8.ctex"]
 
 [params]
 

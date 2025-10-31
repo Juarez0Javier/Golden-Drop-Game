@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://07h3xrxk7frj"]
 
 [ext_resource type="Script" path="res://Scripts/lluvia_effecto.gd" id="1_erakf"]
-[ext_resource type="Texture2D" uid="uid://cdrhxec7fl1o3" path="res://Assets/Rain Spritesheet.png" id="1_rwrbu"]
+[ext_resource type="Texture2D" uid="uid://c53kit3pspnyu" path="res://Assets/lluvia/Rain Spritesheet.png" id="1_rwrbu"]
 
 [sub_resource type="Animation" id="Animation_63avu"]
 resource_name = "Lluvia"
