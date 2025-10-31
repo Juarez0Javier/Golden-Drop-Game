@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6hyc58yewkaj"]
+
+[ext_resource type="Script" path="res://Scripts/menus/menu_principal.gd" id="1_f47k7"]
+
+[node name="MenuPrincipal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f47k7")
+
+[node name="Jugar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 270.0
+offset_right = 716.0
+offset_bottom = 388.0
+text = "Jugar"
+
+[node name="Salir" type="Button" parent="."]
+layout_mode = 0
+offset_left = 491.0
+offset_top = 429.0
+offset_right = 697.0
+offset_bottom = 535.0
+text = "Salir"
+
+[connection signal="button_down" from="Jugar" to="." method="_on_jugar_button_down"]
+[connection signal="button_down" from="Salir" to="." method="_on_salir_button_down"]

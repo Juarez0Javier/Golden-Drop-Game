@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://b6fu6124dkyb1"
-path="res://.godot/imported/Pixelcastle-Regular.woff-7487e5ed5bc6588a3435efca115fbe70.fontdata"
+path="res://.godot/imported/Pixelcastle-Regular.woff-a8e80a594a43936c184032cf692f18a8.fontdata"
 
 [deps]
 
-source_file="res://Assets/fonts/Pixelcastle-Regular.woff"
-dest_files=["res://.godot/imported/Pixelcastle-Regular.woff-7487e5ed5bc6588a3435efca115fbe70.fontdata"]
+source_file="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.woff"
+dest_files=["res://.godot/imported/Pixelcastle-Regular.woff-a8e80a594a43936c184032cf692f18a8.fontdata"]
 
 [params]
 
