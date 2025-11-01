@@ -1,0 +1,491 @@
+[gd_scene load_steps=22 format=3 uid="uid://ch3flhfcx447s"]
+
+[ext_resource type="Script" path="res://Scripts/menus/seleccion_de_nivel.gd" id="1_4dw3r"]
+[ext_resource type="Texture2D" uid="uid://bavlx0tujkk3i" path="res://Assets/Menu/Pinboard.png" id="1_lait2"]
+[ext_resource type="Texture2D" uid="uid://dhjuklegmgv4a" path="res://Assets/Menu/Borde.png" id="2_drbq6"]
+[ext_resource type="Texture2D" uid="uid://bojpo52lqfc5t" path="res://Assets/Menu/Taller.png" id="3_syy8o"]
+[ext_resource type="Texture2D" uid="uid://bpa3neggljc7l" path="res://Assets/Menu/fragmentos1.png" id="4_4bsa7"]
+[ext_resource type="Texture2D" uid="uid://cjax488l7syvi" path="res://Assets/Menu/Pin1.png" id="4_ylf3n"]
+[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="5_5chxn"]
+[ext_resource type="Texture2D" uid="uid://coon2qfjt3j4h" path="res://Assets/Menu/gota1.png" id="6_ujbjj"]
+[ext_resource type="Texture2D" uid="uid://jjx8c63hquet" path="res://Assets/Menu/fragmentos2.png" id="7_38ddb"]
+[ext_resource type="FontFile" uid="uid://c1rjhde3e55r6" path="res://Assets/fuentes/fuente para numero/medieval-pixel.ttf" id="7_jq1kb"]
+[ext_resource type="Texture2D" uid="uid://c24284khr6ruh" path="res://Assets/Menu/Pin4.png" id="9_x56qb"]
+[ext_resource type="Texture2D" uid="uid://dnuw3dxci4p8j" path="res://Assets/Menu/Pin6.png" id="10_b0kqx"]
+[ext_resource type="Texture2D" uid="uid://syewpacpf7f8" path="res://Assets/Menu/gota2.png" id="10_n3mc3"]
+[ext_resource type="Texture2D" uid="uid://dukbf5waw3enr" path="res://Assets/Menu/Pin3.png" id="11_ol6ki"]
+[ext_resource type="Texture2D" uid="uid://b2lrovojmucem" path="res://Assets/Menu/exit.png" id="13_85foy"]
+[ext_resource type="Texture2D" uid="uid://dseu0sg6kdq0p" path="res://Assets/Menu/izq.png" id="14_6jsul"]
+[ext_resource type="Texture2D" uid="uid://dibt6ina8j3jm" path="res://Assets/Menu/Temp.png" id="14_h3dip"]
+[ext_resource type="Texture2D" uid="uid://c15rjja75lm2y" path="res://Assets/Menu/Lock.png" id="15_cjknv"]
+[ext_resource type="Texture2D" uid="uid://hk0vh88ppfv5" path="res://Assets/Menu/der.png" id="15_entxm"]
+[ext_resource type="Texture2D" uid="uid://tgsnno4otuxi" path="res://Assets/Menu/Pin5.png" id="16_qshd2"]
+[ext_resource type="Texture2D" uid="uid://dlh4ekinlrgwl" path="res://Assets/Menu/Pin2.png" id="18_11gin"]
+
+[node name="Seleccion de Nivel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4dw3r")
+
+[node name="Board" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("1_lait2")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 384, 216)
+
+[node name="BordeNivel" type="Sprite2D" parent="."]
+position = Vector2(194, 71)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("2_drbq6")
+centered = false
+
+[node name="BordeFragmentos" type="Sprite2D" parent="."]
+position = Vector2(717, 367)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_drbq6")
+centered = false
+
+[node name="FragmentosByN" type="Sprite2D" parent="."]
+position = Vector2(741, 391)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_38ddb")
+centered = false
+
+[node name="FragmentosColor" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(741, 391)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_4bsa7")
+centered = false
+
+[node name="BordeGota" type="Sprite2D" parent="."]
+position = Vector2(717, 59)
+scale = Vector2(0.6, 0.7)
+texture = ExtResource("2_drbq6")
+centered = false
+
+[node name="GotaByN" type="Sprite2D" parent="."]
+position = Vector2(747, 89)
+scale = Vector2(2.9, 2.9)
+texture = ExtResource("10_n3mc3")
+centered = false
+
+[node name="GotaColor" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(747, 89)
+scale = Vector2(2.9, 2.9)
+texture = ExtResource("6_ujbjj")
+centered = false
+
+[node name="Nivel 1" type="Node2D" parent="."]
+
+[node name="ImgNivel" type="Sprite2D" parent="Nivel 1"]
+position = Vector2(220, 97)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("3_syy8o")
+centered = false
+
+[node name="Pin" type="Sprite2D" parent="Nivel 1"]
+position = Vector2(437, 86)
+scale = Vector2(2, 2)
+texture = ExtResource("4_ylf3n")
+
+[node name="Pin2" type="Sprite2D" parent="Nivel 1"]
+position = Vector2(836, 379)
+scale = Vector2(2, 2)
+texture = ExtResource("9_x56qb")
+
+[node name="Pin3" type="Sprite2D" parent="Nivel 1"]
+position = Vector2(847, 65)
+scale = Vector2(2, 2)
+texture = ExtResource("11_ol6ki")
+
+[node name="Nombre" type="Label" parent="Nivel 1"]
+offset_left = 251.0
+offset_top = 412.0
+offset_right = 617.0
+offset_bottom = 467.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_5chxn")
+theme_override_font_sizes/font_size = 36
+text = "Taller Abandonado"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fragmentos" type="Label" parent="Nivel 1"]
+offset_left = 768.0
+offset_top = 564.0
+offset_right = 906.0
+offset_bottom = 619.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_jq1kb")
+theme_override_font_sizes/font_size = 36
+text = "0/?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Gota" type="Label" parent="Nivel 1"]
+offset_left = 768.0
+offset_top = 284.0
+offset_right = 906.0
+offset_bottom = 339.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_jq1kb")
+theme_override_font_sizes/font_size = 36
+text = "0/1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Nivel 2" type="Node2D" parent="."]
+visible = false
+
+[node name="ImgNivel" type="Sprite2D" parent="Nivel 2"]
+visible = false
+position = Vector2(220, 97)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("3_syy8o")
+centered = false
+
+[node name="ImgNivelByN" type="Sprite2D" parent="Nivel 2"]
+position = Vector2(220, 97)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("14_h3dip")
+centered = false
+
+[node name="Candado" type="Sprite2D" parent="Nivel 2"]
+position = Vector2(385.5, 195.5)
+scale = Vector2(3, 3)
+texture = ExtResource("15_cjknv")
+centered = false
+
+[node name="Pin" type="Sprite2D" parent="Nivel 2"]
+position = Vector2(434, 85)
+scale = Vector2(2, 2)
+texture = ExtResource("9_x56qb")
+
+[node name="Pin2" type="Sprite2D" parent="Nivel 2"]
+position = Vector2(847, 373)
+scale = Vector2(2, 2)
+texture = ExtResource("11_ol6ki")
+
+[node name="Pin3" type="Sprite2D" parent="Nivel 2"]
+position = Vector2(841, 72)
+scale = Vector2(2, 2)
+texture = ExtResource("16_qshd2")
+
+[node name="Nombre" type="Label" parent="Nivel 2"]
+offset_left = 251.0
+offset_top = 412.0
+offset_right = 617.0
+offset_bottom = 467.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_5chxn")
+theme_override_font_sizes/font_size = 36
+text = "Bosque Humedo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fragmentos" type="Label" parent="Nivel 2"]
+offset_left = 768.0
+offset_top = 564.0
+offset_right = 906.0
+offset_bottom = 619.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_jq1kb")
+theme_override_font_sizes/font_size = 36
+text = "0/?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Gota" type="Label" parent="Nivel 2"]
+offset_left = 768.0
+offset_top = 284.0
+offset_right = 906.0
+offset_bottom = 339.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_jq1kb")
+theme_override_font_sizes/font_size = 36
+text = "0/1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Nivel 3" type="Node2D" parent="."]
+visible = false
+
+[node name="ImgNivel" type="Sprite2D" parent="Nivel 3"]
+visible = false
+position = Vector2(220, 97)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("3_syy8o")
+centered = false
+
+[node name="ImgNivelByN" type="Sprite2D" parent="Nivel 3"]
+position = Vector2(220, 97)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("14_h3dip")
+centered = false
+
+[node name="Candado" type="Sprite2D" parent="Nivel 3"]
+position = Vector2(385.5, 195.5)
+scale = Vector2(3, 3)
+texture = ExtResource("15_cjknv")
+centered = false
+
+[node name="Pin" type="Sprite2D" parent="Nivel 3"]
+position = Vector2(450, 76)
+scale = Vector2(2, 2)
+texture = ExtResource("10_b0kqx")
+
+[node name="Pin2" type="Sprite2D" parent="Nivel 3"]
+position = Vector2(833, 379)
+scale = Vector2(2, 2)
+texture = ExtResource("18_11gin")
+
+[node name="Pin3" type="Sprite2D" parent="Nivel 3"]
+position = Vector2(841, 72)
+scale = Vector2(2, 2)
+texture = ExtResource("4_ylf3n")
+
+[node name="Nombre" type="Label" parent="Nivel 3"]
+offset_left = 251.0
+offset_top = 412.0
+offset_right = 617.0
+offset_bottom = 467.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_5chxn")
+theme_override_font_sizes/font_size = 36
+text = "Ruinas Mojadas"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fragmentos" type="Label" parent="Nivel 3"]
+offset_left = 768.0
+offset_top = 564.0
+offset_right = 906.0
+offset_bottom = 619.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_jq1kb")
+theme_override_font_sizes/font_size = 36
+text = "0/?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Gota" type="Label" parent="Nivel 3"]
+offset_left = 768.0
+offset_top = 284.0
+offset_right = 906.0
+offset_bottom = 339.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_jq1kb")
+theme_override_font_sizes/font_size = 36
+text = "0/1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Nivel 4" type="Node2D" parent="."]
+visible = false
+
+[node name="ImgNivel" type="Sprite2D" parent="Nivel 4"]
+visible = false
+position = Vector2(220, 97)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("3_syy8o")
+centered = false
+
+[node name="ImgNivelByN" type="Sprite2D" parent="Nivel 4"]
+position = Vector2(220, 97)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("14_h3dip")
+centered = false
+
+[node name="Candado" type="Sprite2D" parent="Nivel 4"]
+position = Vector2(385.5, 195.5)
+scale = Vector2(3, 3)
+texture = ExtResource("15_cjknv")
+centered = false
+
+[node name="Pin" type="Sprite2D" parent="Nivel 4"]
+position = Vector2(434, 85)
+scale = Vector2(2, 2)
+texture = ExtResource("18_11gin")
+
+[node name="Pin2" type="Sprite2D" parent="Nivel 4"]
+position = Vector2(846, 379)
+scale = Vector2(2, 2)
+texture = ExtResource("16_qshd2")
+
+[node name="Pin3" type="Sprite2D" parent="Nivel 4"]
+position = Vector2(849, 65)
+scale = Vector2(2, 2)
+texture = ExtResource("10_b0kqx")
+
+[node name="Nombre" type="Label" parent="Nivel 4"]
+offset_left = 251.0
+offset_top = 412.0
+offset_right = 617.0
+offset_bottom = 467.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_5chxn")
+theme_override_font_sizes/font_size = 36
+text = "Valle de la Tormenta"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fragmentos" type="Label" parent="Nivel 4"]
+offset_left = 768.0
+offset_top = 564.0
+offset_right = 906.0
+offset_bottom = 619.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_jq1kb")
+theme_override_font_sizes/font_size = 36
+text = "0/?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Gota" type="Label" parent="Nivel 4"]
+offset_left = 768.0
+offset_top = 284.0
+offset_right = 906.0
+offset_bottom = 339.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_jq1kb")
+theme_override_font_sizes/font_size = 36
+text = "0/1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Nivel 5" type="Node2D" parent="."]
+visible = false
+
+[node name="ImgNivel" type="Sprite2D" parent="Nivel 5"]
+visible = false
+position = Vector2(220, 97)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("3_syy8o")
+centered = false
+
+[node name="ImgNivelByN" type="Sprite2D" parent="Nivel 5"]
+position = Vector2(220, 97)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("14_h3dip")
+centered = false
+
+[node name="Candado" type="Sprite2D" parent="Nivel 5"]
+position = Vector2(385.5, 195.5)
+scale = Vector2(3, 3)
+texture = ExtResource("15_cjknv")
+centered = false
+
+[node name="Pin" type="Sprite2D" parent="Nivel 5"]
+position = Vector2(447, 85)
+scale = Vector2(2, 2)
+texture = ExtResource("16_qshd2")
+
+[node name="Pin2" type="Sprite2D" parent="Nivel 5"]
+position = Vector2(847, 373)
+scale = Vector2(2, 2)
+texture = ExtResource("10_b0kqx")
+
+[node name="Pin3" type="Sprite2D" parent="Nivel 5"]
+position = Vector2(843, 74)
+scale = Vector2(2, 2)
+texture = ExtResource("9_x56qb")
+
+[node name="Nombre" type="Label" parent="Nivel 5"]
+offset_left = 251.0
+offset_top = 412.0
+offset_right = 617.0
+offset_bottom = 467.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_5chxn")
+theme_override_font_sizes/font_size = 36
+text = "La Torre"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fragmentos" type="Label" parent="Nivel 5"]
+offset_left = 768.0
+offset_top = 564.0
+offset_right = 906.0
+offset_bottom = 619.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_jq1kb")
+theme_override_font_sizes/font_size = 36
+text = "0/?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Gota" type="Label" parent="Nivel 5"]
+offset_left = 768.0
+offset_top = 284.0
+offset_right = 906.0
+offset_bottom = 339.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_jq1kb")
+theme_override_font_sizes/font_size = 36
+text = "0/1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Jugar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 361.5
+offset_top = 500.0
+offset_right = 506.5
+offset_bottom = 558.0
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_5chxn")
+theme_override_font_sizes/font_size = 50
+text = "Jugar"
+flat = true
+
+[node name="Salir" type="Button" parent="."]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 69.0
+offset_bottom = 69.0
+scale = Vector2(0.8, 0.8)
+icon = ExtResource("13_85foy")
+flat = true
+icon_alignment = 1
+
+[node name="Izquierda" type="Button" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 288.0
+offset_right = 84.0
+offset_bottom = 360.0
+theme_override_colors/icon_hover_color = Color(1, 0.772549, 0, 1)
+icon = ExtResource("14_6jsul")
+flat = true
+icon_alignment = 1
+
+[node name="Derecha" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1064.0
+offset_top = 288.0
+offset_right = 1136.0
+offset_bottom = 360.0
+theme_override_colors/icon_hover_color = Color(1, 0.772549, 0, 1)
+icon = ExtResource("15_entxm")
+flat = true
+icon_alignment = 1
+
+[connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="mouse_entered" from="Salir" to="." method="_on_salir_mouse_entered"]
+[connection signal="mouse_exited" from="Salir" to="." method="_on_salir_mouse_exited"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]
+[connection signal="mouse_entered" from="Izquierda" to="." method="_on_izquierda_mouse_entered"]
+[connection signal="mouse_exited" from="Izquierda" to="." method="_on_izquierda_mouse_exited"]
+[connection signal="pressed" from="Izquierda" to="." method="_on_izquierda_pressed"]
+[connection signal="mouse_entered" from="Derecha" to="." method="_on_derecha_mouse_entered"]
+[connection signal="mouse_exited" from="Derecha" to="." method="_on_derecha_mouse_exited"]
+[connection signal="pressed" from="Derecha" to="." method="_on_derecha_pressed"]

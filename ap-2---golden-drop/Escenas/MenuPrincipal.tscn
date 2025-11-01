@@ -1,35 +1,147 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6hyc58yewkaj"]
+[gd_scene load_steps=12 format=3 uid="uid://cqd83lbf5lueu"]
 
-[ext_resource type="Script" path="res://Scripts/menus/menu_principal.gd" id="1_f47k7"]
-[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="2_efv6a"]
+[ext_resource type="Script" path="res://Scripts/menus/menu_principal.gd" id="1_lq8u1"]
+[ext_resource type="Texture2D" uid="uid://dqm4s3gsxo385" path="res://Assets/Menu/Darker.png" id="1_y0uwv"]
+[ext_resource type="Texture2D" uid="uid://d1hvldqq88icv" path="res://Assets/Coleccionables/Gotas/1.png" id="2_ykgux"]
+[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="3_e652e"]
+[ext_resource type="Texture2D" uid="uid://c53kit3pspnyu" path="res://Assets/lluvia/Rain Spritesheet.png" id="4_jyiom"]
 
-[node name="MenuPrincipal" type="Control"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_fprnr"]
+atlas = ExtResource("4_jyiom")
+region = Rect2(0, 0, 618, 618)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6qsr3"]
+atlas = ExtResource("4_jyiom")
+region = Rect2(0, 618, 618, 618)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rhf8"]
+atlas = ExtResource("4_jyiom")
+region = Rect2(0, 1236, 618, 618)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j60mm"]
+atlas = ExtResource("4_jyiom")
+region = Rect2(0, 1854, 618, 618)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_88gq7"]
+atlas = ExtResource("4_jyiom")
+region = Rect2(0, 2472, 618, 618)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3xvla"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fprnr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6qsr3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3rhf8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j60mm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_88gq7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="Menu Principal" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_f47k7")
-metadata/_edit_vertical_guides_ = [-72.0]
+script = ExtResource("1_lq8u1")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+z_index = -1
+scale = Vector2(3, 3)
+texture = ExtResource("1_y0uwv")
+centered = false
+
+[node name="Gota" type="Sprite2D" parent="."]
+position = Vector2(516, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("2_ykgux")
+centered = false
+
+[node name="Golden Drop" type="Label" parent="."]
+layout_mode = 0
+offset_left = 373.0
+offset_top = 125.0
+offset_right = 783.0
+offset_bottom = 185.0
+theme_override_colors/font_color = Color(1, 0.772549, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_e652e")
+theme_override_font_sizes/font_size = 60
+text = "Golden Drop"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Jugar" type="Button" parent="."]
 layout_mode = 0
-offset_left = 463.0
-offset_top = 270.0
-offset_right = 716.0
-offset_bottom = 388.0
-theme_override_fonts/font = ExtResource("2_efv6a")
+offset_left = 453.0
+offset_top = 320.0
+offset_right = 703.0
+offset_bottom = 370.0
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("3_e652e")
+theme_override_font_sizes/font_size = 40
 text = "Jugar"
+flat = true
+
+[node name="SelecNivel" type="Button" parent="."]
+layout_mode = 0
+offset_left = 423.0
+offset_top = 400.0
+offset_right = 733.0
+offset_bottom = 450.0
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("3_e652e")
+theme_override_font_sizes/font_size = 40
+text = "Seleccionar Nivel"
+flat = true
+
+[node name="Opciones" type="Button" parent="."]
+layout_mode = 0
+offset_left = 453.0
+offset_top = 480.0
+offset_right = 703.0
+offset_bottom = 530.0
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("3_e652e")
+theme_override_font_sizes/font_size = 40
+text = "Opciones"
+flat = true
 
 [node name="Salir" type="Button" parent="."]
 layout_mode = 0
-offset_left = 491.0
-offset_top = 429.0
-offset_right = 697.0
-offset_bottom = 535.0
-theme_override_fonts/font = ExtResource("2_efv6a")
+offset_left = 453.0
+offset_top = 560.0
+offset_right = 703.0
+offset_bottom = 610.0
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("3_e652e")
+theme_override_font_sizes/font_size = 40
 text = "Salir"
+flat = true
 
-[connection signal="button_down" from="Jugar" to="." method="_on_jugar_button_down"]
-[connection signal="button_down" from="Salir" to="." method="_on_salir_button_down"]
+[node name="Lluvia" type="AnimatedSprite2D" parent="."]
+z_index = -1
+scale = Vector2(1.9, 1.9)
+sprite_frames = SubResource("SpriteFrames_3xvla")
+autoplay = "default"
+frame = 3
+frame_progress = 0.061467
+centered = false
+
+[connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="SelecNivel" to="." method="_on_selec_nivel_pressed"]
+[connection signal="pressed" from="Opciones" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]
