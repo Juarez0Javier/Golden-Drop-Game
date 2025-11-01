@@ -26,7 +26,7 @@ func cambiar_escena(nombre_escena: String):
 func conectar_seniales(nombre_escena: String):
 	match nombre_escena:
 		Escenas.MenuPrincipal:
-				escena_actual.connect("iniciar_juego", Callable(self, "cambiar_escena").bind(Escenas.Cinematica))
+				escena_actual.connect("iniciar_cinematica", Callable(self, "cambiar_escena").bind(Escenas.Cinematica))
 				
 		Escenas.Cinematica:
-				escena_actual.connect("finaliza_intro", Callable(self, "cambiar_escena").bind(Escenas.Juego))
+				escena_actual.connect("iniciar_juego", Callable(self, "cambiar_escena").bind(Escenas.Juego))

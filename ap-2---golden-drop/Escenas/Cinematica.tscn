@@ -1,61 +1,63 @@
-[gd_scene load_steps=58 format=3 uid="uid://dqvuwdnasfeo3"]
+[gd_scene load_steps=63 format=3 uid="uid://dqvuwdnasfeo3"]
 
 [ext_resource type="Script" path="res://Scripts/cinematicas/cinematica.gd" id="1_opng1"]
-[ext_resource type="Texture2D" uid="uid://soy78uhajkf4" path="res://Assets/Cinematicas/1.png" id="2_xw0cw"]
-[ext_resource type="Texture2D" uid="uid://cdh533f1pqcy6" path="res://Assets/Cinematicas/2.png" id="3_intq6"]
-[ext_resource type="Texture2D" uid="uid://cptbhjdqx1rfs" path="res://Assets/Cinematicas/3.png" id="4_4nl1w"]
-[ext_resource type="Texture2D" uid="uid://5srd86vpkqcf" path="res://Assets/Cinematicas/4.png" id="5_kg0if"]
-[ext_resource type="Texture2D" uid="uid://dneu2l3s0u0bm" path="res://Assets/Cinematicas/5.png" id="6_ussdy"]
-[ext_resource type="Texture2D" uid="uid://bx8n0fw5scojl" path="res://Assets/Cinematicas/6.png" id="7_kuvra"]
-[ext_resource type="Texture2D" uid="uid://dej6n3j446ah2" path="res://Assets/Cinematicas/7.png" id="8_55qxj"]
-[ext_resource type="Texture2D" uid="uid://tncknxo0ccrc" path="res://Assets/Cinematicas/8.png" id="9_kjuxm"]
-[ext_resource type="Texture2D" uid="uid://dm7xpub5qlu2j" path="res://Assets/Cinematicas/9.png" id="10_oyxh2"]
-[ext_resource type="Texture2D" uid="uid://bf6c6d2jjrhfx" path="res://Assets/Cinematicas/10.png" id="11_vycwc"]
-[ext_resource type="Texture2D" uid="uid://d4nw31l4b7eps" path="res://Assets/Cinematicas/11.png" id="12_7ajuv"]
-[ext_resource type="Texture2D" uid="uid://pyxdwe320q3m" path="res://Assets/Cinematicas/12.png" id="13_8by1a"]
-[ext_resource type="Texture2D" uid="uid://bcyg7cw67ytrl" path="res://Assets/Cinematicas/13.png" id="14_fkt8m"]
-[ext_resource type="Texture2D" uid="uid://bgril2plixpuw" path="res://Assets/Cinematicas/14.png" id="15_ccupx"]
-[ext_resource type="Texture2D" uid="uid://cw8ehi515i40h" path="res://Assets/Cinematicas/15.png" id="16_3746a"]
-[ext_resource type="Texture2D" uid="uid://c53saqwvcedky" path="res://Assets/Cinematicas/16.png" id="17_wyopb"]
-[ext_resource type="Texture2D" uid="uid://btiwtjqrp65h2" path="res://Assets/Cinematicas/17.png" id="18_vf3ui"]
-[ext_resource type="Texture2D" uid="uid://bpmkrysaf4kw1" path="res://Assets/Cinematicas/18.png" id="19_ja3jw"]
-[ext_resource type="Texture2D" uid="uid://bf1sfky83ujn2" path="res://Assets/Cinematicas/19.png" id="20_gx5wx"]
-[ext_resource type="Texture2D" uid="uid://cke4ywvelq2" path="res://Assets/Cinematicas/20.png" id="21_xakvn"]
-[ext_resource type="Texture2D" uid="uid://dwpqk537hl4jd" path="res://Assets/Cinematicas/21.png" id="22_bvow7"]
-[ext_resource type="Texture2D" uid="uid://bnuyn01yh211b" path="res://Assets/Cinematicas/22.png" id="23_ann6e"]
-[ext_resource type="Texture2D" uid="uid://cpkv45sfug6hd" path="res://Assets/Cinematicas/23.png" id="24_xdrvb"]
-[ext_resource type="Texture2D" uid="uid://c2hhr65jutbvh" path="res://Assets/Cinematicas/24.png" id="25_80spq"]
-[ext_resource type="Texture2D" uid="uid://bs46h2fwh0c4u" path="res://Assets/Cinematicas/25.png" id="26_tv3um"]
-[ext_resource type="Texture2D" uid="uid://o3rffhso0hb5" path="res://Assets/Cinematicas/26.png" id="27_okenx"]
-[ext_resource type="Texture2D" uid="uid://cv0l0twj8r1g8" path="res://Assets/Cinematicas/27.png" id="28_e8osu"]
-[ext_resource type="Texture2D" uid="uid://doebjj4onj3e6" path="res://Assets/Cinematicas/28.png" id="29_oxdly"]
-[ext_resource type="Texture2D" uid="uid://3whe65wkjqsv" path="res://Assets/Cinematicas/29.png" id="30_pr4ep"]
-[ext_resource type="Texture2D" uid="uid://cc4slqh6ht23q" path="res://Assets/Cinematicas/30.png" id="31_wr7n7"]
-[ext_resource type="Texture2D" uid="uid://cfrakpjayuhwu" path="res://Assets/Cinematicas/31.png" id="32_54uu8"]
-[ext_resource type="Texture2D" uid="uid://iskpw8i7swxv" path="res://Assets/Cinematicas/32.png" id="33_pi5xs"]
-[ext_resource type="Texture2D" uid="uid://cf0ltjmy7w4ja" path="res://Assets/Cinematicas/33.png" id="34_mp85t"]
-[ext_resource type="Texture2D" uid="uid://bb1a1ak5aikin" path="res://Assets/Cinematicas/34.png" id="35_tkljw"]
-[ext_resource type="Texture2D" uid="uid://qbch6f427acg" path="res://Assets/Cinematicas/35.png" id="36_k8hna"]
-[ext_resource type="Texture2D" uid="uid://bsmtfphwo8vtx" path="res://Assets/Cinematicas/36.png" id="37_i265m"]
-[ext_resource type="Texture2D" uid="uid://clys4aextuto1" path="res://Assets/Cinematicas/37.png" id="38_mxxyn"]
-[ext_resource type="Texture2D" uid="uid://ek41dlpht1cd" path="res://Assets/Cinematicas/38.png" id="39_x0uil"]
-[ext_resource type="Texture2D" uid="uid://uny2es5wpgpx" path="res://Assets/Cinematicas/39.png" id="40_gqx7m"]
-[ext_resource type="Texture2D" uid="uid://cohd6ubo2unk4" path="res://Assets/Cinematicas/40.png" id="41_csk0t"]
-[ext_resource type="Texture2D" uid="uid://b21fwaxsaxwqw" path="res://Assets/Cinematicas/41.png" id="42_ys8v4"]
-[ext_resource type="Texture2D" uid="uid://csxs3jwp4ptpj" path="res://Assets/Cinematicas/42.png" id="43_0unmp"]
-[ext_resource type="Texture2D" uid="uid://cjwjmjiyruoo7" path="res://Assets/Cinematicas/43.png" id="44_br7s0"]
-[ext_resource type="Texture2D" uid="uid://1h8ksnaa03sp" path="res://Assets/Cinematicas/44.png" id="45_fm5s1"]
-[ext_resource type="Texture2D" uid="uid://x2nhe6fle3q7" path="res://Assets/Cinematicas/45.png" id="46_soat6"]
-[ext_resource type="Texture2D" uid="uid://b4hhpapokhy61" path="res://Assets/Cinematicas/46.png" id="47_5nfpc"]
-[ext_resource type="Texture2D" uid="uid://llyflkxbys07" path="res://Assets/Cinematicas/47.png" id="48_e2t55"]
-[ext_resource type="Texture2D" uid="uid://cmgcdeiptrc8l" path="res://Assets/Cinematicas/48.png" id="49_7nl4w"]
-[ext_resource type="Texture2D" uid="uid://b572fave1qk55" path="res://Assets/Cinematicas/49.png" id="50_emc2i"]
-[ext_resource type="Texture2D" uid="uid://cq21k7yhfdp7y" path="res://Assets/Cinematicas/50.png" id="51_f366e"]
-[ext_resource type="Texture2D" uid="uid://bvxmgsimnstvp" path="res://Assets/Cinematicas/51.png" id="52_842ak"]
-[ext_resource type="Texture2D" uid="uid://hhg1xbt1g4ad" path="res://Assets/Cinematicas/52.png" id="53_6wehl"]
-[ext_resource type="Texture2D" uid="uid://c135y7jm8e8nh" path="res://Assets/Cinematicas/53.png" id="54_xpgmj"]
-[ext_resource type="Texture2D" uid="uid://buixccbjkx680" path="res://Assets/Cinematicas/54.png" id="55_v1w63"]
+[ext_resource type="Texture2D" uid="uid://soy78uhajkf4" path="res://Assets/cinematicas/1.png" id="2_xw0cw"]
+[ext_resource type="Texture2D" uid="uid://cdh533f1pqcy6" path="res://Assets/cinematicas/2.png" id="3_intq6"]
+[ext_resource type="Texture2D" uid="uid://cptbhjdqx1rfs" path="res://Assets/cinematicas/3.png" id="4_4nl1w"]
+[ext_resource type="Texture2D" uid="uid://5srd86vpkqcf" path="res://Assets/cinematicas/4.png" id="5_kg0if"]
+[ext_resource type="Texture2D" uid="uid://dneu2l3s0u0bm" path="res://Assets/cinematicas/5.png" id="6_ussdy"]
+[ext_resource type="Texture2D" uid="uid://bx8n0fw5scojl" path="res://Assets/cinematicas/6.png" id="7_kuvra"]
+[ext_resource type="Texture2D" uid="uid://dej6n3j446ah2" path="res://Assets/cinematicas/7.png" id="8_55qxj"]
+[ext_resource type="Texture2D" uid="uid://tncknxo0ccrc" path="res://Assets/cinematicas/8.png" id="9_kjuxm"]
+[ext_resource type="Texture2D" uid="uid://dm7xpub5qlu2j" path="res://Assets/cinematicas/9.png" id="10_oyxh2"]
+[ext_resource type="Texture2D" uid="uid://bf6c6d2jjrhfx" path="res://Assets/cinematicas/10.png" id="11_vycwc"]
+[ext_resource type="Texture2D" uid="uid://d4nw31l4b7eps" path="res://Assets/cinematicas/11.png" id="12_7ajuv"]
+[ext_resource type="Texture2D" uid="uid://pyxdwe320q3m" path="res://Assets/cinematicas/12.png" id="13_8by1a"]
+[ext_resource type="Texture2D" uid="uid://bcyg7cw67ytrl" path="res://Assets/cinematicas/13.png" id="14_fkt8m"]
+[ext_resource type="Texture2D" uid="uid://bgril2plixpuw" path="res://Assets/cinematicas/14.png" id="15_ccupx"]
+[ext_resource type="Texture2D" uid="uid://cw8ehi515i40h" path="res://Assets/cinematicas/15.png" id="16_3746a"]
+[ext_resource type="Texture2D" uid="uid://c53saqwvcedky" path="res://Assets/cinematicas/16.png" id="17_wyopb"]
+[ext_resource type="Texture2D" uid="uid://btiwtjqrp65h2" path="res://Assets/cinematicas/17.png" id="18_vf3ui"]
+[ext_resource type="Texture2D" uid="uid://bpmkrysaf4kw1" path="res://Assets/cinematicas/18.png" id="19_ja3jw"]
+[ext_resource type="Texture2D" uid="uid://bf1sfky83ujn2" path="res://Assets/cinematicas/19.png" id="20_gx5wx"]
+[ext_resource type="Texture2D" uid="uid://cke4ywvelq2" path="res://Assets/cinematicas/20.png" id="21_xakvn"]
+[ext_resource type="Texture2D" uid="uid://dwpqk537hl4jd" path="res://Assets/cinematicas/21.png" id="22_bvow7"]
+[ext_resource type="Texture2D" uid="uid://bnuyn01yh211b" path="res://Assets/cinematicas/22.png" id="23_ann6e"]
+[ext_resource type="Texture2D" uid="uid://cpkv45sfug6hd" path="res://Assets/cinematicas/23.png" id="24_xdrvb"]
+[ext_resource type="Texture2D" uid="uid://c2hhr65jutbvh" path="res://Assets/cinematicas/24.png" id="25_80spq"]
+[ext_resource type="Texture2D" uid="uid://bs46h2fwh0c4u" path="res://Assets/cinematicas/25.png" id="26_tv3um"]
+[ext_resource type="Texture2D" uid="uid://o3rffhso0hb5" path="res://Assets/cinematicas/26.png" id="27_okenx"]
+[ext_resource type="Texture2D" uid="uid://cv0l0twj8r1g8" path="res://Assets/cinematicas/27.png" id="28_e8osu"]
+[ext_resource type="Texture2D" uid="uid://doebjj4onj3e6" path="res://Assets/cinematicas/28.png" id="29_oxdly"]
+[ext_resource type="Texture2D" uid="uid://3whe65wkjqsv" path="res://Assets/cinematicas/29.png" id="30_pr4ep"]
+[ext_resource type="Texture2D" uid="uid://cc4slqh6ht23q" path="res://Assets/cinematicas/30.png" id="31_wr7n7"]
+[ext_resource type="Texture2D" uid="uid://cfrakpjayuhwu" path="res://Assets/cinematicas/31.png" id="32_54uu8"]
+[ext_resource type="Texture2D" uid="uid://iskpw8i7swxv" path="res://Assets/cinematicas/32.png" id="33_pi5xs"]
+[ext_resource type="Texture2D" uid="uid://cf0ltjmy7w4ja" path="res://Assets/cinematicas/33.png" id="34_mp85t"]
+[ext_resource type="Texture2D" uid="uid://bb1a1ak5aikin" path="res://Assets/cinematicas/34.png" id="35_tkljw"]
+[ext_resource type="Texture2D" uid="uid://qbch6f427acg" path="res://Assets/cinematicas/35.png" id="36_k8hna"]
+[ext_resource type="Texture2D" uid="uid://bsmtfphwo8vtx" path="res://Assets/cinematicas/36.png" id="37_i265m"]
+[ext_resource type="Texture2D" uid="uid://clys4aextuto1" path="res://Assets/cinematicas/37.png" id="38_mxxyn"]
+[ext_resource type="Texture2D" uid="uid://ek41dlpht1cd" path="res://Assets/cinematicas/38.png" id="39_x0uil"]
+[ext_resource type="Texture2D" uid="uid://uny2es5wpgpx" path="res://Assets/cinematicas/39.png" id="40_gqx7m"]
+[ext_resource type="Texture2D" uid="uid://cohd6ubo2unk4" path="res://Assets/cinematicas/40.png" id="41_csk0t"]
+[ext_resource type="Texture2D" uid="uid://b21fwaxsaxwqw" path="res://Assets/cinematicas/41.png" id="42_ys8v4"]
+[ext_resource type="Texture2D" uid="uid://csxs3jwp4ptpj" path="res://Assets/cinematicas/42.png" id="43_0unmp"]
+[ext_resource type="Texture2D" uid="uid://cjwjmjiyruoo7" path="res://Assets/cinematicas/43.png" id="44_br7s0"]
+[ext_resource type="Texture2D" uid="uid://1h8ksnaa03sp" path="res://Assets/cinematicas/44.png" id="45_fm5s1"]
+[ext_resource type="Texture2D" uid="uid://x2nhe6fle3q7" path="res://Assets/cinematicas/45.png" id="46_soat6"]
+[ext_resource type="Texture2D" uid="uid://b4hhpapokhy61" path="res://Assets/cinematicas/46.png" id="47_5nfpc"]
+[ext_resource type="Texture2D" uid="uid://llyflkxbys07" path="res://Assets/cinematicas/47.png" id="48_e2t55"]
+[ext_resource type="Texture2D" uid="uid://cmgcdeiptrc8l" path="res://Assets/cinematicas/48.png" id="49_7nl4w"]
+[ext_resource type="Texture2D" uid="uid://b572fave1qk55" path="res://Assets/cinematicas/49.png" id="50_emc2i"]
+[ext_resource type="Texture2D" uid="uid://cq21k7yhfdp7y" path="res://Assets/cinematicas/50.png" id="51_f366e"]
+[ext_resource type="Texture2D" uid="uid://bvxmgsimnstvp" path="res://Assets/cinematicas/51.png" id="52_842ak"]
+[ext_resource type="Texture2D" uid="uid://hhg1xbt1g4ad" path="res://Assets/cinematicas/52.png" id="53_6wehl"]
+[ext_resource type="Texture2D" uid="uid://c135y7jm8e8nh" path="res://Assets/cinematicas/53.png" id="54_xpgmj"]
+[ext_resource type="Texture2D" uid="uid://buixccbjkx680" path="res://Assets/cinematicas/54.png" id="55_v1w63"]
 [ext_resource type="Script" path="res://Scripts/cinematicas/dialogos.gd" id="56_1vbdl"]
+[ext_resource type="FontFile" uid="uid://b6fu6124dkyb1" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.woff" id="56_t6ck0"]
+[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="58_yy6vs"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g11ll"]
 animations = [{
@@ -262,6 +264,91 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_bflgx"]
+resource_name = "FadeIn-Boton"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Boton:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.133333, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Boton:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.133333, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Boton:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.133333, 0.633333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_3oggm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Boton:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Boton:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Boton:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4r4yb"]
+_data = {
+"FadeIn-Boton": SubResource("Animation_bflgx"),
+"RESET": SubResource("Animation_3oggm")
+}
+
 [node name="CinematicScene" type="CanvasLayer"]
 script = ExtResource("1_opng1")
 
@@ -272,21 +359,25 @@ scale = Vector2(3.23595, 2.64754)
 sprite_frames = SubResource("SpriteFrames_g11ll")
 animation = &"loop_dialogos"
 frame = 7
-frame_progress = 0.248071
+frame_progress = 0.910869
 
-[node name="Omitir" type="Button" parent="."]
+[node name="Boton" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
 anchors_preset = -1
 anchor_left = 0.901
 anchor_top = 0.904
 anchor_right = 0.974
 anchor_bottom = 0.961
-offset_left = 0.0479736
-offset_top = 0.207947
-offset_right = -0.0480957
-offset_bottom = 0.271973
+offset_left = -26.952
+offset_top = -12.792
+offset_right = 24.0477
+offset_bottom = 12.208
 grow_horizontal = 0
 grow_vertical = 0
-text = "omitir"
+theme_override_fonts/font = ExtResource("56_t6ck0")
+theme_override_font_sizes/font_size = 20
+text = "Siguiente"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
@@ -307,8 +398,16 @@ color = Color(0.0745098, 0.0156863, 0, 0.447059)
 visible = false
 offset_left = 304.0
 offset_top = 550.0
-offset_right = 738.0
-offset_bottom = 595.0
+offset_right = 759.0
+offset_bottom = 598.0
+theme_override_fonts/font = ExtResource("58_yy6vs")
+theme_override_font_sizes/font_size = 24
 
-[connection signal="pressed" from="Omitir" to="." method="_on_omitir_pressed"]
-[connection signal="dialogos_terminados" from="Dialogos" to="." method="_on_dialogos_dialogos_terminados"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_4r4yb")
+}
+
+[connection signal="pressed" from="Boton" to="." method="_on_boton_pressed"]
+[connection signal="pressed" from="Boton" to="Dialogos" method="_on_boton_pressed"]

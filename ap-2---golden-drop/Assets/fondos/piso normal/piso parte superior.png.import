@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://di1p1fvkttx1u"
-path="res://.godot/imported/piso parte superior.png-6c88a019c25793215b9e26733d6c165c.ctex"
+path="res://.godot/imported/piso parte superior.png-b226e279db5f270988b005da395f40ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Fondos/piso normal/piso parte superior.png"
-dest_files=["res://.godot/imported/piso parte superior.png-6c88a019c25793215b9e26733d6c165c.ctex"]
+source_file="res://Assets/fondos/piso normal/piso parte superior.png"
+dest_files=["res://.godot/imported/piso parte superior.png-b226e279db5f270988b005da395f40ab.ctex"]
 
 [params]
 

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c6hyc58yewkaj"]
+[gd_scene load_steps=3 format=3 uid="uid://c6hyc58yewkaj"]
 
 [ext_resource type="Script" path="res://Scripts/menus/menu_principal.gd" id="1_f47k7"]
+[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="2_efv6a"]
 
 [node name="MenuPrincipal" type="Control"]
 layout_mode = 3
@@ -18,6 +19,7 @@ offset_left = 463.0
 offset_top = 270.0
 offset_right = 716.0
 offset_bottom = 388.0
+theme_override_fonts/font = ExtResource("2_efv6a")
 text = "Jugar"
 
 [node name="Salir" type="Button" parent="."]
@@ -26,6 +28,7 @@ offset_left = 491.0
 offset_top = 429.0
 offset_right = 697.0
 offset_bottom = 535.0
+theme_override_fonts/font = ExtResource("2_efv6a")
 text = "Salir"
 
 [connection signal="button_down" from="Jugar" to="." method="_on_jugar_button_down"]
