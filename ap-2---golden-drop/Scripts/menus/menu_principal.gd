@@ -3,7 +3,7 @@ extends Control
 
 var selectnivel : PackedScene
 @warning_ignore("UNUSED_SIGNAL")
-signal iniciar_juego
+signal iniciar_cinematica
 
 
 # Called when the node enters the scene tree for the first time.
@@ -31,4 +31,4 @@ func _on_selec_nivel_pressed() -> void:
 	
 
 func _on_jugar_pressed() -> void:
-	emit_signal("iniciar_juego")
+	emit_signal("iniciar_cinematica")
