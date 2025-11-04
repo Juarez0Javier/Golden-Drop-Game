@@ -372,7 +372,7 @@ texture = ExtResource("2_ffthd")
 centered = false
 
 [node name="Lluvia Effecto" parent="." instance=ExtResource("5_xhsvb")]
-layer = 0
+layer = -1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 visible = false

@@ -1,0 +1,131 @@
+[gd_scene load_steps=5 format=3 uid="uid://csccrl0fnj7pw"]
+
+[ext_resource type="Script" path="res://Scripts/menus/ganar_perder.gd" id="1_18cw5"]
+[ext_resource type="Texture2D" uid="uid://gw8rt34dgicy" path="res://Assets/Menu/Carton.png" id="1_s7q37"]
+[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="2_xvrmc"]
+[ext_resource type="FontFile" uid="uid://c1rjhde3e55r6" path="res://Assets/fuentes/fuente para numero/medieval-pixel.ttf" id="3_t575r"]
+
+[node name="Ganar_Perder" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_18cw5")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(332, 30)
+scale = Vector2(3, 3)
+texture = ExtResource("1_s7q37")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 164, 196)
+
+[node name="Completado" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 332.0
+offset_top = 80.0
+offset_right = 823.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 50
+text = "Nivel Completado"
+horizontal_alignment = 1
+
+[node name="Incompleto" type="Label" parent="."]
+visible = false
+offset_left = 332.0
+offset_top = 80.0
+offset_right = 823.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 50
+text = "Nivel Incompleto"
+horizontal_alignment = 1
+
+[node name="LabelFargmentos" type="Label" parent="."]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 247.0
+offset_right = 735.0
+offset_bottom = 280.0
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 24
+text = "Fragmentos de Carton obtenidos . . . ."
+horizontal_alignment = 1
+
+[node name="Fragmentos" type="Label" parent="."]
+layout_mode = 0
+offset_left = 743.0
+offset_top = 253.0
+offset_right = 825.0
+offset_bottom = 277.0
+theme_override_fonts/font = ExtResource("3_t575r")
+theme_override_font_sizes/font_size = 30
+text = "0/?"
+
+[node name="LabelGota" type="Label" parent="."]
+offset_left = 332.0
+offset_top = 320.0
+offset_right = 762.0
+offset_bottom = 353.0
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 24
+text = " Gota Dorada obtenida . . . . . . . . . . . . . . ."
+horizontal_alignment = 1
+
+[node name="Gota" type="Label" parent="."]
+offset_left = 772.0
+offset_top = 326.0
+offset_right = 823.0
+offset_bottom = 350.0
+theme_override_fonts/font = ExtResource("3_t575r")
+theme_override_font_sizes/font_size = 30
+text = "0/1"
+
+[node name="MenuPrincipal" type="Button" parent="."]
+process_mode = 3
+offset_left = 333.0
+offset_top = 577.0
+offset_right = 551.0
+offset_bottom = 617.0
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 30
+text = "Menu Principal"
+flat = true
+
+[node name="SiguienteNivel" type="Button" parent="."]
+process_mode = 3
+visible = false
+offset_left = 606.0
+offset_top = 578.0
+offset_right = 824.0
+offset_bottom = 618.0
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 30
+text = "Siguiente Nivel"
+flat = true
+
+[node name="Reintentar" type="Button" parent="."]
+process_mode = 3
+visible = false
+offset_left = 606.0
+offset_top = 578.0
+offset_right = 824.0
+offset_bottom = 618.0
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 30
+text = "Reintentar"
+flat = true
+
+[connection signal="pressed" from="MenuPrincipal" to="." method="_on_menu_principal_pressed"]
+[connection signal="pressed" from="SiguienteNivel" to="." method="_on_siguiente_nivel_pressed"]
+[connection signal="pressed" from="Reintentar" to="." method="_on_reintentar_pressed"]
