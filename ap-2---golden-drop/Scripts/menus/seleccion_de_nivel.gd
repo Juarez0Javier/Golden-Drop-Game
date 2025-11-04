@@ -1,18 +1,9 @@
 extends Control
 
 
-var mainmenu : PackedScene
-var nivel1 : PackedScene
-#var nivel2 : PackedScene
-#var nivel3 : PackedScene
-#var nivel4 : PackedScene
-#var nivel5 : PackedScene
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	mainmenu = load("res://Escenas/Main.tscn")
-	nivel1 = load("res://Escenas/Niveles/nv_1_taller.tscn")
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -22,8 +13,7 @@ func _process(_delta: float) -> void:
 
 func _on_jugar_pressed() -> void:
 	if($"Nivel 1".visible == true):
-		var level = nivel1.instantiate()
-		self.get_parent().add_child(level)
+		get_parent().cambiar_escena("Niveles/nv_1_taller")
 		self.call_deferred("queue_free")
 	#elif($"Nivel 2".visible == true):
 		#var level = nivel2.instantiate()
@@ -44,8 +34,7 @@ func _on_jugar_pressed() -> void:
 
 
 func _on_salir_pressed() -> void:
-	var main = mainmenu.instantiate()
-	self.get_parent().add_child(main)
+	get_parent().cambiar_escena("MenuPrincipal")
 	self.call_deferred("queue_free")
 
 

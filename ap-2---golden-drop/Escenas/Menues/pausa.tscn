@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bfvqdj22tkgqg"]
+[gd_scene load_steps=4 format=3 uid="uid://bfvqdj22tkgqg"]
 
 [ext_resource type="Script" path="res://Scripts/menus/pausa.gd" id="1_3vkj7"]
 [ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="1_4wna5"]
+[ext_resource type="PackedScene" uid="uid://disgah5swu83e" path="res://Escenas/Menues/barra_volumen.tscn" id="3_kg7uo"]
 
 [node name="Pausa" type="Control"]
 process_mode = 3
@@ -19,11 +20,11 @@ layout_mode = 0
 offset_right = 89.0
 offset_bottom = 82.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="MenuPausa" type="VBoxContainer" parent="MarginContainer"]
 process_mode = 3
 layout_mode = 2
 
-[node name="Continuar" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Continuar" type="Button" parent="MarginContainer/MenuPausa"]
 process_mode = 3
 process_priority = 1
 z_index = 1
@@ -37,7 +38,7 @@ Continuar
 "
 flat = true
 
-[node name="Opciones" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Opciones" type="Button" parent="MarginContainer/MenuPausa"]
 process_mode = 3
 process_priority = 1
 z_index = 1
@@ -51,7 +52,7 @@ Opciones
 "
 flat = true
 
-[node name="MenuPrincipal" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="MenuPrincipal" type="Button" parent="MarginContainer/MenuPausa"]
 process_mode = 3
 process_priority = 1
 z_index = 1
@@ -65,6 +66,64 @@ Menu Principal
 "
 flat = true
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Continuar" to="." method="_on_continuar_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Opciones" to="." method="_on_opciones_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/MenuPrincipal" to="." method="_on_menu_principal_pressed"]
+[node name="MenuOpciones" type="VBoxContainer" parent="MarginContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="General" type="Label" parent="MarginContainer/MenuOpciones"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4wna5")
+theme_override_font_sizes/font_size = 30
+text = "
+Volumen General"
+horizontal_alignment = 1
+
+[node name="BarraVolumen" parent="MarginContainer/MenuOpciones" instance=ExtResource("3_kg7uo")]
+layout_mode = 2
+metadata/Bus = "Master"
+
+[node name="Musica" type="Label" parent="MarginContainer/MenuOpciones"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4wna5")
+theme_override_font_sizes/font_size = 30
+text = "
+Musica"
+horizontal_alignment = 1
+
+[node name="BarraVolumen2" parent="MarginContainer/MenuOpciones" instance=ExtResource("3_kg7uo")]
+layout_mode = 2
+metadata/Bus = "Musica"
+
+[node name="Efectos" type="Label" parent="MarginContainer/MenuOpciones"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_4wna5")
+theme_override_font_sizes/font_size = 30
+text = "
+Efectos"
+horizontal_alignment = 1
+
+[node name="BarraVolumen3" parent="MarginContainer/MenuOpciones" instance=ExtResource("3_kg7uo")]
+layout_mode = 2
+metadata/Bus = "Efectos"
+
+[node name="Espacio" type="Control" parent="MarginContainer/MenuOpciones"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Volver" type="Button" parent="MarginContainer/MenuOpciones"]
+process_mode = 3
+process_priority = 1
+z_index = 1
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("1_4wna5")
+theme_override_font_sizes/font_size = 30
+text = "Volver
+"
+flat = true
+
+[connection signal="pressed" from="MarginContainer/MenuPausa/Continuar" to="." method="_on_continuar_pressed"]
+[connection signal="pressed" from="MarginContainer/MenuPausa/Opciones" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="MarginContainer/MenuPausa/MenuPrincipal" to="." method="_on_menu_principal_pressed"]
+[connection signal="pressed" from="MarginContainer/MenuOpciones/Volver" to="." method="_on_volver_pressed"]

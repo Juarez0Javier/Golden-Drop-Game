@@ -1,12 +1,8 @@
 extends Control
 
 
-var mainmenu : PackedScene
-
-
 func _ready() -> void:
 	hide()
-	mainmenu = load("res://Escenas/Main.tscn")	
 	
 
 func mostrarMenu(humedad,fragmentos,gota):
@@ -42,8 +38,7 @@ func continuar():
 	hide()
 
 func _on_menu_principal_pressed() -> void:
-	var main = mainmenu.instantiate()
-	self.get_parent().get_parent().get_parent().add_child(main)
+	self.get_parent().get_parent().get_parent().cambiar_escena("MenuPrincipal")
 	get_tree().paused = false
 	self.get_parent().get_parent().call_deferred("queue_free")
 
