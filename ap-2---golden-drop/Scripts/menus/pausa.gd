@@ -2,6 +2,7 @@ extends Control
 
 
 var mainmenu : PackedScene
+var ganarperder = false
 
 
 func _ready() -> void:
@@ -28,10 +29,10 @@ func pausar():
 
 
 func abrirMenu():
-	if Input.is_action_just_pressed("Pausar") and get_tree().paused == false:
+	if Input.is_action_just_pressed("Pausar") and get_tree().paused == false and ganarperder == false:
 		pausar()
 		
-	elif Input.is_action_just_pressed("Pausar") and get_tree().paused == true:
+	elif Input.is_action_just_pressed("Pausar") and get_tree().paused == true and ganarperder == false:
 		continuar()
 
 

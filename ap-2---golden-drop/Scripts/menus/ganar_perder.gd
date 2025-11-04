@@ -6,7 +6,7 @@ var mainmenu : PackedScene
 
 func _ready() -> void:
 	hide()
-	mainmenu = load("res://Escenas/Main.tscn")
+	mainmenu = load("res://Escenas/Main.tscn")	
 	
 
 func mostrarMenu(humedad,fragmentos,gota):
@@ -29,6 +29,7 @@ func mostrarMenu(humedad,fragmentos,gota):
 		if(child is ColorRect):
 			child.show()
 	show()
+	$"../Pausa".ganarperder = true
 	get_tree().paused = true
 
 
@@ -37,6 +38,7 @@ func continuar():
 	for child in get_parent().get_children():
 		if(child is ColorRect):
 			child.hide()
+	$"../Pausa".ganarperder = false
 	hide()
 
 func _on_menu_principal_pressed() -> void:
