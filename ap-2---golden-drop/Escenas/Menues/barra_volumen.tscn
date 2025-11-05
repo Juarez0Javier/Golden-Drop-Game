@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://disgah5swu83e"]
+
+[ext_resource type="Script" path="res://Scripts/menus/barra_volumen.gd" id="1_upkvt"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ppdmp"]
+color = Color(0.856067, 0.856067, 0.856067, 1)
+thickness = 4
+
+[node name="BarraVolumen" type="HSlider"]
+offset_right = 320.0
+offset_bottom = 16.0
+theme_override_styles/slider = SubResource("StyleBoxLine_ppdmp")
+max_value = 1.0
+step = 0.001
+script = ExtResource("1_upkvt")
+metadata/Bus = ""
+
+[connection signal="value_changed" from="." to="." method="_on_value_changed"]

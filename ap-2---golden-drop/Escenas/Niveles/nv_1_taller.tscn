@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Scripts/gamestate.gd" id="1_7gv3n"]
 [ext_resource type="PackedScene" uid="uid://pyucq8e7ng6d" path="res://Escenas/Personajes/pj_caja.tscn" id="1_bgcxy"]
-[ext_resource type="Texture2D" uid="uid://q4ku4m31jpje" path="res://Assets/Fondos/b1.png" id="1_y57cr"]
-[ext_resource type="Texture2D" uid="uid://4c06jm1ew1dx" path="res://Assets/Fondos/1.png" id="2_ffthd"]
+[ext_resource type="Texture2D" uid="uid://q4ku4m31jpje" path="res://Assets/fondos/b1.png" id="1_y57cr"]
+[ext_resource type="Texture2D" uid="uid://4c06jm1ew1dx" path="res://Assets/fondos/1.png" id="2_ffthd"]
 [ext_resource type="PackedScene" uid="uid://pn1f47dtv8xp" path="res://Escenas/Objetos/objetivo.tscn" id="3_k36yq"]
 [ext_resource type="PackedScene" uid="uid://b8vahwyu3vnbl" path="res://Escenas/Ambientes/piso.tscn" id="5_1yo8i"]
 [ext_resource type="PackedScene" uid="uid://ck7m6kvogdxot" path="res://Escenas/Objetos/calor_(barril).tscn" id="5_127x2"]
@@ -379,6 +379,7 @@ centered = false
 [node name="Sprite2D" type="Sprite2D" parent="Fondo/ParallaxLayer2"]
 
 [node name="Lluvia Effecto" parent="." instance=ExtResource("5_xhsvb")]
+layer = -1
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_set = SubResource("TileSet_ucdd4")

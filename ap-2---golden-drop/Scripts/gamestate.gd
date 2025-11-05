@@ -21,11 +21,12 @@ func _process(_delta: float):
 	humedad = clamp(humedad,0,100)
 	
 	if humedad == 100:
-		reset()
+		$"../PJCaja/Ganar_Perder".mostrarMenu(humedad,cartones,gotaD)
 	pass
+	
 
 func ganar():
-	get_tree().quit()
+	$"../PJCaja/Ganar_Perder".mostrarMenu(humedad,cartones,gotaD)
 
 func reset():
 	
