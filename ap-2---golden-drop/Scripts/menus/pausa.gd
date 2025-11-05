@@ -2,6 +2,7 @@ extends Control
 
 
 var ganarperder = false
+var config = ConfigFile.new()
 
 
 func _ready() -> void:
@@ -51,5 +52,9 @@ func _on_menu_principal_pressed() -> void:
 
 
 func _on_volver_pressed() -> void:
+	config.set_value("Volumen", "Master", $MarginContainer/MenuOpciones/BarraVolumen.value)
+	config.set_value("Volumen", "Musica", $MarginContainer/MenuOpciones/BarraVolumen2.value)
+	config.set_value("Volumen", "Efectos", $MarginContainer/MenuOpciones/BarraVolumen3.value)
+	config.save("user://opciones.cfg")
 	$MarginContainer/MenuPausa.show()
 	$MarginContainer/MenuOpciones.hide()

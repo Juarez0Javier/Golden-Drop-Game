@@ -12,21 +12,22 @@ var gotaD = false
 var chekpointUlt = null
 var collUlti = []
 
+var nivel
 
 func _ready():
-	pass
+	nivel = get_parent().name
 	
 func _process(_delta: float):
 	
 	humedad = clamp(humedad,0,100)
 	
 	if humedad == 100:
-		$"../PJCaja/Ganar_Perder".mostrarMenu(humedad,cartones,gotaD)
+		$"../PJCaja/Ganar_Perder".mostrarMenu(humedad,cartones,gotaD,nivel)
 	pass
 	
 
 func ganar():
-	$"../PJCaja/Ganar_Perder".mostrarMenu(humedad,cartones,gotaD)
+	$"../PJCaja/Ganar_Perder".mostrarMenu(humedad,cartones,gotaD,nivel)
 
 func reset():
 	

@@ -1,26 +1,37 @@
 extends Control
 
+var progress = ConfigFile.new()
+var nivel : int
 
 func _ready() -> void:
 	hide()
 	
 
-func mostrarMenu(humedad,fragmentos,gota):
-	if humedad == 100:
-		$Incompleto.show()
-		$Reintentar.show()
-		$Completado.hide()
-		$SiguienteNivel.hide()
-	else:
-		$Completado.show()
-		$SiguienteNivel.show()
-		$Incompleto.hide()
-		$Reintentar.hide()
-	$Fragmentos.text = str(fragmentos) + "/?"
-	if gota == true:
-		$Gota.text = "1/1"
-	else:
-		$Gota.text = "0/1"
+func mostrarMenu(humedad,fragmentos,gota,nivel):
+	var err = progress.load("user://progreso.cfg")
+	if(err == OK):
+		if humedad == 100:
+			$Incompleto.show()
+			$Reintentar.show()
+			$Completado.hide()
+			$SiguienteNivel.hide()
+		else:
+			$Completado.show()
+			$SiguienteNivel.show()
+			$Incompleto.hide()
+			$Reintentar.hide()
+		if nivel == "Nv1Taller":
+			if $Completado.visible == true and progress.get_value("Niveles","Completados") == 0:
+				progress.set_value("Niveles","Completados",1)
+			$Fragmentos.text = str(fragmentos) + "/" + progress.get_value("Nivel1","FragmentosTotales")
+			if fragmentos > int(progress.get_value("Nivel1","Fragmentos")):
+				progress.set_value("Nivel1","Fragmentos",str(fragmentos))
+			if gota == true:
+				$Gota.text = "1/1"
+				progress.set_value("Nivel1","Gota","1")
+			else:
+				$Gota.text = "0/1"
+		progress.save("user://progreso.cfg")
 	for child in get_parent().get_children():
 		if(child is ColorRect):
 			child.show()
@@ -50,3 +61,4 @@ func _on_siguiente_nivel_pressed() -> void:
 func _on_reintentar_pressed() -> void:
 	continuar()
 	$"../../GameState".reset()
+	
