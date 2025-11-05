@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vslvtqcdywj1"
-path="res://.godot/imported/1.png-1ab791746705891e69584054a69f3f8a.ctex"
+path="res://.godot/imported/1.png-e63019fad487939171a73c25d9715f8d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/fondos/fondo con piso/1.png"
-dest_files=["res://.godot/imported/1.png-1ab791746705891e69584054a69f3f8a.ctex"]
+source_file="res://Assets/Fondos/fondo con piso/1.png"
+dest_files=["res://.godot/imported/1.png-e63019fad487939171a73c25d9715f8d.ctex"]
 
 [params]
 

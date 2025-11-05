@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8rwsjw2sqgl5"
-path="res://.godot/imported/2.png-647faee43f8aac12dfca8e57c76bf63a.ctex"
+path="res://.godot/imported/2.png-e9b14cb3e1a33e32dd478037f6fe051b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/prota/salto/2.png"
-dest_files=["res://.godot/imported/2.png-647faee43f8aac12dfca8e57c76bf63a.ctex"]
+source_file="res://Assets/Prota/Salto/2.png"
+dest_files=["res://.godot/imported/2.png-e9b14cb3e1a33e32dd478037f6fe051b.ctex"]
 
 [params]
 

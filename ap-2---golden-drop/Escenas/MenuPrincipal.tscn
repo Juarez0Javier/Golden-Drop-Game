@@ -1,29 +1,29 @@
 [gd_scene load_steps=12 format=3 uid="uid://cqd83lbf5lueu"]
 
-[ext_resource type="Script" path="res://Scripts/menus/menu_principal.gd" id="1_lq8u1"]
-[ext_resource type="Texture2D" uid="uid://dqm4s3gsxo385" path="res://Assets/Menu/Darker.png" id="1_y0uwv"]
-[ext_resource type="Texture2D" uid="uid://d1hvldqq88icv" path="res://Assets/Coleccionables/Gotas/1.png" id="2_ykgux"]
-[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="3_e652e"]
-[ext_resource type="Texture2D" uid="uid://c53kit3pspnyu" path="res://Assets/lluvia/Rain Spritesheet.png" id="4_jyiom"]
+[ext_resource type="Script" path="res://Scripts/menus/menu_principal.gd" id="1_0xdqj"]
+[ext_resource type="Texture2D" uid="uid://c12gmchjlj3u" path="res://Assets/Menu/Darker.png" id="2_g44i1"]
+[ext_resource type="Texture2D" uid="uid://d1hvldqq88icv" path="res://Assets/Coleccionables/Gotas/1.png" id="3_tw83q"]
+[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="4_esr4k"]
+[ext_resource type="Texture2D" uid="uid://c53kit3pspnyu" path="res://Assets/lluvia/Rain Spritesheet.png" id="5_8ujo6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fprnr"]
-atlas = ExtResource("4_jyiom")
+atlas = ExtResource("5_8ujo6")
 region = Rect2(0, 0, 618, 618)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6qsr3"]
-atlas = ExtResource("4_jyiom")
+atlas = ExtResource("5_8ujo6")
 region = Rect2(0, 618, 618, 618)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3rhf8"]
-atlas = ExtResource("4_jyiom")
+atlas = ExtResource("5_8ujo6")
 region = Rect2(0, 1236, 618, 618)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j60mm"]
-atlas = ExtResource("4_jyiom")
+atlas = ExtResource("5_8ujo6")
 region = Rect2(0, 1854, 618, 618)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_88gq7"]
-atlas = ExtResource("4_jyiom")
+atlas = ExtResource("5_8ujo6")
 region = Rect2(0, 2472, 618, 618)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3xvla"]
@@ -56,18 +56,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_lq8u1")
+script = ExtResource("1_0xdqj")
 
 [node name="Fondo" type="Sprite2D" parent="."]
 z_index = -1
 scale = Vector2(3, 3)
-texture = ExtResource("1_y0uwv")
+texture = ExtResource("2_g44i1")
 centered = false
 
 [node name="Gota" type="Sprite2D" parent="."]
 position = Vector2(516, 0)
 scale = Vector2(2, 2)
-texture = ExtResource("2_ykgux")
+texture = ExtResource("3_tw83q")
 centered = false
 
 [node name="Golden Drop" type="Label" parent="."]
@@ -78,7 +78,7 @@ offset_right = 783.0
 offset_bottom = 185.0
 theme_override_colors/font_color = Color(1, 0.772549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_e652e")
+theme_override_fonts/font = ExtResource("4_esr4k")
 theme_override_font_sizes/font_size = 60
 text = "Golden Drop"
 horizontal_alignment = 1
@@ -91,7 +91,7 @@ offset_top = 320.0
 offset_right = 703.0
 offset_bottom = 370.0
 theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
-theme_override_fonts/font = ExtResource("3_e652e")
+theme_override_fonts/font = ExtResource("4_esr4k")
 theme_override_font_sizes/font_size = 40
 text = "Jugar"
 flat = true
@@ -103,7 +103,7 @@ offset_top = 400.0
 offset_right = 733.0
 offset_bottom = 450.0
 theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
-theme_override_fonts/font = ExtResource("3_e652e")
+theme_override_fonts/font = ExtResource("4_esr4k")
 theme_override_font_sizes/font_size = 40
 text = "Seleccionar Nivel"
 flat = true
@@ -115,7 +115,7 @@ offset_top = 480.0
 offset_right = 703.0
 offset_bottom = 530.0
 theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
-theme_override_fonts/font = ExtResource("3_e652e")
+theme_override_fonts/font = ExtResource("4_esr4k")
 theme_override_font_sizes/font_size = 40
 text = "Opciones"
 flat = true
@@ -127,7 +127,7 @@ offset_top = 560.0
 offset_right = 703.0
 offset_bottom = 610.0
 theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
-theme_override_fonts/font = ExtResource("3_e652e")
+theme_override_fonts/font = ExtResource("4_esr4k")
 theme_override_font_sizes/font_size = 40
 text = "Salir"
 flat = true

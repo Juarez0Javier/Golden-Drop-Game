@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cgdwjvlji6ayi"
-path="res://.godot/imported/1.png-3027d65cb5fbb156aad77e79923762bc.ctex"
+path="res://.godot/imported/1.png-0eb8bcc06f7eb3753f6e231971b1d3ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/prota/Inmovil/1.png"
-dest_files=["res://.godot/imported/1.png-3027d65cb5fbb156aad77e79923762bc.ctex"]
+source_file="res://Assets/Prota/Inmovil/1.png"
+dest_files=["res://.godot/imported/1.png-0eb8bcc06f7eb3753f6e231971b1d3ce.ctex"]
 
 [params]
 
