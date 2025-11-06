@@ -1,15 +1,44 @@
 extends Control
 
 
-# Called when the node enters the scene tree for the first time.
+var progress = ConfigFile.new()
+
+
 func _ready() -> void:
-	pass
+	var err = progress.load("user://progreso.cfg")
+	if(err == OK):
+		$"Nivel 1/Fragmentos".text = progress.get_value("Nivel1", "Fragmentos") + "/" + progress.get_value("Nivel1","FragmentosTotales")			
+		$"Nivel 1/Gota".text = progress.get_value("Nivel1", "Gota") + "/1"
+		$FragmentosColor.visible = comparar($"Nivel 1/Fragmentos".text)
+		$FragmentosByN.visible = !$FragmentosColor.visible
+		$GotaColor.visible = comparar($"Nivel 1/Gota".text)
+		$GotaByN.visible = !$GotaColor.visible
+		var cantidad = progress.get_value("Niveles","Completados")
+		if cantidad > 0:
+			$"Nivel 2/Candado".visible = false
+			$"Nivel 2/Fragmentos".text = progress.get_value("Nivel2", "Fragmentos") + "/" + progress.get_value("Nivel2","FragmentosTotales")			
+			$"Nivel 2/Gota".text = progress.get_value("Nivel2", "Gota") + "/1"
+			if cantidad > 1:
+				$"Nivel 3/Candado".visible = false
+				$"Nivel 3/Fragmentos".text = progress.get_value("Nivel3", "Fragmentos") + "/" + progress.get_value("Nivel3","FragmentosTotales")			
+				$"Nivel 3/Gota".text = progress.get_value("Nivel3", "Gota") + "/1"
+				if cantidad > 2:
+					$"Nivel 4/Candado".visible = false
+					$"Nivel 4/Fragmentos".text = progress.get_value("Nivel4", "Fragmentos") + "/" + progress.get_value("Nivel4","FragmentosTotales")			
+					$"Nivel 4/Gota".text = progress.get_value("Nivel4", "Gota") + "/1"
+					if cantidad > 3:
+						$"Nivel 5/Candado".visible = false
+						$"Nivel 5/Fragmentos".text = progress.get_value("Nivel5", "Fragmentos") + "/" + progress.get_value("Nivel5","FragmentosTotales")			
+						$"Nivel 5/Gota".text = progress.get_value("Nivel5", "Gota") + "/1"
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
-	pass
-
+func comparar(texto):
+	var comparacion = texto.split("/")
+	if comparacion[0] == comparacion[1]:
+		return true
+	else:
+		return false
+		
 
 func _on_jugar_pressed() -> void:
 	if($"Nivel 1".visible == true):
@@ -51,21 +80,37 @@ func _on_izquierda_pressed() -> void:
 		if($"Nivel 2".visible == true):
 			$"Nivel 2".visible = false
 			$"Nivel 1".visible = true
+			$FragmentosColor.visible = comparar($"Nivel 1/Fragmentos".text)
+			$FragmentosByN.visible = !$FragmentosColor.visible
+			$GotaColor.visible = comparar($"Nivel 1/Gota".text)
+			$GotaByN.visible = !$GotaColor.visible
 			$Jugar.disabled = false
 		if($"Nivel 3".visible == true):
 			$"Nivel 3".visible = false
 			$"Nivel 2".visible = true
-			if($"Nivel 2/Candado".visible == false):
+			$FragmentosColor.visible = comparar($"Nivel 2/Fragmentos".text)
+			$FragmentosByN.visible = !$FragmentosColor.visible
+			$GotaColor.visible = comparar($"Nivel 2/Gota".text)
+			$GotaByN.visible = !$GotaColor.visible
+			if($"Nivel 2/ImgNivel".visible == true):
 				$Jugar.disabled = false
 		if($"Nivel 4".visible == true):
 			$"Nivel 4".visible = false
 			$"Nivel 3".visible = true
-			if($"Nivel 3/Candado".visible == false):
+			$FragmentosColor.visible = comparar($"Nivel 3/Fragmentos".text)
+			$FragmentosByN.visible = !$FragmentosColor.visible
+			$GotaColor.visible = comparar($"Nivel 3/Gota".text)
+			$GotaByN.visible = !$GotaColor.visible
+			if($"Nivel 3/ImgNivel".visible == true):
 				$Jugar.disabled = false
 		if($"Nivel 5".visible == true):
 			$"Nivel 5".visible = false
 			$"Nivel 4".visible = true
-			if($"Nivel 4/Candado".visible == false):
+			$FragmentosColor.visible = comparar($"Nivel 4/Fragmentos".text)
+			$FragmentosByN.visible = !$FragmentosColor.visible
+			$GotaColor.visible = comparar($"Nivel 4/Gota".text)
+			$GotaByN.visible = !$GotaColor.visible
+			if($"Nivel 4/ImgNivel".visible == true):
 				$Jugar.disabled = false	
 
 
@@ -83,22 +128,38 @@ func _on_derecha_pressed() -> void:
 		if($"Nivel 1".visible == true):
 			$"Nivel 1".visible = false
 			$"Nivel 2".visible = true
-			if($"Nivel 2/Candado".visible == true):
+			$FragmentosColor.visible = comparar($"Nivel 2/Fragmentos".text)
+			$FragmentosByN.visible = !$FragmentosColor.visible
+			$GotaColor.visible = comparar($"Nivel 2/Gota".text)
+			$GotaByN.visible = !$GotaColor.visible
+			if($"Nivel 2/ImgNivelByN".visible == true):
 				$Jugar.disabled = true
 		elif($"Nivel 2".visible == true):
 			$"Nivel 2".visible = false
 			$"Nivel 3".visible = true
-			if($"Nivel 3/Candado".visible == true):
+			$FragmentosColor.visible = comparar($"Nivel 3/Fragmentos".text)
+			$FragmentosByN.visible = !$FragmentosColor.visible
+			$GotaColor.visible = comparar($"Nivel 3/Gota".text)
+			$GotaByN.visible = !$GotaColor.visible
+			if($"Nivel 3/ImgNivelByN".visible == true):
 				$Jugar.disabled = true
 		elif($"Nivel 3".visible == true):
 			$"Nivel 3".visible = false
 			$"Nivel 4".visible = true
-			if($"Nivel 4/Candado".visible == true):
+			$FragmentosColor.visible = comparar($"Nivel 4/Fragmentos".text)
+			$FragmentosByN.visible = !$FragmentosColor.visible
+			$GotaColor.visible = comparar($"Nivel 4/Gota".text)
+			$GotaByN.visible = !$GotaColor.visible
+			if($"Nivel 4/ImgNivelByN".visible == true):
 				$Jugar.disabled = true
 		elif($"Nivel 4".visible == true):
 			$"Nivel 4".visible = false
 			$"Nivel 5".visible = true
-			if($"Nivel 5/Candado".visible == true):
+			$FragmentosColor.visible = comparar($"Nivel 5/Fragmentos".text)
+			$FragmentosByN.visible = !$FragmentosColor.visible
+			$GotaColor.visible = comparar($"Nivel 5/Gota".text)
+			$GotaByN.visible = !$GotaColor.visible
+			if($"Nivel 5/ImgNivelByN".visible == true):
 				$Jugar.disabled = true
 
 

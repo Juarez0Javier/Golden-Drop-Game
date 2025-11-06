@@ -13,10 +13,12 @@ var gotaD = false
 var chekpointUlt = null
 var collUlti = []
 
+var nivel
 var meta = Vector2(0,0)
 var inicio = Vector2(0,0)
 
 func _ready():
+	nivel = get_parent().name
 	
 	pass
 	
@@ -24,6 +26,8 @@ func _process(_delta: float):
 	
 	humedad = clamp(humedad,0,maxHumedad)
 	
+	if humedad == 100:
+		$"../PJCaja/Ganar_Perder".mostrarMenu(humedad,cartones,gotaD,nivel)
 	if humedad == maxHumedad:
 		pjcaja.morir()
 		$FadeOut/AnimationPlayer.play("Flush")
@@ -34,7 +38,7 @@ func _process(_delta: float):
 	
 
 func ganar():
-	$"../PJCaja/Ganar_Perder".mostrarMenu(humedad,cartones,gotaD)
+	$"../PJCaja/Ganar_Perder".mostrarMenu(humedad,cartones,gotaD,nivel)
 
 func reset():
 	
