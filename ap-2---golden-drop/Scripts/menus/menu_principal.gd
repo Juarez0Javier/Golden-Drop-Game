@@ -39,8 +39,9 @@ func _on_salir_pressed() -> void:
 
 
 func _on_opciones_pressed() -> void:
-	$BotonesPrincipal.hide()
-	$MenuOpciones.show()
+	##$BotonesPrincipal.hide()
+	##$MenuOpciones.show()
+	pass
 
 
 func _on_selec_nivel_pressed() -> void:

@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/menus/seleccion_de_nivel.gd" id="1_4dw3r"]
 [ext_resource type="Texture2D" uid="uid://beq135m00rjqw" path="res://Assets/Menu/Pinboard.png" id="1_lait2"]
 [ext_resource type="Texture2D" uid="uid://c06jcefuboao7" path="res://Assets/Menu/Borde.png" id="2_drbq6"]
-[ext_resource type="Texture2D" uid="uid://c7ed47ms5f2kc" path="res://Assets/Menu/Taller.png" id="3_syy8o"]
+[ext_resource type="Texture2D" uid="uid://btf4ylbap3rqn" path="res://Assets/Menu/Taller.png" id="3_syy8o"]
 [ext_resource type="Texture2D" uid="uid://dabki5ckvaax2" path="res://Assets/Menu/fragmentos1.png" id="4_4bsa7"]
 [ext_resource type="Texture2D" uid="uid://dd775kv48htn7" path="res://Assets/Menu/Pin1.png" id="4_ylf3n"]
 [ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="5_5chxn"]

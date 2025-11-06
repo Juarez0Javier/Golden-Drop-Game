@@ -1,0 +1,149 @@
+[gd_scene load_steps=6 format=3 uid="uid://dpn5faaoq4ags"]
+
+[ext_resource type="Script" path="res://Scripts/menus/menu_ganar.gd" id="1_18cw5"]
+[ext_resource type="Texture2D" uid="uid://odyey48jyir4" path="res://Assets/Menu/Carton.png" id="1_s7q37"]
+[ext_resource type="Texture2D" uid="uid://dl6jtxmgr835i" path="res://Assets/Menu/Marco.png" id="2_u3i67"]
+[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="2_xvrmc"]
+[ext_resource type="FontFile" uid="uid://c1rjhde3e55r6" path="res://Assets/fuentes/fuente para numero/medieval-pixel.ttf" id="3_t575r"]
+
+[node name="MenuGanar" type="CanvasLayer"]
+script = ExtResource("1_18cw5")
+
+[node name="Control" type="Control" parent="."]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fondo" type="TextureRect" parent="Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.00868056
+anchor_top = 0.112654
+anchor_right = 0.157118
+anchor_bottom = 0.408951
+offset_left = 292.0
+offset_top = -58.0
+offset_right = 612.0
+offset_bottom = 262.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_s7q37")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Control/Fondo"]
+texture_filter = 1
+offset_left = -44.0
+offset_top = -9.0
+offset_right = 558.0
+offset_bottom = 539.0
+texture = ExtResource("2_u3i67")
+
+[node name="Completado" type="Label" parent="Control/Fondo"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 14.0
+offset_top = 85.0
+offset_right = 505.0
+offset_bottom = 135.0
+theme_override_colors/font_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 50
+text = "Nivel Completado"
+horizontal_alignment = 1
+
+[node name="LabelFargmentos" type="Label" parent="Control/Fondo"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 22.0
+offset_top = 205.0
+offset_right = 427.0
+offset_bottom = 238.0
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 24
+text = "Fragmentos de Carton obtenidos . . . ."
+horizontal_alignment = 1
+
+[node name="Fragmentos" type="Label" parent="Control/Fondo/LabelFargmentos"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 426.0
+offset_top = 5.0
+offset_right = 508.0
+offset_bottom = 29.0
+theme_override_fonts/font = ExtResource("3_t575r")
+theme_override_font_sizes/font_size = 30
+text = "0/?"
+
+[node name="LabelGota" type="Label" parent="Control/Fondo"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 22.0
+offset_top = 274.0
+offset_right = 454.0
+offset_bottom = 307.0
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 24
+text = " Gota Dorada obtenida . . . . . . . . . . . . ."
+
+[node name="Gota" type="Label" parent="Control/Fondo/LabelGota"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 426.0
+offset_top = 6.0
+offset_right = 477.0
+offset_bottom = 30.0
+theme_override_fonts/font = ExtResource("3_t575r")
+theme_override_font_sizes/font_size = 30
+text = "0/1"
+
+[node name="MenuPrincipal" type="Button" parent="Control/Fondo"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 0
+offset_left = 39.0
+offset_top = 429.0
+offset_right = 257.0
+offset_bottom = 469.0
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 30
+text = "Menu Principal"
+flat = true
+
+[node name="SiguienteNivel" type="Button" parent="Control/Fondo"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 0
+offset_left = 149.0
+offset_top = 367.0
+offset_right = 367.0
+offset_bottom = 407.0
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 30
+text = "Siguiente Nivel"
+flat = true
+
+[node name="Reintentar" type="Button" parent="Control/Fondo"]
+process_mode = 3
+texture_filter = 1
+layout_mode = 0
+offset_left = 272.0
+offset_top = 431.0
+offset_right = 490.0
+offset_bottom = 471.0
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("2_xvrmc")
+theme_override_font_sizes/font_size = 30
+text = "Reintentar"
+flat = true
+
+[connection signal="pressed" from="Control/Fondo/MenuPrincipal" to="." method="_on_menu_principal_pressed"]
+[connection signal="pressed" from="Control/Fondo/SiguienteNivel" to="." method="_on_siguiente_nivel_pressed"]
+[connection signal="pressed" from="Control/Fondo/Reintentar" to="." method="_on_reintentar_pressed"]

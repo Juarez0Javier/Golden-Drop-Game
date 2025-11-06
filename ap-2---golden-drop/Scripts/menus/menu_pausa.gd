@@ -22,6 +22,6 @@ func _on_continuar_pressed() -> void:
 
 
 func _on_menu_principal_pressed() -> void:
-	##self.get_parent().get_parent().get_parent().cambiar_escena("MenuPrincipal")
-	##self.get_parent().get_parent().call_deferred("queue_free")
+	self.get_parent().get_parent().cambiar_escena("TallerNv1")
+	self.get_parent().call_deferred("queue_free")
 	pass

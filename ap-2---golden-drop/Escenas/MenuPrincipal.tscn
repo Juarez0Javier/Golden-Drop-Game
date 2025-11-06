@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cqd83lbf5lueu"]
+[gd_scene load_steps=12 format=3 uid="uid://cqd83lbf5lueu"]
 
 [ext_resource type="Script" path="res://Scripts/menus/menu_principal.gd" id="1_0xdqj"]
 [ext_resource type="Texture2D" uid="uid://c12gmchjlj3u" path="res://Assets/Menu/Darker.png" id="2_g44i1"]
@@ -149,5 +149,3 @@ centered = false
 [connection signal="pressed" from="BotonesPrincipal/Jugar" to="." method="_on_jugar_pressed"]
 [connection signal="pressed" from="BotonesPrincipal/SelecNivel" to="." method="_on_selec_nivel_pressed"]
 [connection signal="pressed" from="BotonesPrincipal/Opciones" to="." method="_on_opciones_pressed"]
-[connection signal="pressed" from="BotonesPrincipal/Salir" to="." method="_on_salir_pressed"]
-[connection signal="pressed" from="MenuOpciones/Volver" to="." method="_on_volver_pressed"]
