@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://dt3842jsmu6a2"]
+
+[ext_resource type="Script" path="res://Scripts/fondo_taller.gd" id="1_t6xqe"]
+[ext_resource type="Texture2D" uid="uid://bdeqt5a72smvc" path="res://Assets/Fondos/FondoAlto(Gris).png" id="2_b8ouw"]
+[ext_resource type="Texture2D" uid="uid://cq2s4wmk68xm8" path="res://Assets/Fondos/FondoBajo(Gris).png" id="3_elu3o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c3c46"]
+size = Vector2(111, 34.75)
+
+[node name="FondoTaller" type="ParallaxBackground"]
+script = ExtResource("1_t6xqe")
+colorPiso = Array[Color]([Color(0.902233, 0.404584, 0.530574, 1), Color(0.596955, 0.663469, 0.939182, 1), Color(0.101309, 0.585667, 0.581946, 1)])
+
+[node name="FondoAlto" type="ParallaxLayer" parent="."]
+z_index = -2
+z_as_relative = false
+position = Vector2(-735, -287)
+motion_mirroring = Vector2(1492, 366)
+
+[node name="Sprite2D" type="Sprite2D" parent="FondoAlto"]
+modulate = Color(0.698105, 0.951765, 0.193752, 1)
+texture_filter = 1
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("2_b8ouw")
+centered = false
+
+[node name="FondoBajo" type="ParallaxLayer" parent="."]
+z_index = -1
+position = Vector2(-735, -287)
+motion_mirroring = Vector2(1492, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="FondoBajo"]
+modulate = Color(0.32, 0.705333, 1, 1)
+z_as_relative = false
+texture_filter = 1
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("3_elu3o")
+centered = false
+
+[node name="PisoInfinito" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PisoInfinito"]
+position = Vector2(0, 30)
+shape = SubResource("RectangleShape2D_c3c46")
+debug_color = Color(0.692094, 0.32502, 0.937302, 0.42)

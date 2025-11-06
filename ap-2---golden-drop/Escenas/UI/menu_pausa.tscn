@@ -1,0 +1,97 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfvqdj22tkgqg"]
+
+[ext_resource type="Script" path="res://Scripts/menus/menu_pausa.gd" id="1_j16sv"]
+[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="2_u3nva"]
+[ext_resource type="Texture2D" uid="uid://odyey48jyir4" path="res://Assets/Menu/Carton.png" id="3_42vxn"]
+[ext_resource type="Texture2D" uid="uid://dl6jtxmgr835i" path="res://Assets/Menu/Marco.png" id="4_ju5dp"]
+
+[node name="MenuPausa" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_j16sv")
+
+[node name="Control" type="Control" parent="."]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 400.0
+offset_top = 120.0
+offset_right = 791.0
+offset_bottom = 536.0
+texture = ExtResource("3_42vxn")
+
+[node name="TextureRect" type="TextureRect" parent="Control/TextureRect"]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -5.0
+offset_right = 396.0
+offset_bottom = 422.0
+texture = ExtResource("4_ju5dp")
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/TextureRect"]
+process_mode = 3
+layout_mode = 0
+offset_left = 61.0
+offset_top = 51.0
+offset_right = 327.0
+offset_bottom = 391.0
+
+[node name="MenuPausa" type="VBoxContainer" parent="Control/TextureRect/MarginContainer"]
+process_mode = 3
+layout_mode = 2
+
+[node name="Continuar" type="Button" parent="Control/TextureRect/MarginContainer/MenuPausa"]
+process_mode = 3
+process_priority = 1
+z_index = 1
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("2_u3nva")
+theme_override_font_sizes/font_size = 30
+text = "
+Continuar
+
+"
+flat = true
+
+[node name="Opciones" type="Button" parent="Control/TextureRect/MarginContainer/MenuPausa"]
+process_mode = 3
+process_priority = 1
+z_index = 1
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("2_u3nva")
+theme_override_font_sizes/font_size = 30
+text = "
+Opciones
+
+"
+flat = true
+
+[node name="MenuPrincipal" type="Button" parent="Control/TextureRect/MarginContainer/MenuPausa"]
+process_mode = 3
+process_priority = 1
+z_index = 1
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("2_u3nva")
+theme_override_font_sizes/font_size = 30
+text = "
+Menu Principal
+
+"
+flat = true
+
+[connection signal="pressed" from="Control/TextureRect/MarginContainer/MenuPausa/Continuar" to="." method="_on_continuar_pressed"]
+[connection signal="pressed" from="Control/TextureRect/MarginContainer/MenuPausa/Opciones" to="Control" method="_on_opciones_pressed"]
+[connection signal="pressed" from="Control/TextureRect/MarginContainer/MenuPausa/MenuPrincipal" to="." method="_on_menu_principal_pressed"]

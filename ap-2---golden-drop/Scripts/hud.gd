@@ -14,14 +14,22 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	
-	var vidaTextura = $'Control/Progresso Barra/TextureRect'
-	
-	##Controlando Humedad
-	$"Control/Progresso Barra".value = gamestate.humedad
-	$'Control/Progresso Barra/Label'.text = "%3d" % clamp(gamestate.humedad,0,100) + "%"
 
 	
-	if gamestate.humedad == 100:
+	
+	##Controlando Progreso
+	var inicioAMeta = gamestate.inicio.distance_to(gamestate.meta)
+	var jugadorAMeta = gamestate.pjcaja.position.distance_to(gamestate.meta)
+	$"Control/ProgresoBarra".value = $"Control/ProgresoBarra".max_value - (jugadorAMeta * 100)/inicioAMeta
+	
+	##Controlando Humedad
+	var vidaTextura = $'Control/VidaBarra/TextureRect'
+	
+	$"Control/VidaBarra".value =  clamp(gamestate.humedad,0,gamestate.maxHumedad)
+	$'Control/VidaBarra/Label'.text = "%3d" % clamp(gamestate.humedad,0,gamestate.maxHumedad) + "%"
+
+	
+	if gamestate.humedad >= 100:
 		vidaTextura.texture = vidaEstados[4]
 	elif gamestate.humedad >= 75:
 		vidaTextura.texture = vidaEstados[3]

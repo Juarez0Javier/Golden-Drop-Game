@@ -12,6 +12,7 @@ func _on_body_entered(body: Node2D) -> void:
 		$'AnimationPlayer'.stop()
 		$'CollisionShape2D'.set_deferred("disabled",true)
 		$'Sprite2D'.visible = false
+		$'AudioStreamPlayer2D'.play()
 		gamestate.gotaD = true
 		gamestate.humedad = 0
 		gamestate.collUlti.append(self)

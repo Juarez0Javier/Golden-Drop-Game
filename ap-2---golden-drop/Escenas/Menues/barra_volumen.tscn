@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://disgah5swu83e"]
+[gd_scene load_steps=3 format=3 uid="uid://dxyptd6wgijmp"]
 
 [ext_resource type="Script" path="res://Scripts/menus/barra_volumen.gd" id="1_upkvt"]
 
@@ -7,8 +7,10 @@ color = Color(0.856067, 0.856067, 0.856067, 1)
 thickness = 4
 
 [node name="BarraVolumen" type="HSlider"]
-offset_right = 320.0
-offset_bottom = 16.0
+offset_left = -2.0
+offset_top = -1.0
+offset_right = 318.0
+offset_bottom = 15.0
 theme_override_styles/slider = SubResource("StyleBoxLine_ppdmp")
 max_value = 1.0
 step = 0.001

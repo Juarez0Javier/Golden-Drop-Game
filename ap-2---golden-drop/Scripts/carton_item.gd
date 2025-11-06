@@ -16,6 +16,7 @@ func _on_body_entered(body: Node2D) -> void:
 		$'AnimationPlayer'.stop()
 		$'CollisionShape2D'.set_deferred("disabled",true)
 		$'Sprite2D'.visible = false
+		$'AudioStreamPlayer2D'.play()
 		gamestate.cartones += 1
 		gamestate.collUlti.append(self)
 	pass # Replace with function body.

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c16cbdugqt4jm"
+path="res://.godot/imported/Lamp Buzz Sound Effect _ No Copyright.wav-5709121457c816c6509a824b29910a6b.sample"
+
+[deps]
+
+source_file="res://Assets/sound/efectos/fuentes de calor/luz/Lamp Buzz Sound Effect _ No Copyright.wav"
+dest_files=["res://.godot/imported/Lamp Buzz Sound Effect _ No Copyright.wav-5709121457c816c6509a824b29910a6b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

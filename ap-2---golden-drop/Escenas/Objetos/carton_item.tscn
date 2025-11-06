@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cyykw8k17qyam"]
+[gd_scene load_steps=16 format=3 uid="uid://cyykw8k17qyam"]
 
 [ext_resource type="Script" path="res://Scripts/carton_item.gd" id="1_0j6be"]
 [ext_resource type="Texture2D" uid="uid://dpmnjvdwn57e6" path="res://Assets/Coleccionables/Fragmentos/1.png" id="2_j7eky"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bfh5ffemkbaho" path="res://Assets/Coleccionables/Fragmentos/7.png" id="8_s10mo"]
 [ext_resource type="Texture2D" uid="uid://c70e0cu611ud2" path="res://Assets/Coleccionables/Fragmentos/8.png" id="9_w5jcy"]
 [ext_resource type="Texture2D" uid="uid://cl8bsurcbwcd7" path="res://Assets/Coleccionables/Fragmentos/9.png" id="10_jqhl0"]
+[ext_resource type="AudioStream" uid="uid://dajhcetpbkmlv" path="res://Assets/sound/efectos/fracmentos/cartones/MMO_Game_Magic_Source_Paper_08_Scroll_Page_Turn_Flip.wav" id="11_si1ae"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2gci1"]
 size = Vector2(32, 32)
@@ -94,5 +95,10 @@ texture = ExtResource("2_j7eky")
 libraries = {
 "": SubResource("AnimationLibrary_hfkcc")
 }
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_si1ae")
+volume_db = -2.0
+pitch_scale = 0.5
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

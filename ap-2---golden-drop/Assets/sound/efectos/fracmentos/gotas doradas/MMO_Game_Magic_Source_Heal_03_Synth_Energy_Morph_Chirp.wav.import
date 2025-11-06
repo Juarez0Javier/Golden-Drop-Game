@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://r8bpc7e2f3b7"
+path="res://.godot/imported/MMO_Game_Magic_Source_Heal_03_Synth_Energy_Morph_Chirp.wav-979e97d0a1677c44e9e759121c522351.sample"
+
+[deps]
+
+source_file="res://Assets/sound/efectos/fracmentos/gotas doradas/MMO_Game_Magic_Source_Heal_03_Synth_Energy_Morph_Chirp.wav"
+dest_files=["res://.godot/imported/MMO_Game_Magic_Source_Heal_03_Synth_Energy_Morph_Chirp.wav-979e97d0a1677c44e9e759121c522351.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

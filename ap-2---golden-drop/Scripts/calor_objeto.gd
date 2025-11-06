@@ -19,6 +19,7 @@ func _process(_delta: float) -> void:
 	if cura == 0:
 		$HealTimer.stop()
 		$'HeatSprite'.play("Apagar")
+		$'AudioStreamPlayer2D'.volume_db = -3
 		cura = -1
 	pass
 
@@ -49,6 +50,7 @@ func _on_heal_timer_timeout() -> void:
 func _on_cooldown_timeout() -> void:
 	$'CollisionShape2D'.set_deferred("disabled",false)
 	$'HeatSprite'.play("Encender")
+	$'AudioStreamPlayer2D'.volume_db = 0
 	cura = curaMax
 	pass # Replace with function body.
 

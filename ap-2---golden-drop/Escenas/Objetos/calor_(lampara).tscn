@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://eqfrg75et5ho"]
+[gd_scene load_steps=9 format=3 uid="uid://eqfrg75et5ho"]
 
 [ext_resource type="Script" path="res://Scripts/calor_objeto.gd" id="2_3i5l6"]
 [ext_resource type="Texture2D" uid="uid://bm2buroit48n" path="res://Assets/Objetos/Fuentes de Calor/luz/1.png" id="2_mpe3m"]
 [ext_resource type="Texture2D" uid="uid://7qhqrhfjxyqi" path="res://Assets/Objetos/Fuentes de Calor/luz/4.png" id="3_ykjg1"]
 [ext_resource type="Texture2D" uid="uid://dnty4wus15grv" path="res://Assets/Objetos/Fuentes de Calor/luz/3.png" id="4_hfj0n"]
 [ext_resource type="Texture2D" uid="uid://dqnfdb87n7i2d" path="res://Assets/Objetos/Fuentes de Calor/luz/2.png" id="5_nnxup"]
+[ext_resource type="AudioStream" uid="uid://c16cbdugqt4jm" path="res://Assets/sound/efectos/fuentes de calor/luz/Lamp Buzz Sound Effect _ No Copyright.wav" id="6_3ih6b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bojns"]
 size = Vector2(60, 315.5)
@@ -84,6 +85,12 @@ animation = &"Idle Apagado"
 wait_time = 0.25
 
 [node name="Cooldown" type="Timer" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_3ih6b")
+autoplay = true
+max_distance = 500.0
+attenuation = 0.5
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c0xg7iilgukyg"
+path="res://.godot/imported/MMO_Game_Magic_Source_Fire_B2_03_Blazing_Flame_Burning.wav-7ab9f9a80e0f1040f8b6176a0f6a4c40.sample"
+
+[deps]
+
+source_file="res://Assets/sound/efectos/fuentes de calor/fuego/MMO_Game_Magic_Source_Fire_B2_03_Blazing_Flame_Burning.wav"
+dest_files=["res://.godot/imported/MMO_Game_Magic_Source_Fire_B2_03_Blazing_Flame_Burning.wav-7ab9f9a80e0f1040f8b6176a0f6a4c40.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
