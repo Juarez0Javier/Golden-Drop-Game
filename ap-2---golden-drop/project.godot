@@ -13,7 +13,7 @@ config_version=5
 config/name="AP 2 - Golden Drop"
 run/main_scene="res://Escenas/Main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://colibri-icon.png"
 
 [input]
 

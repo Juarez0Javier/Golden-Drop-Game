@@ -37,7 +37,6 @@ func mostrar_dialogo_actual():
 					
 func siguiente_linea(): 
 	if cambiar_indice:
-		print(indice)
 		if indice < dialogos.size()-1:	
 			indice += 1
 			mostrar_dialogo_actual()
