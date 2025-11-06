@@ -26,7 +26,7 @@ func mostrarMenu(humedad,fragmentos,gota,nivel):
 		if(child is ColorRect):
 			child.show()
 	show()
-	##$"../Pausa".ganarperder = true
+	$"../MenuPausa".ganarperder = true
 	get_tree().paused = true
 
 
@@ -35,7 +35,7 @@ func continuar():
 	for child in get_parent().get_children():
 		if(child is ColorRect):
 			child.hide()
-	##$"../Pausa".ganarperder = false
+	$"../MenuPausa".ganarperder = false
 	hide()
 
 func _on_menu_principal_pressed() -> void:

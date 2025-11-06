@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6dlo82rcx0r1"]
+
+[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="1_dlwfb"]
+[ext_resource type="Script" path="res://Scripts/menus/menu_opciones.gd" id="1_nssq7"]
+[ext_resource type="PackedScene" uid="uid://dxyptd6wgijmp" path="res://Escenas/Menues/barra_volumen.tscn" id="2_o17s2"]
+
+[node name="MenuOpciones" type="VBoxContainer"]
+theme_override_constants/separation = 0
+script = ExtResource("1_nssq7")
+
+[node name="General" type="Label" parent="."]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_dlwfb")
+theme_override_font_sizes/font_size = 30
+text = "
+Volumen General"
+horizontal_alignment = 1
+
+[node name="BarraVolumen" parent="." instance=ExtResource("2_o17s2")]
+layout_mode = 2
+metadata/Bus = "Master"
+
+[node name="Musica" type="Label" parent="."]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_dlwfb")
+theme_override_font_sizes/font_size = 30
+text = "
+Musica"
+horizontal_alignment = 1
+
+[node name="BarraVolumen2" parent="." instance=ExtResource("2_o17s2")]
+layout_mode = 2
+metadata/Bus = "Musica"
+
+[node name="Efectos" type="Label" parent="."]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_dlwfb")
+theme_override_font_sizes/font_size = 30
+text = "
+Efectos"
+horizontal_alignment = 1
+
+[node name="BarraVolumen3" parent="." instance=ExtResource("2_o17s2")]
+layout_mode = 2
+metadata/Bus = "Efectos"
+
+[node name="Espacio" type="Control" parent="."]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Volver" type="Button" parent="."]
+process_mode = 3
+process_priority = 1
+z_index = 1
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_fonts/font = ExtResource("1_dlwfb")
+theme_override_font_sizes/font_size = 30
+text = "Volver
+"
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+
+[connection signal="pressed" from="Volver" to="." method="_on_volver_pressed"]

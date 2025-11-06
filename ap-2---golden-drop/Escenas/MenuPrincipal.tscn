@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://cqd83lbf5lueu"]
+[gd_scene load_steps=13 format=3 uid="uid://cqd83lbf5lueu"]
 
 [ext_resource type="Script" path="res://Scripts/menus/menu_principal.gd" id="1_0xdqj"]
 [ext_resource type="Texture2D" uid="uid://c12gmchjlj3u" path="res://Assets/Menu/Darker.png" id="2_g44i1"]
 [ext_resource type="Texture2D" uid="uid://d1hvldqq88icv" path="res://Assets/Coleccionables/Gotas/1.png" id="3_tw83q"]
 [ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="4_esr4k"]
+[ext_resource type="PackedScene" uid="uid://c6dlo82rcx0r1" path="res://Escenas/Menues/menu_opciones.tscn" id="5_4equp"]
 [ext_resource type="Texture2D" uid="uid://c53kit3pspnyu" path="res://Assets/lluvia/Rain Spritesheet.png" id="5_8ujo6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fprnr"]
@@ -125,7 +126,7 @@ theme_override_font_sizes/font_size = 40
 text = "Opciones"
 flat = true
 
-[node name="Salir" type="Button" parent="."]
+[node name="Salir" type="Button" parent="BotonesPrincipal"]
 layout_mode = 0
 offset_left = 453.0
 offset_top = 560.0
@@ -136,6 +137,14 @@ theme_override_fonts/font = ExtResource("4_esr4k")
 theme_override_font_sizes/font_size = 40
 text = "Salir"
 flat = true
+
+[node name="MenuOpciones" parent="." instance=ExtResource("5_4equp")]
+visible = false
+layout_mode = 0
+offset_left = 438.0
+offset_top = 288.0
+offset_right = 718.0
+offset_bottom = 626.0
 
 [node name="Lluvia" type="AnimatedSprite2D" parent="."]
 z_index = -1
@@ -149,3 +158,4 @@ centered = false
 [connection signal="pressed" from="BotonesPrincipal/Jugar" to="." method="_on_jugar_pressed"]
 [connection signal="pressed" from="BotonesPrincipal/SelecNivel" to="." method="_on_selec_nivel_pressed"]
 [connection signal="pressed" from="BotonesPrincipal/Opciones" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="BotonesPrincipal/Salir" to="." method="_on_salir_pressed"]

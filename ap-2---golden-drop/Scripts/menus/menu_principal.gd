@@ -3,7 +3,6 @@ extends Control
 
 @warning_ignore("UNUSED_SIGNAL")
 signal iniciar_cinematica
-var config = ConfigFile.new()
 var progress = ConfigFile.new()
 
 
@@ -39,9 +38,8 @@ func _on_salir_pressed() -> void:
 
 
 func _on_opciones_pressed() -> void:
-	##$BotonesPrincipal.hide()
-	##$MenuOpciones.show()
-	pass
+	$BotonesPrincipal.hide()
+	$MenuOpciones.show()
 
 
 func _on_selec_nivel_pressed() -> void:
@@ -51,12 +49,3 @@ func _on_selec_nivel_pressed() -> void:
 
 func _on_jugar_pressed() -> void:
 	emit_signal("iniciar_cinematica")
-
-
-func _on_volver_pressed() -> void:
-	config.set_value("Volumen", "Master", $MenuOpciones/BarraVolumen.value)
-	config.set_value("Volumen", "Musica", $MenuOpciones/BarraVolumen2.value)
-	config.set_value("Volumen", "Efectos", $MenuOpciones/BarraVolumen3.value)
-	config.save("user://opciones.cfg")
-	$MenuOpciones.hide()
-	$BotonesPrincipal.show()
