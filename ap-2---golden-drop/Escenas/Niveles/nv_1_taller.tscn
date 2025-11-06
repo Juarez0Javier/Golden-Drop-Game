@@ -164,10 +164,10 @@ scale = Vector2(1.00567, 1.01552)
 layer = 2
 
 [node name="MenuGanar" parent="." instance=ExtResource("16_abf5i")]
-layer = 2
+layer = 4
 
 [node name="MenuPausa" parent="." instance=ExtResource("15_wcamq")]
-layer = 2
+layer = 4
 
 [node name="FadeOut" type="CanvasLayer" parent="."]
 layer = 3
