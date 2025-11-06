@@ -26,9 +26,9 @@ func _process(_delta: float):
 	
 	if humedad == maxHumedad:
 		pjcaja.morir()
-		$FadeOut/AnimationPlayer.play("Flush")
+		$'../FadeOut/AnimationPlayer'.play("Flush")
 		
-	if $FadeOut/AnimationPlayer.current_animation == "Flush" and snapped($FadeOut/AnimationPlayer.current_animation_position,0.1) == $FadeOut/AnimationPlayer.current_animation_length / 2:
+	if $'../FadeOut/AnimationPlayer'.current_animation == "Flush" and snapped($'../FadeOut/AnimationPlayer'.current_animation_position,0.1) == $'../FadeOut/AnimationPlayer'.current_animation_length / 2:
 		reset()
 	pass
 	

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxb6j3hivooxc"]
+
+[ext_resource type="Texture2D" uid="uid://3u85oh0srcey" path="res://Assets/Objetos/agua/6.png" id="1_8xu0t"]
+[ext_resource type="Script" path="res://Scripts/charco.gd" id="1_dbx7p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q862v"]
+size = Vector2(45.4458, 11.8095)
+
+[node name="Charco" type="Area2D"]
+scale = Vector2(3.6087, 2.625)
+script = ExtResource("1_dbx7p")
+"dañoCharco" = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.10844, 2.47619)
+scale = Vector2(1, 0.999999)
+shape = SubResource("RectangleShape2D_q862v")
+
+[node name="Agua" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.831325, -7.15256e-07)
+texture = ExtResource("1_8xu0t")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.125
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
