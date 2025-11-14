@@ -60,11 +60,13 @@ script = ExtResource("1_0xdqj")
 
 [node name="Fondo" type="Sprite2D" parent="."]
 z_index = -1
+texture_filter = 1
 scale = Vector2(3, 3)
 texture = ExtResource("2_g44i1")
 centered = false
 
 [node name="Gota" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(516, 0)
 scale = Vector2(2, 2)
 texture = ExtResource("3_tw83q")
@@ -90,6 +92,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Jugar" type="Button" parent="BotonesPrincipal"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 453.0
 offset_top = 320.0
@@ -102,6 +105,7 @@ text = "Jugar"
 flat = true
 
 [node name="SelecNivel" type="Button" parent="BotonesPrincipal"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 423.0
 offset_top = 400.0
@@ -114,6 +118,7 @@ text = "Seleccionar Nivel"
 flat = true
 
 [node name="Opciones" type="Button" parent="BotonesPrincipal"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 453.0
 offset_top = 480.0
@@ -125,7 +130,8 @@ theme_override_font_sizes/font_size = 40
 text = "Opciones"
 flat = true
 
-[node name="Salir" type="Button" parent="."]
+[node name="Salir" type="Button" parent="BotonesPrincipal"]
+texture_filter = 1
 layout_mode = 0
 offset_left = 453.0
 offset_top = 560.0

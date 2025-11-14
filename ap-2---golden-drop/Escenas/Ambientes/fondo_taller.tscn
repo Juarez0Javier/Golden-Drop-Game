@@ -15,7 +15,7 @@ colorPiso = Array[Color]([Color(0.321569, 0.705882, 1, 1), Color(0.695254, 0.763
 z_index = -2
 z_as_relative = false
 position = Vector2(-735, -287)
-motion_mirroring = Vector2(1492, 366)
+motion_mirroring = Vector2(1500, 366)
 
 [node name="Sprite2D" type="Sprite2D" parent="FondoAlto"]
 modulate = Color(0.698105, 0.951765, 0.193752, 1)
@@ -27,7 +27,7 @@ centered = false
 [node name="FondoBajo" type="ParallaxLayer" parent="."]
 z_index = -1
 position = Vector2(-735, -287)
-motion_mirroring = Vector2(1492, 0)
+motion_mirroring = Vector2(1500, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="FondoBajo"]
 modulate = Color(0.32, 0.705333, 1, 1)

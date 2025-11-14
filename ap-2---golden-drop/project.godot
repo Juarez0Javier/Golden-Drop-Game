@@ -15,6 +15,10 @@ run/main_scene="res://Escenas/Main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ManejadorEscena="*res://Scripts/manejador_escena.gd"
+
 [input]
 
 "Mover Derecha"={

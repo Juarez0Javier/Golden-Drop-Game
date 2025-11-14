@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://dqvuwdnasfeo3"]
+[gd_scene load_steps=64 format=3 uid="uid://dqvuwdnasfeo3"]
 
 [ext_resource type="Script" path="res://Scripts/cinematicas/cinematica.gd" id="1_opng1"]
 [ext_resource type="Texture2D" uid="uid://soy78uhajkf4" path="res://Assets/Cinematicas/1.png" id="2_xw0cw"]
@@ -58,6 +58,7 @@
 [ext_resource type="Script" path="res://Scripts/cinematicas/dialogos.gd" id="56_1vbdl"]
 [ext_resource type="FontFile" uid="uid://b6fu6124dkyb1" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.woff" id="56_t6ck0"]
 [ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="58_yy6vs"]
+[ext_resource type="AudioStream" uid="uid://wftdkxnqosam" path="res://Assets/sound/soundtrack/QUP_BS Ensemble 94BPM Em Bright.wav" id="59_tbq54"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_g11ll"]
 animations = [{
@@ -361,27 +362,11 @@ animation = &"loop_dialogos"
 frame = 7
 frame_progress = 0.910869
 
-[node name="Boton" type="Button" parent="."]
-modulate = Color(1, 1, 1, 0)
-self_modulate = Color(1, 1, 1, 0)
-anchors_preset = -1
-anchor_left = 0.901
-anchor_top = 0.904
-anchor_right = 0.974
-anchor_bottom = 0.961
-offset_left = -26.952
-offset_top = -12.792
-offset_right = 24.0477
-offset_bottom = 12.208
-grow_horizontal = 0
-grow_vertical = 0
-theme_override_fonts/font = ExtResource("56_t6ck0")
-theme_override_font_sizes/font_size = 20
-text = "Siguiente"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+reset_on_save = false
+libraries = {
+"": SubResource("AnimationLibrary_4r4yb")
+}
 
 [node name="Dialogos" type="CanvasLayer" parent="."]
 script = ExtResource("56_1vbdl")
@@ -403,11 +388,27 @@ offset_bottom = 598.0
 theme_override_fonts/font = ExtResource("58_yy6vs")
 theme_override_font_sizes/font_size = 24
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-reset_on_save = false
-libraries = {
-"": SubResource("AnimationLibrary_4r4yb")
-}
+[node name="Boton" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = -1
+anchor_left = 0.901
+anchor_top = 0.904
+anchor_right = 0.974
+anchor_bottom = 0.961
+offset_left = -26.952
+offset_top = -12.792
+offset_right = 24.0477
+offset_bottom = 12.208
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("56_t6ck0")
+theme_override_font_sizes/font_size = 20
+text = "Siguiente"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("59_tbq54")
+autoplay = true
 
 [connection signal="pressed" from="Boton" to="." method="_on_boton_pressed"]
 [connection signal="pressed" from="Boton" to="Dialogos" method="_on_boton_pressed"]

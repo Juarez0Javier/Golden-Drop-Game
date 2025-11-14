@@ -6,7 +6,6 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("Pausar"):
-		print("Pausar")
 		pausar()
 
 func pausar():
@@ -22,6 +21,6 @@ func _on_continuar_pressed() -> void:
 
 
 func _on_menu_principal_pressed() -> void:
-	self.get_parent().get_parent().cambiar_escena("TallerNv1")
+	self.get_parent().get_parent().cambiar_escena("MenuPrincipal")
 	self.get_parent().call_deferred("queue_free")
 	pass

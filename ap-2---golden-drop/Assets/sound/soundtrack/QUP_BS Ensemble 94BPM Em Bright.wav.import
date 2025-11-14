@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://wftdkxnqosam"
+path="res://.godot/imported/QUP_BS Ensemble 94BPM Em Bright.wav-36ee1008667f1b18ba3d0e6f76d17698.sample"
+
+[deps]
+
+source_file="res://Assets/sound/soundtrack/QUP_BS Ensemble 94BPM Em Bright.wav"
+dest_files=["res://.godot/imported/QUP_BS Ensemble 94BPM Em Bright.wav-36ee1008667f1b18ba3d0e6f76d17698.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
