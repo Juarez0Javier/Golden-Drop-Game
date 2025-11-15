@@ -38,6 +38,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="Control/Fondo"]
 texture_filter = 1
+layout_mode = 0
 offset_left = -44.0
 offset_top = -9.0
 offset_right = 558.0

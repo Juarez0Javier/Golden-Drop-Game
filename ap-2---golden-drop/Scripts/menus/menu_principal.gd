@@ -1,12 +1,9 @@
 extends Control
 
-
 @warning_ignore("UNUSED_SIGNAL")
-signal iniciar_cinematica
+
 var progress = ConfigFile.new()
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var err = progress.load("user://progreso.cfg")
 	if(err != OK):
@@ -43,9 +40,11 @@ func _on_opciones_pressed() -> void:
 
 
 func _on_selec_nivel_pressed() -> void:
-	get_parent().cambiar_escena("Menues/seleccion_de_nivel")
+	Main.cambiar_escena(Main.Escenas.SeleccionNivel)
 	self.call_deferred("queue_free")
 	
 
 func _on_jugar_pressed() -> void:
-	emit_signal("iniciar_cinematica")
+	Main.cambiar_escena(Main.Escenas.Cinematica)
+	self.call_deferred("queue_free")
+	

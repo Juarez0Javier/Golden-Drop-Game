@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="AP 2 - Golden Drop"
-run/main_scene="res://Escenas/Main.tscn"
+run/main_scene="res://Escenas/MenuPrincipal.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://colibri-icon.png"
+
+[autoload]
+
+Main="*res://Scripts/Managers/Main.gd"
+MusicManager="*res://Scripts/Managers/MusicManager.gd"
 
 [input]
 

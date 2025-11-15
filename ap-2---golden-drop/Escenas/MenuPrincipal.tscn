@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cqd83lbf5lueu"]
+[gd_scene load_steps=14 format=3 uid="uid://cqd83lbf5lueu"]
 
 [ext_resource type="Script" path="res://Scripts/menus/menu_principal.gd" id="1_0xdqj"]
 [ext_resource type="Texture2D" uid="uid://c12gmchjlj3u" path="res://Assets/Menu/Darker.png" id="2_g44i1"]
@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="4_esr4k"]
 [ext_resource type="PackedScene" uid="uid://c6dlo82rcx0r1" path="res://Escenas/Menues/menu_opciones.tscn" id="5_4equp"]
 [ext_resource type="Texture2D" uid="uid://c53kit3pspnyu" path="res://Assets/lluvia/Rain Spritesheet.png" id="5_8ujo6"]
+[ext_resource type="AudioStream" uid="uid://c60f0080symuw" path="res://Assets/sound/menus/menu.wav" id="7_a8uev"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fprnr"]
 atlas = ExtResource("5_8ujo6")
@@ -154,6 +155,10 @@ autoplay = "default"
 frame = 3
 frame_progress = 0.061467
 centered = false
+
+[node name="MusicaMenu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_a8uev")
+bus = &"Musica"
 
 [connection signal="pressed" from="BotonesPrincipal/Jugar" to="." method="_on_jugar_pressed"]
 [connection signal="pressed" from="BotonesPrincipal/SelecNivel" to="." method="_on_selec_nivel_pressed"]

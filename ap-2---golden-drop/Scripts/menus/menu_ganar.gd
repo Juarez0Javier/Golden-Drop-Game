@@ -39,7 +39,7 @@ func continuar():
 	hide()
 
 func _on_menu_principal_pressed() -> void:
-	self.get_parent().get_parent().cambiar_escena("MenuPrincipal")
+	Main.cambiar_escena(Main.Escenas.MenuPrincipal)
 	get_tree().paused = false
 	self.get_parent().call_deferred("queue_free")
 
@@ -49,7 +49,7 @@ func _on_siguiente_nivel_pressed() -> void:
 
 
 func _on_reintentar_pressed() -> void:
-	self.get_parent().get_parent().cambiar_escena("Niveles/nv_1_taller")
+	Main.cambiar_escena(Main.Escenas.Nivel1)
 	get_tree().paused = false
 	self.get_parent().call_deferred("queue_free")
 	
