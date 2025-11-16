@@ -11,25 +11,27 @@ var escena_actual : Node
 var musica = ""
 
 func _ready() -> void:
-	cambiar_escena(Escenas.MenuPrincipal)
+	escena_actual = obtener_instancia("MenuPrincipal")
+	gestionar_musica()
 	
 
 func cambiar_escena(nombre_escena: String):
-	var ruta = "res://Escenas/" + nombre_escena + ".tscn"
-	
 	if escena_actual != null:
 		escena_actual.queue_free()
 	
-	var siguiente_escena = instancia_escena(ruta)
+	var siguiente_escena = obtener_instancia(nombre_escena)
 	add_child(siguiente_escena)
 	escena_actual = siguiente_escena
 
 	gestionar_musica()
 
-func instancia_escena(ruta):
+
+func obtener_instancia(nombre_escena):
+	var ruta = "res://Escenas/" + nombre_escena + ".tscn"
 	var instancia = load(ruta).instantiate()
 	return instancia
-		
+	
+	
 func gestionar_musica():
 	if(escena_actual.name == "Menu Principal" or escena_actual.name == "Seleccion de Nivel"):
 		musica = "res://Assets/sound/menus/menu.wav"

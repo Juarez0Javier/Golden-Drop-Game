@@ -35,8 +35,8 @@ func _on_salir_pressed() -> void:
 
 
 func _on_opciones_pressed() -> void:
-	$BotonesPrincipal.hide()
 	$MenuOpciones.show()
+	$BotonesPrincipal.hide()
 
 
 func _on_selec_nivel_pressed() -> void:
@@ -47,4 +47,3 @@ func _on_selec_nivel_pressed() -> void:
 func _on_jugar_pressed() -> void:
 	Main.cambiar_escena(Main.Escenas.Cinematica)
 	self.call_deferred("queue_free")
-	
