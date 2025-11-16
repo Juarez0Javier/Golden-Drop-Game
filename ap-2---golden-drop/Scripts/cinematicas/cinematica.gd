@@ -11,7 +11,7 @@ signal iniciar_juego
 
 var dialogos_mostrados := false
 var dialogos_escena : CanvasLayer
-
+		
 func _ready():
 	anim.play("cinematic")
 	musica.play()

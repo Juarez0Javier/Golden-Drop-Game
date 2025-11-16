@@ -26,7 +26,8 @@ func _process(delta: float) -> void:
 	
 	var limiteSup = -1 * altoPiso + offsetPisoPos
 	
-	pisoAct = (int(gamestate.pjcaja.position.y) / int(limiteSup))
+	#pisoAct = (int(gamestate.pjcaja.position.y) / int(limiteSup))
+	pisoAct = int(gamestate.pjcaja.position.y / limiteSup)
 	
 	limiteSup *= pisoAct + 1
 	var limiteInf = limiteSup + lerpLimit

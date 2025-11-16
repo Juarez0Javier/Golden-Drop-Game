@@ -17,7 +17,10 @@ func _ready() -> void:
 
 func cambiar_escena(nombre_escena: String):
 	if escena_actual != null:
-		escena_actual.queue_free()
+		escena_actual.call_deferred("queue_free")
+		escena_actual = null
+	
+	get_tree().paused = false
 	
 	var siguiente_escena = obtener_instancia(nombre_escena)
 	add_child(siguiente_escena)
