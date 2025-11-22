@@ -11,7 +11,7 @@ signal iniciar_juego
 
 var dialogos_mostrados := false
 var dialogos_escena : CanvasLayer
-
+		
 func _ready():
 	anim.play("cinematic")
 	musica.play()
@@ -43,5 +43,5 @@ func mostrar_boton_omitir():
 
 func _on_boton_pressed() -> void:
 	if boton.text!= "Siguiente": 
-		emit_signal("iniciar_juego")
+		Main.cambiar_escena(Main.Escenas.Nivel1)
 		

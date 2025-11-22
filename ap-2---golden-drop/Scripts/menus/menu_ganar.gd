@@ -2,6 +2,7 @@ extends CanvasLayer
 
 var progress = ConfigFile.new()
 var nivel : int
+var nivel_actual 
 
 func _ready() -> void:
 	hide()
@@ -28,6 +29,8 @@ func mostrarMenu(humedad,fragmentos,gota,nivel):
 	show()
 	$"../MenuPausa".ganarperder = true
 	get_tree().paused = true
+	
+	nivel_actual = nivel
 
 
 func continuar():
@@ -39,9 +42,7 @@ func continuar():
 	hide()
 
 func _on_menu_principal_pressed() -> void:
-	self.get_parent().get_parent().cambiar_escena("MenuPrincipal")
-	get_tree().paused = false
-	self.get_parent().call_deferred("queue_free")
+	Main.cambiar_escena(Main.Escenas.MenuPrincipal)
 
 
 func _on_siguiente_nivel_pressed() -> void:
@@ -49,10 +50,9 @@ func _on_siguiente_nivel_pressed() -> void:
 
 
 func _on_reintentar_pressed() -> void:
-	self.get_parent().get_parent().cambiar_escena("Niveles/nv_1_taller")
-	get_tree().paused = false
-	self.get_parent().call_deferred("queue_free")
-	
+	match nivel_actual:
+		"Nv1Taller":
+			Main.cambiar_escena(Main.Escenas.Nivel1)
 	
 	$"../GameState".reset()
 	

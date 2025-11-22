@@ -16,5 +16,5 @@ func _ready() -> void:
 	else:
 		value = config.get_value("Volumen",nombreBus)
 
-func _on_value_changed(value: float) -> void:
-	AudioServer.set_bus_volume_db(indexBus,linear_to_db(value))
+func _on_value_changed(new_value: float) -> void:
+	AudioServer.set_bus_volume_db(indexBus,linear_to_db(new_value))
