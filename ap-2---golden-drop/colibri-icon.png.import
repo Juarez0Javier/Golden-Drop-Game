@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cv0l0twj8r1g8"
-path="res://.godot/imported/27.png-0f155d27d5127aee3c748c3eab264600.ctex"
+uid="uid://cexkbysuxhvsu"
+path="res://.godot/imported/colibri-icon.png-21d940d313f8045a03c4094acd779e3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/cinematicas/27.png"
-dest_files=["res://.godot/imported/27.png-0f155d27d5127aee3c748c3eab264600.ctex"]
+source_file="res://colibri-icon.png"
+dest_files=["res://.godot/imported/colibri-icon.png-21d940d313f8045a03c4094acd779e3b.ctex"]
 
 [params]
 

@@ -167,10 +167,10 @@ position = Vector2(29, -36)
 [node name="HUD" parent="." instance=ExtResource("8_imjg1")]
 
 [node name="MenuGanar" parent="." instance=ExtResource("16_abf5i")]
-layer = 2
+layer = 4
 
 [node name="MenuPausa" parent="." instance=ExtResource("15_wcamq")]
-layer = 3
+layer = 2
 
 [node name="FadeOut" type="CanvasLayer" parent="."]
 

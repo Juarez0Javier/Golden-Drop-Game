@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bfvqdj22tkgqg"]
+[gd_scene load_steps=6 format=3 uid="uid://bfvqdj22tkgqg"]
 
 [ext_resource type="Script" path="res://Scripts/menus/menu_pausa.gd" id="1_j16sv"]
 [ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="2_u3nva"]
 [ext_resource type="Texture2D" uid="uid://odyey48jyir4" path="res://Assets/Menu/Carton.png" id="3_42vxn"]
 [ext_resource type="Texture2D" uid="uid://dl6jtxmgr835i" path="res://Assets/Menu/Marco.png" id="4_ju5dp"]
+[ext_resource type="PackedScene" uid="uid://c6dlo82rcx0r1" path="res://Escenas/Menues/menu_opciones.tscn" id="5_piugd"]
 
 [node name="MenuPausa" type="CanvasLayer"]
 process_mode = 3
@@ -47,12 +48,18 @@ offset_bottom = 391.0
 process_mode = 3
 layout_mode = 2
 
-[node name="Continuar" type="Button" parent="Control/TextureRect/MarginContainer/MenuPausa"]
+[node name="BotonesPrincipal" type="Control" parent="Control/TextureRect/MarginContainer/MenuPausa"]
+layout_mode = 2
+
+[node name="Continuar" type="Button" parent="Control/TextureRect/MarginContainer/MenuPausa/BotonesPrincipal"]
 process_mode = 3
 process_priority = 1
 z_index = 1
 texture_filter = 1
 layout_mode = 2
+offset_top = 4.0
+offset_right = 266.0
+offset_bottom = 102.0
 theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
 theme_override_fonts/font = ExtResource("2_u3nva")
 theme_override_font_sizes/font_size = 30
@@ -62,12 +69,15 @@ Continuar
 "
 flat = true
 
-[node name="Opciones" type="Button" parent="Control/TextureRect/MarginContainer/MenuPausa"]
+[node name="Opciones" type="Button" parent="Control/TextureRect/MarginContainer/MenuPausa/BotonesPrincipal"]
 process_mode = 3
 process_priority = 1
 z_index = 1
 texture_filter = 1
 layout_mode = 2
+offset_top = 106.0
+offset_right = 266.0
+offset_bottom = 204.0
 theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
 theme_override_fonts/font = ExtResource("2_u3nva")
 theme_override_font_sizes/font_size = 30
@@ -77,12 +87,15 @@ Opciones
 "
 flat = true
 
-[node name="MenuPrincipal" type="Button" parent="Control/TextureRect/MarginContainer/MenuPausa"]
+[node name="MenuPrincipal" type="Button" parent="Control/TextureRect/MarginContainer/MenuPausa/BotonesPrincipal"]
 process_mode = 3
 process_priority = 1
 z_index = 1
 texture_filter = 1
 layout_mode = 2
+offset_top = 208.0
+offset_right = 266.0
+offset_bottom = 306.0
 theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
 theme_override_fonts/font = ExtResource("2_u3nva")
 theme_override_font_sizes/font_size = 30
@@ -92,6 +105,10 @@ Menu Principal
 "
 flat = true
 
-[connection signal="pressed" from="Control/TextureRect/MarginContainer/MenuPausa/Continuar" to="." method="_on_continuar_pressed"]
-[connection signal="pressed" from="Control/TextureRect/MarginContainer/MenuPausa/Opciones" to="Control" method="_on_opciones_pressed"]
-[connection signal="pressed" from="Control/TextureRect/MarginContainer/MenuPausa/MenuPrincipal" to="." method="_on_menu_principal_pressed"]
+[node name="MenuOpciones" parent="Control/TextureRect/MarginContainer/MenuPausa" instance=ExtResource("5_piugd")]
+visible = false
+layout_mode = 2
+
+[connection signal="pressed" from="Control/TextureRect/MarginContainer/MenuPausa/BotonesPrincipal/Continuar" to="." method="_on_continuar_pressed"]
+[connection signal="pressed" from="Control/TextureRect/MarginContainer/MenuPausa/BotonesPrincipal/Opciones" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="Control/TextureRect/MarginContainer/MenuPausa/BotonesPrincipal/MenuPrincipal" to="." method="_on_menu_principal_pressed"]

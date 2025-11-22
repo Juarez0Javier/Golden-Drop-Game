@@ -1,10 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6dlo82rcx0r1"]
+[gd_scene load_steps=4 format=3 uid="uid://c6dlo82rcx0r1"]
 
 [ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="1_dlwfb"]
+[ext_resource type="Script" path="res://Scripts/menus/menu_opciones.gd" id="1_nssq7"]
 [ext_resource type="PackedScene" uid="uid://dxyptd6wgijmp" path="res://Escenas/Menues/barra_volumen.tscn" id="2_o17s2"]
 
 [node name="MenuOpciones" type="VBoxContainer"]
 theme_override_constants/separation = 0
+script = ExtResource("1_nssq7")
 
 [node name="General" type="Label" parent="."]
 layout_mode = 2
@@ -60,3 +62,5 @@ flat = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 2
+
+[connection signal="pressed" from="Volver" to="." method="_on_volver_pressed"]
