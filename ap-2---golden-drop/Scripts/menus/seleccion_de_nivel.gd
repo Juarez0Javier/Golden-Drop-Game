@@ -42,8 +42,9 @@ func comparar(texto):
 
 func _on_jugar_pressed() -> void:
 	if($"Nivel 1".visible == true):
-		get_parent().cambiar_escena("Niveles/nv_1_taller")
-		self.call_deferred("queue_free")
+		Main.cambiar_escena(Main.Escenas.Nivel1)
+		#get_parent().cambiar_escena("Niveles/nv_1_taller")
+		#self.call_deferred("queue_free")
 	#elif($"Nivel 2".visible == true):
 		#var level = nivel2.instantiate()
 		#self.get_parent().add_child(level)
@@ -63,8 +64,9 @@ func _on_jugar_pressed() -> void:
 
 
 func _on_salir_pressed() -> void:
-	get_parent().cambiar_escena("MenuPrincipal")
-	self.call_deferred("queue_free")
+	self.hide()
+	#get_parent().cambiar_escena("MenuPrincipal")
+	#self.call_deferred("queue_free")
 
 
 func _on_salir_mouse_entered() -> void:
