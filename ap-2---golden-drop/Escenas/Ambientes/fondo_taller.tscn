@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dt3842jsmu6a2"]
 
 [ext_resource type="Script" path="res://Scripts/fondo_taller.gd" id="1_t6xqe"]
-[ext_resource type="Texture2D" uid="uid://bdeqt5a72smvc" path="res://Assets/Fondos/FondoAlto(Gris).png" id="2_b8ouw"]
-[ext_resource type="Texture2D" uid="uid://cq2s4wmk68xm8" path="res://Assets/Fondos/FondoBajo(Gris).png" id="3_elu3o"]
+[ext_resource type="Texture2D" uid="uid://bdeqt5a72smvc" path="res://Assets/fondos/FondoAlto(Gris).png" id="2_b8ouw"]
+[ext_resource type="Texture2D" uid="uid://cq2s4wmk68xm8" path="res://Assets/fondos/FondoBajo(Gris).png" id="3_elu3o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c3c46"]
 size = Vector2(111, 34.75)

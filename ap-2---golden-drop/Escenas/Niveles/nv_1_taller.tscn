@@ -31,7 +31,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.6, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(1152, 0), Vector2(-576, 0), Vector2(-576, 0), Vector2(-2304, 0)]
+"values": [Vector2(1152, 0), Vector2(-576, 0), Vector2(-576, 0), Vector2(-3000, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_yn03u"]
@@ -125,7 +125,7 @@ scale = Vector2(0.672559, 1)
 position = Vector2(-379, -459)
 
 [node name="Calor (Lampara)" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
-position = Vector2(-130, -211)
+position = Vector2(-116, -216)
 scale = Vector2(2.37601, 1.52)
 
 [node name="Colecc" type="Node2D" parent="DiseñoNivel"]
@@ -148,6 +148,9 @@ position = Vector2(649, -60)
 [node name="GotaItem" parent="DiseñoNivel/Colecc" instance=ExtResource("8_1p4va")]
 position = Vector2(147, -563)
 
+[node name="CartonItem6" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(1307, -77)
+
 [node name="Control" type="Node2D" parent="DiseñoNivel"]
 
 [node name="Checkpoint" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
@@ -162,15 +165,18 @@ position = Vector2(741, -91)
 scale = Vector2(1.00567, 1.01552)
 
 [node name="Charco" parent="." instance=ExtResource("14_dneqw")]
-position = Vector2(29, -36)
+z_index = -1
+position = Vector2(60, 14)
 
 [node name="HUD" parent="." instance=ExtResource("8_imjg1")]
 
 [node name="MenuGanar" parent="." instance=ExtResource("16_abf5i")]
 layer = 4
+visible = false
 
 [node name="MenuPausa" parent="." instance=ExtResource("15_wcamq")]
 layer = 2
+visible = false
 
 [node name="FadeOut" type="CanvasLayer" parent="."]
 
