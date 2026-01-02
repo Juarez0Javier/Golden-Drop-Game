@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dt3842jsmu6a2"]
 
-[ext_resource type="Script" path="res://Scripts/fondo_taller.gd" id="1_t6xqe"]
-[ext_resource type="Texture2D" uid="uid://bdeqt5a72smvc" path="res://Assets/Fondos/FondoAlto(Gris).png" id="2_b8ouw"]
-[ext_resource type="Texture2D" uid="uid://cq2s4wmk68xm8" path="res://Assets/Fondos/FondoBajo(Gris).png" id="3_elu3o"]
+[ext_resource type="Script" path="res://Scripts/Game/fondo_taller.gd" id="1_t6xqe"]
+[ext_resource type="Texture2D" uid="uid://ddqgn8gjexdxr" path="res://Assets/Fondos/Taller/FondoAlto (Gris).png" id="2_fsjyi"]
+[ext_resource type="Texture2D" uid="uid://cvbgyrsueuatx" path="res://Assets/Fondos/Taller/FondoBajo (Gris).png" id="3_q4u40"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c3c46"]
 size = Vector2(90, 30)
@@ -14,30 +14,30 @@ colorPiso = Array[Color]([Color(0.321569, 0.705882, 1, 1), Color(0.695254, 0.763
 [node name="FondoAlto" type="ParallaxLayer" parent="."]
 z_index = -2
 z_as_relative = false
-position = Vector2(0, -488)
-motion_mirroring = Vector2(2000, 488)
+position = Vector2(0, -500)
+motion_mirroring = Vector2(2000, 500)
 
 [node name="Sprite2D" type="Sprite2D" parent="FondoAlto"]
 modulate = Color(0.698105, 0.951765, 0.193752, 1)
 texture_filter = 1
-texture = ExtResource("2_b8ouw")
+texture = ExtResource("2_fsjyi")
 centered = false
 
 [node name="FondoBajo" type="ParallaxLayer" parent="."]
 z_index = -1
-position = Vector2(0, -488)
+position = Vector2(0, -500)
 motion_mirroring = Vector2(2000, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="FondoBajo"]
 modulate = Color(0.32, 0.705333, 1, 1)
 z_as_relative = false
 texture_filter = 1
-texture = ExtResource("3_elu3o")
+texture = ExtResource("3_q4u40")
 centered = false
 
 [node name="PisoInfinito" type="StaticBody2D" parent="."]
-position = Vector2(0, -66.33)
+position = Vector2(0, -68.33)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PisoInfinito"]
 shape = SubResource("RectangleShape2D_c3c46")
-debug_color = Color(0.692094, 0.32502, 0.937302, 0.42)
+debug_color = Color(0.325641, 0.615352, 0.303724, 0.42)

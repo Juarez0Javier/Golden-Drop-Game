@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://hqja60f7ac2r"]
 
-[ext_resource type="Script" path="res://Scripts/refugio.gd" id="1_jivmd"]
+[ext_resource type="Script" path="res://Scripts/Game/refugio.gd" id="1_jivmd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cnvbd"]
 size = Vector2(145, 53)

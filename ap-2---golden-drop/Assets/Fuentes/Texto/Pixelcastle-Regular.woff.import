@@ -1,0 +1,39 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://b6fu6124dkyb1"
+path="res://.godot/imported/Pixelcastle-Regular.woff-a3c98d60c8d98f1453646c12890880b7.fontdata"
+
+[deps]
+
+source_file="res://Assets/Fuentes/Texto/Pixelcastle-Regular.woff"
+dest_files=["res://.godot/imported/Pixelcastle-Regular.woff-a3c98d60c8d98f1453646c12890880b7.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=4
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[{
+"chars": [],
+"glyphs": [],
+"name": "New Configuration",
+"size": Vector2i(16, 0)
+}]
+language_support={}
+script_support={}
+opentype_features={}

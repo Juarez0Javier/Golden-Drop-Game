@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bfvqdj22tkgqg"]
 
-[ext_resource type="Script" path="res://Scripts/menus/menu_pausa.gd" id="1_j16sv"]
-[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="2_u3nva"]
+[ext_resource type="Script" path="res://Scripts/Menus/menu_pausa.gd" id="1_j16sv"]
+[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/Fuentes/Texto/Pixelcastle-Regular.otf" id="2_u3nva"]
 [ext_resource type="Texture2D" uid="uid://odyey48jyir4" path="res://Assets/Menu/Carton.png" id="3_42vxn"]
 [ext_resource type="Texture2D" uid="uid://dl6jtxmgr835i" path="res://Assets/Menu/Marco.png" id="4_ju5dp"]
 [ext_resource type="PackedScene" uid="uid://c6dlo82rcx0r1" path="res://Escenas/Menues/menu_opciones.tscn" id="5_piugd"]

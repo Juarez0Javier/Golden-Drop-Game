@@ -1,13 +1,13 @@
 [gd_scene load_steps=11 format=3 uid="uid://ck7m6kvogdxot"]
 
-[ext_resource type="Script" path="res://Scripts/calor_objeto.gd" id="1_ycnpi"]
+[ext_resource type="Script" path="res://Scripts/Game/calor_objeto.gd" id="1_ycnpi"]
 [ext_resource type="Texture2D" uid="uid://5tn1t6fimtwp" path="res://Assets/Objetos/Fuentes de Calor/fuego/1.png" id="2_vgwod"]
 [ext_resource type="Texture2D" uid="uid://dsf026hdsai48" path="res://Assets/Objetos/Fuentes de Calor/fuego/2.png" id="3_selcu"]
 [ext_resource type="Texture2D" uid="uid://5xq5ktsp6ia4" path="res://Assets/Objetos/Fuentes de Calor/fuego/3.png" id="4_ttj21"]
 [ext_resource type="Texture2D" uid="uid://2ys8sxw0sff2" path="res://Assets/Objetos/Fuentes de Calor/fuego/4.png" id="5_3xk4k"]
 [ext_resource type="Texture2D" uid="uid://cwvc3fbycugh" path="res://Assets/Objetos/Fuentes de Calor/fuego/5.png" id="6_bq43n"]
 [ext_resource type="Texture2D" uid="uid://cu23qjix86164" path="res://Assets/Objetos/Fuentes de Calor/fuego/6.png" id="7_62tvh"]
-[ext_resource type="AudioStream" uid="uid://c0xg7iilgukyg" path="res://Assets/sound/efectos/fuentes de calor/fuego/MMO_Game_Magic_Source_Fire_B2_03_Blazing_Flame_Burning.wav" id="8_aq2kg"]
+[ext_resource type="AudioStream" uid="uid://c0xg7iilgukyg" path="res://Assets/Sonido/efectos/fuentes de calor/fuego/MMO_Game_Magic_Source_Fire_B2_03_Blazing_Flame_Burning.wav" id="8_aq2kg"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y8ued"]
 radius = 35.0

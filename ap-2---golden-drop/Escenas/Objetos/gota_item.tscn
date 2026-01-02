@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://djpb4cjdxnqbi"]
 
-[ext_resource type="Script" path="res://Scripts/gota_item.gd" id="1_k0o1t"]
+[ext_resource type="Script" path="res://Scripts/Game/gota_item.gd" id="1_k0o1t"]
 [ext_resource type="Texture2D" uid="uid://d1hvldqq88icv" path="res://Assets/Coleccionables/Gotas/1.png" id="2_d6ywf"]
-[ext_resource type="AudioStream" uid="uid://r8bpc7e2f3b7" path="res://Assets/sound/efectos/fracmentos/gotas doradas/MMO_Game_Magic_Source_Heal_03_Synth_Energy_Morph_Chirp.wav" id="3_uuyw8"]
+[ext_resource type="AudioStream" uid="uid://r8bpc7e2f3b7" path="res://Assets/Sonido/efectos/fracmentos/gotas doradas/MMO_Game_Magic_Source_Heal_03_Synth_Energy_Morph_Chirp.wav" id="3_uuyw8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kngq7"]
 size = Vector2(17, 25)

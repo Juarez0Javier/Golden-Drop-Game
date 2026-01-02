@@ -2,13 +2,15 @@ extends CanvasLayer
 
 var progress = ConfigFile.new()
 var nivel : int
-var nivel_actual 
+var nivel_actual
 
 func _ready() -> void:
 	hide()
 	
 
 func mostrarMenu(humedad,fragmentos,gota,nivel):
+	
+	## Manejo del Guardado de Progreso
 	var err = progress.load("user://progreso.cfg")
 	if(err == OK):
 		if nivel == "Nv1Taller":
@@ -23,6 +25,9 @@ func mostrarMenu(humedad,fragmentos,gota,nivel):
 			else:
 				$Control/Fondo/LabelGota/Gota.text = "0/1"
 		progress.save("user://progreso.cfg")
+		
+	
+		
 	for child in get_parent().get_children():
 		if(child is ColorRect):
 			child.show()
@@ -31,15 +36,6 @@ func mostrarMenu(humedad,fragmentos,gota,nivel):
 	get_tree().paused = true
 	
 	nivel_actual = nivel
-
-
-func continuar():
-	get_tree().paused = false
-	for child in get_parent().get_children():
-		if(child is ColorRect):
-			child.hide()
-	$"../MenuPausa".ganarperder = false
-	hide()
 
 func _on_menu_principal_pressed() -> void:
 	Main.cambiar_escena(Main.Escenas.MenuPrincipal)
@@ -50,9 +46,6 @@ func _on_siguiente_nivel_pressed() -> void:
 
 
 func _on_reintentar_pressed() -> void:
-	match nivel_actual:
-		"Nv1Taller":
-			Main.cambiar_escena(Main.Escenas.Nivel1)
 	
 	$"../GameState".reset()
 	

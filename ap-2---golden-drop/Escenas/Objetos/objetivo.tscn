@@ -1,16 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://pn1f47dtv8xp"]
+[gd_scene load_steps=4 format=3 uid="uid://pn1f47dtv8xp"]
 
-[ext_resource type="Script" path="res://Scripts/objetivo.gd" id="1_qy3qj"]
+[ext_resource type="Script" path="res://Scripts/Game/objetivo.gd" id="1_qy3qj"]
+[ext_resource type="Texture2D" uid="uid://landumgbllqj" path="res://Assets/Objetos/objetivo.png" id="2_601ah"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fdy5q"]
+size = Vector2(40, 40)
 
 [node name="Objetivo" type="Area2D"]
 script = ExtResource("1_qy3qj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(10, -10)
-scale = Vector2(0.985816, 1.06061)
 shape = SubResource("RectangleShape2D_fdy5q")
 debug_color = Color(0.936507, 0.423119, 0.643518, 0.42)
+
+[node name="Objetivo" type="Sprite2D" parent="CollisionShape2D"]
+texture_filter = 1
+position = Vector2(1.37215e-08, -2.38419e-07)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_601ah")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

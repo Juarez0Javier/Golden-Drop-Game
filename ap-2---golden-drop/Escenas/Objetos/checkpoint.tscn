@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://i48jg2hh8775"]
 
-[ext_resource type="Script" path="res://Scripts/checkpoint.gd" id="1_dlfjs"]
-[ext_resource type="AudioStream" uid="uid://bcec1nbw8d4mc" path="res://Assets/sound/efectos/chespoin/guargado.wav" id="2_ocr2k"]
+[ext_resource type="Script" path="res://Scripts/Game/checkpoint.gd" id="1_dlfjs"]
+[ext_resource type="AudioStream" uid="uid://bcec1nbw8d4mc" path="res://Assets/Sonido/efectos/chespoin/guargado.wav" id="2_ocr2k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pdw7j"]
 

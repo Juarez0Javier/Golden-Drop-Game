@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dxyptd6wgijmp"]
 
-[ext_resource type="Script" path="res://Scripts/menus/barra_volumen.gd" id="1_upkvt"]
+[ext_resource type="Script" path="res://Scripts/Menus/barra_volumen.gd" id="1_upkvt"]
 
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_ppdmp"]
 color = Color(0.856067, 0.856067, 0.856067, 1)

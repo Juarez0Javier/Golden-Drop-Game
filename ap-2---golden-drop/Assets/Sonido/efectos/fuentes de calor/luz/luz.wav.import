@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://chp2h0mwp8x66"
+path="res://.godot/imported/luz.wav-27ce067c6fdcd0fc28b09385c372422c.sample"
+
+[deps]
+
+source_file="res://Assets/Sonido/efectos/fuentes de calor/luz/luz.wav"
+dest_files=["res://.godot/imported/luz.wav-27ce067c6fdcd0fc28b09385c372422c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

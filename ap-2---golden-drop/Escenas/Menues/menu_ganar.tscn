@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://dpn5faaoq4ags"]
 
-[ext_resource type="Script" path="res://Scripts/menus/menu_ganar.gd" id="1_18cw5"]
+[ext_resource type="Script" path="res://Scripts/Menus/menu_ganar.gd" id="1_18cw5"]
 [ext_resource type="Texture2D" uid="uid://odyey48jyir4" path="res://Assets/Menu/Carton.png" id="1_s7q37"]
 [ext_resource type="Texture2D" uid="uid://dl6jtxmgr835i" path="res://Assets/Menu/Marco.png" id="2_u3i67"]
-[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/fuentes/fuentes para texto/Pixelcastle-Regular.otf" id="2_xvrmc"]
-[ext_resource type="FontFile" uid="uid://c1rjhde3e55r6" path="res://Assets/fuentes/fuente para numero/medieval-pixel.ttf" id="3_t575r"]
+[ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/Fuentes/Texto/Pixelcastle-Regular.otf" id="2_xvrmc"]
+[ext_resource type="FontFile" uid="uid://c1rjhde3e55r6" path="res://Assets/Fuentes/Numeros/medieval-pixel.ttf" id="3_t575r"]
 
 [node name="MenuGanar" type="CanvasLayer"]
 script = ExtResource("1_18cw5")
