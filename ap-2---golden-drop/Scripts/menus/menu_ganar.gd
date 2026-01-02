@@ -4,6 +4,8 @@ var progress = ConfigFile.new()
 var nivel : int
 var nivel_actual
 
+@onready var gameState = get_node("../GameState")
+
 func _ready() -> void:
 	hide()
 	
@@ -32,8 +34,9 @@ func mostrarMenu(humedad,fragmentos,gota,nivel):
 		if(child is ColorRect):
 			child.show()
 	show()
-	$"../MenuPausa".ganarperder = true
 	get_tree().paused = true
+	gameState.inputHabilitado = false
+	
 	
 	nivel_actual = nivel
 
@@ -43,9 +46,4 @@ func _on_menu_principal_pressed() -> void:
 
 func _on_siguiente_nivel_pressed() -> void:
 	_on_menu_principal_pressed()
-
-
-func _on_reintentar_pressed() -> void:
-	
-	$"../GameState".reset()
 	

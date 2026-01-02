@@ -8,14 +8,14 @@ var gravedad = 15
 @onready var sprite = get_node("AnimatedSprite2D")
 @onready var gameState = get_node("../GameState")
 
-@export var inputHabilitado = true
+signal cajaAnimationFinished(animName)
 
 func _physics_process(delta: float) -> void:
 	var movimiento = Vector2.ZERO
 	
 	##Movimiento en el Piso
-	if is_on_floor() and inputHabilitado:
-		if Input.is_action_pressed("Mover Derecha") and inputHabilitado:
+	if is_on_floor() and gameState.inputHabilitado:
+		if Input.is_action_pressed("Mover Derecha"):
 			movimiento.x += velocidad
 			sprite.flip_h = false
 			sprite.play("Caminar")
@@ -36,10 +36,10 @@ func _physics_process(delta: float) -> void:
 		
 	
 	##Movimiento en el Aire		
-	if !is_on_floor() and inputHabilitado :
-		if Input.is_action_pressed("Mover Derecha") and inputHabilitado:
+	if !is_on_floor() and gameState.inputHabilitado:
+		if Input.is_action_pressed("Mover Derecha"):
 				movimiento.x += int(velocidad/5)
-		elif Input.is_action_pressed("Mover Izquierda") and inputHabilitado:
+		elif Input.is_action_pressed("Mover Izquierda"):
 				movimiento.x -= int(velocidad/5)
 		else:
 			velocity.x = 0
@@ -64,9 +64,11 @@ func _physics_process(delta: float) -> void:
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if sprite.animation == "Salto":
 		sprite.play("En Aire")
-		pass
+		
+	cajaAnimationFinished.emit(sprite.animation)
+	
+	pass
 		
 func morir():
 	if sprite.animation != "Muerte":
-		inputHabilitado = false
 		sprite.play("Muerte")

@@ -107,10 +107,10 @@ text = "0/1"
 process_mode = 3
 texture_filter = 1
 layout_mode = 0
-offset_left = 39.0
-offset_top = 429.0
-offset_right = 257.0
-offset_bottom = 469.0
+offset_left = 220.0
+offset_top = 416.0
+offset_right = 438.0
+offset_bottom = 456.0
 theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
 theme_override_fonts/font = ExtResource("2_xvrmc")
 theme_override_font_sizes/font_size = 30
@@ -121,30 +121,15 @@ flat = true
 process_mode = 3
 texture_filter = 1
 layout_mode = 0
-offset_left = 149.0
-offset_top = 367.0
-offset_right = 367.0
-offset_bottom = 407.0
+offset_left = 54.0
+offset_top = 355.0
+offset_right = 272.0
+offset_bottom = 395.0
 theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
 theme_override_fonts/font = ExtResource("2_xvrmc")
 theme_override_font_sizes/font_size = 30
 text = "Siguiente Nivel"
 flat = true
 
-[node name="Reintentar" type="Button" parent="Control/Fondo"]
-process_mode = 3
-texture_filter = 1
-layout_mode = 0
-offset_left = 272.0
-offset_top = 431.0
-offset_right = 490.0
-offset_bottom = 471.0
-theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
-theme_override_fonts/font = ExtResource("2_xvrmc")
-theme_override_font_sizes/font_size = 30
-text = "Reintentar"
-flat = true
-
 [connection signal="pressed" from="Control/Fondo/MenuPrincipal" to="." method="_on_menu_principal_pressed"]
 [connection signal="pressed" from="Control/Fondo/SiguienteNivel" to="." method="_on_siguiente_nivel_pressed"]
-[connection signal="pressed" from="Control/Fondo/Reintentar" to="." method="_on_reintentar_pressed"]

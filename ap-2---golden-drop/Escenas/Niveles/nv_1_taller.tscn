@@ -1,8 +1,7 @@
-[gd_scene load_steps=25 format=4 uid="uid://c0lnvrk15bewb"]
+[gd_scene load_steps=22 format=4 uid="uid://c0lnvrk15bewb"]
 
 [ext_resource type="Script" path="res://Scripts/Managers/gamestate.gd" id="1_7gv3n"]
 [ext_resource type="PackedScene" uid="uid://pyucq8e7ng6d" path="res://Escenas/Personajes/pj_caja.tscn" id="1_bgcxy"]
-[ext_resource type="Texture2D" uid="uid://damofqx18u52q" path="res://Assets/Efectos/ActionLines.png" id="2_namxk"]
 [ext_resource type="PackedScene" uid="uid://dt3842jsmu6a2" path="res://Escenas/Ambientes/fondo_taller.tscn" id="2_rm4nq"]
 [ext_resource type="PackedScene" uid="uid://pn1f47dtv8xp" path="res://Escenas/Objetos/objetivo.tscn" id="3_k36yq"]
 [ext_resource type="PackedScene" uid="uid://b8vahwyu3vnbl" path="res://Escenas/Ambientes/piso.tscn" id="5_1yo8i"]
@@ -19,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://bfvqdj22tkgqg" path="res://Escenas/Menues/menu_pausa.tscn" id="15_wcamq"]
 [ext_resource type="PackedScene" uid="uid://dpn5faaoq4ags" path="res://Escenas/Menues/menu_ganar.tscn" id="16_abf5i"]
 [ext_resource type="AudioStream" uid="uid://c5w8u1uqep3b" path="res://Assets/Sonido/soundtrack/Platformer_Games_Music_Pack_Volume_4_Track_3_Gameplay_Ambience_Looping.wav" id="16_e2xx2"]
+[ext_resource type="PackedScene" uid="uid://cj0j5lbudywbh" path="res://Escenas/UI/fade_out.tscn" id="18_jyf0c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ndqu3"]
 texture = ExtResource("5_ciqj3")
@@ -108,42 +108,6 @@ terrain_set_0/terrain_0/name = "PisoTaller"
 terrain_set_0/terrain_0/color = Color(0.329158, 0.329158, 0.329158, 1)
 sources/0 = SubResource("TileSetAtlasSource_ndqu3")
 
-[sub_resource type="Animation" id="Animation_uhhx5"]
-resource_name = "Flush"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Control/ColorRect:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.6, 1),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(1152, 0), Vector2(-576, 0), Vector2(-576, 0), Vector2(-3000, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_yn03u"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Control/ColorRect:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1152, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_3u8xg"]
-_data = {
-"Flush": SubResource("Animation_uhhx5"),
-"RESET": SubResource("Animation_yn03u")
-}
-
 [node name="Nv1Taller" type="Node2D"]
 
 [node name="GameState" type="Node" parent="."]
@@ -161,7 +125,6 @@ tile_set = SubResource("TileSet_do7p8")
 collision_visibility_mode = 1
 
 [node name="Lluvia Effecto" parent="." instance=ExtResource("5_xhsvb")]
-process_mode = 4
 layer = 10
 
 [node name="PJCaja" parent="." instance=ExtResource("1_bgcxy")]
@@ -271,37 +234,7 @@ layer = 4
 [node name="MenuPausa" parent="." instance=ExtResource("15_wcamq")]
 layer = 2
 
-[node name="FadeOut" type="CanvasLayer" parent="."]
-
-[node name="Control" type="Control" parent="FadeOut"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-
-[node name="ColorRect" type="TextureRect" parent="FadeOut/Control"]
-modulate = Color(0.334029, 0.782602, 0.838792, 1)
-texture_filter = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1152.0
-offset_right = 2880.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_namxk")
-expand_mode = 2
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeOut"]
-libraries = {
-"": SubResource("AnimationLibrary_3u8xg")
-}
-
-[node name="Timer" type="Timer" parent="FadeOut"]
+[node name="FadeOut" parent="." instance=ExtResource("18_jyf0c")]
 
 [node name="MusicaFondo" type="AudioStreamPlayer" parent="."]
 process_mode = 3

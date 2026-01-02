@@ -1,45 +1,46 @@
 extends Node
 
 @onready var pjcaja = get_node("../PJCaja")
+@onready var fadeOut = get_node("../FadeOut")
+@onready var menuGanar = get_node("../MenuGanar")
 
 var humedad = 0
 var maxHumedad = 100
-var muerto = false
 
 var enRefugio = false
+var inputHabilitado = true
 
 var cartones = 0
 var gotaD = false
-var chekpointUlt = null
-var collUlti = []
+var chekpointUlt = null		##Ulimo checkpoint
+var collUlti = [] 			##Lista de coleccionables hasta ultimo chekcpoint
 
 var meta = Vector2(0,0)
 var inicio = Vector2(0,0)
 
 func _ready():
 	
+	pjcaja.cajaAnimationFinished.connect(on_cajaAnimationFinished)
+	fadeOut.fadeOutEnd.connect(on_fadeOutEnd)
+	fadeOut.fadeOutFullBlock.connect(on_fadeOutFullBlock)
 	pass
 	
 func _process(_delta: float):
+	
+	##print(inputHabilitado)
 	
 	humedad = clamp(humedad,0,maxHumedad)
 	
 	if humedad == maxHumedad:
 		pjcaja.morir()
-		$'../FadeOut/AnimationPlayer'.play("Flush")
-		
-	if $'../FadeOut/AnimationPlayer'.current_animation == "Flush" and snapped($'../FadeOut/AnimationPlayer'.current_animation_position,0.1) == $'../FadeOut/AnimationPlayer'.current_animation_length / 2:
-		reset()
+		inputHabilitado = false
 	pass
-	
 
 func ganar():
-	$"../MenuGanar".mostrarMenu(humedad,cartones,gotaD,get_parent().name)
+	menuGanar.mostrarMenu(humedad,cartones,gotaD,get_parent().name)
 
 func reset():
-	
 	pjcaja.position = chekpointUlt.position
-	pjcaja.inputHabilitado = true 
 	
 	for coll in collUlti:
 		if coll.name.find("Carton") != -1:
@@ -51,5 +52,19 @@ func reset():
 	collUlti.clear()
 	
 	humedad = 0
-	muerto = false
+	pass
+	
+func on_cajaAnimationFinished(animName):
+	if animName == "Muerte":
+		fadeOut.playFadeOut()
+	pass
+
+func on_fadeOutFullBlock():
+	print("Reset!")
+	reset()
+	pass
+	
+func on_fadeOutEnd():
+	print("End")
+	inputHabilitado = true
 	pass
