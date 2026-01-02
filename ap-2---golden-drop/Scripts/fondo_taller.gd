@@ -7,6 +7,8 @@ extends ParallaxBackground
 @onready var pisoBajoSprite = $FondoBajo/Sprite2D
 @onready var pisoAltoSprite = $FondoAlto/Sprite2D
 
+@onready var pisoTiles = get_node("../PisoTiles")
+
 @export var colorPiso: Array[Color]
 
 var offsetPisoPos = 20
@@ -16,9 +18,7 @@ var color
 var t = 0.0
 var pisoAct = 0
 
-
-
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	##Calculando Posicion de Piso
 	piso.position.x = gamestate.pjcaja.position.x
 	
@@ -37,10 +37,12 @@ func _process(delta: float) -> void:
 	else:
 		t = 0
 	
-	if pisoAct + 1 < colorPiso.size():
+	if abs(pisoAct + 1) < colorPiso.size():
 		color = lerp(colorPiso[pisoAct],colorPiso[pisoAct+1],t)
 	else:
 		color = colorPiso[colorPiso.size() - 1]
 	
 	pisoBajoSprite.modulate = color
 	pisoAltoSprite.modulate = color
+	if pisoTiles:
+		pisoTiles.modulate = color

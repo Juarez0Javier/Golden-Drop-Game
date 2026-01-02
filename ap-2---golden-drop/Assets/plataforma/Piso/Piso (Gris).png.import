@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://by0xqu4kaaypt"
-path="res://.godot/imported/piso.png-7aba528044d59a07aa5672bfc330c066.ctex"
+uid="uid://cfkfx7uls7eml"
+path="res://.godot/imported/Piso (Gris).png-745f8ddf16cdf58b8d231f4ca4be58e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/fondos/fondo con piso/piso.png"
-dest_files=["res://.godot/imported/piso.png-7aba528044d59a07aa5672bfc330c066.ctex"]
+source_file="res://Assets/plataforma/Piso/Piso (Gris).png"
+dest_files=["res://.godot/imported/Piso (Gris).png-745f8ddf16cdf58b8d231f4ca4be58e5.ctex"]
 
 [params]
 
