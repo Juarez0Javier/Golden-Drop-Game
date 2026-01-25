@@ -1,11 +1,12 @@
 extends Area2D
 
-@onready var gamestate = get_node("../../../GameState")
+@onready var gamestate = $"../../../GameState"
 
 var enRango = false
 
 @export var curaMax = 10
 var cura = curaMax
+var secado = 1
 
 @export var cooldown = 5
 
@@ -42,7 +43,7 @@ func _on_body_exited(body: Node2D) -> void:
 
 
 func _on_heal_timer_timeout() -> void:
-	gamestate.humedad -= 1
+	gamestate.disminuir_humedad(secado)
 	cura -= 1
 	pass # Replace with function body.
 
@@ -58,6 +59,11 @@ func _on_cooldown_timeout() -> void:
 func _on_heat_sprite_animation_finished() -> void:
 	if $'HeatSprite'.animation == "Apagar":
 		$'HeatSprite'.play("Idle Apagado")
+		if($calor):
+			$calor.visible = false
 	if $'HeatSprite'.animation == "Encender":
 		$'HeatSprite'.play("Idle")
+		if($calor):
+			$calor.visible = true
+		
 	pass # Replace with function body.

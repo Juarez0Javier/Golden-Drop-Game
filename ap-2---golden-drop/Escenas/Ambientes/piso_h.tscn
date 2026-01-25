@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8vahwyu3vnbl"]
+
+[ext_resource type="Texture2D" uid="uid://by46qyfkssxb" path="res://Assets/Plataformas/Vigas/h1.png" id="1_qhyd8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t563t"]
+size = Vector2(141, 30)
+
+[node name="Piso_h" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, -4)
+shape = SubResource("RectangleShape2D_t563t")
+debug_color = Color(0.336012, 0.612402, 0.320836, 0.42)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0.455924, 0.902689, 1)
+texture = ExtResource("1_qhyd8")

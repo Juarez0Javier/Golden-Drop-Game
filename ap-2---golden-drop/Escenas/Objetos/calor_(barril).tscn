@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://ck7m6kvogdxot"]
+[gd_scene load_steps=12 format=3 uid="uid://ck7m6kvogdxot"]
 
 [ext_resource type="Script" path="res://Scripts/Game/calor_objeto.gd" id="1_ycnpi"]
+[ext_resource type="Texture2D" uid="uid://d188hppewv40l" path="res://Assets/Objetos/Fuentes de Calor/degradado.png" id="2_ie42u"]
 [ext_resource type="Texture2D" uid="uid://5tn1t6fimtwp" path="res://Assets/Objetos/Fuentes de Calor/fuego/1.png" id="2_vgwod"]
 [ext_resource type="Texture2D" uid="uid://dsf026hdsai48" path="res://Assets/Objetos/Fuentes de Calor/fuego/2.png" id="3_selcu"]
 [ext_resource type="Texture2D" uid="uid://5xq5ktsp6ia4" path="res://Assets/Objetos/Fuentes de Calor/fuego/3.png" id="4_ttj21"]
@@ -91,7 +92,13 @@ debug_color = Color(0.792157, 0.47451, 0.333333, 0.419608)
 [node name="HeatSprite" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_cd1og")
-animation = &"Idle"
+animation = &"Idle Apagado"
+
+[node name="calor" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.258824)
+position = Vector2(6.85637e-06, 16)
+scale = Vector2(0.0374449, 0.0742857)
+texture = ExtResource("2_ie42u")
 
 [node name="HealTimer" type="Timer" parent="."]
 wait_time = 0.25

@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-@onready var gamestate = get_node("../GameState")
+@onready var gamestate = $"../GameState"
 @export var vidaEstados: Array[Texture]
 
 func _ready() -> void:

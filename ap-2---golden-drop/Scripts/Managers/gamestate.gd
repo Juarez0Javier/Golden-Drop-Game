@@ -1,8 +1,10 @@
+class_name GameState
 extends Node
 
 @onready var pjcaja = get_node("../PJCaja")
 @onready var fadeOut = get_node("../FadeOut")
 @onready var menuGanar = get_node("../MenuGanar")
+@onready var timerEstado = $TimerEstado
 
 var humedad = 0
 var maxHumedad = 100
@@ -41,6 +43,7 @@ func ganar():
 
 func reset():
 	pjcaja.position = chekpointUlt.position
+	pjcaja.velocity = Vector2(0,0)
 	
 	for coll in collUlti:
 		if coll.name.find("Carton") != -1:
@@ -68,3 +71,16 @@ func on_fadeOutEnd():
 	print("End")
 	inputHabilitado = true
 	pass
+	
+func aumentar_humedad(daño: int):
+	humedad += daño
+	pjcaja.modulate = Color.DEEP_SKY_BLUE
+	timerEstado.start()
+	
+func disminuir_humedad(vida: int):
+	humedad -= vida
+	pjcaja.modulate = Color.GOLD
+	timerEstado.start()
+	
+func _on_timer_estado_timeout() -> void:
+	pjcaja.modulate = Color.WHITE

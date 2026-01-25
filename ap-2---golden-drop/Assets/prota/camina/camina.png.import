@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2fg8mx3wr3d"
-path="res://.godot/imported/camina.png-3f2edb91a6681126bfb6a4bb5d6316dc.ctex"
+path="res://.godot/imported/camina.png-297cfc0b255aa88151f9d2e8bd34005f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Prota/Camina/camina.png"
-dest_files=["res://.godot/imported/camina.png-3f2edb91a6681126bfb6a4bb5d6316dc.ctex"]
+source_file="res://Assets/prota/camina/camina.png"
+dest_files=["res://.godot/imported/camina.png-297cfc0b255aa88151f9d2e8bd34005f.ctex"]
 
 [params]
 
