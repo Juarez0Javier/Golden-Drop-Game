@@ -325,7 +325,6 @@ position = Vector2(2535, -558)
 [node name="Piso_inc11" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
 position = Vector2(963, -1462)
 rotation = -0.289725
-scale = Vector2(1, 1)
 
 [node name="Piso_inc9" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
 position = Vector2(-162, -958)
@@ -389,7 +388,7 @@ rotation = -0.00872665
 scale = Vector2(0.999923, 0.999923)
 
 [node name="Piso_h28" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(4945, -1211)
+position = Vector2(4922, -1189)
 rotation = -0.0261799
 scale = Vector2(0.999769, 0.999769)
 
@@ -426,22 +425,18 @@ scale = Vector2(0.999999, 0.999999)
 [node name="Piso_h18" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 position = Vector2(747, -1312)
 rotation = -0.298451
-scale = Vector2(1, 1)
 
 [node name="Piso_h17" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 position = Vector2(5779, -199)
 rotation = -0.00349066
-scale = Vector2(1, 1)
 
 [node name="Piso_h11" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 position = Vector2(5375, -203)
 rotation = -0.00174533
-scale = Vector2(1, 1)
 
 [node name="Piso_h10" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 position = Vector2(5208, -323)
 rotation = 0.29147
-scale = Vector2(1, 1)
 
 [node name="Piso_h13" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 position = Vector2(4324, -677)
@@ -469,7 +464,7 @@ position = Vector2(4453, -289)
 
 [node name="Piso_h9" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 modulate = Color(0.827451, 0.792157, 0, 0.980392)
-position = Vector2(5223, -1217)
+position = Vector2(5193, -1251)
 
 [node name="Piso_h31" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 modulate = Color(1, 0.909804, 0, 1)
@@ -578,7 +573,7 @@ position = Vector2(3545, -204)
 position = Vector2(4108, -1447)
 
 [node name="CartonItem20" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(4947, -1268)
+position = Vector2(4913, -1239)
 
 [node name="CartonItem11" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(2848, -164)
