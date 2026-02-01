@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bfh5ffemkbaho" path="res://Assets/Coleccionables/Fragmentos/7.png" id="8_s10mo"]
 [ext_resource type="Texture2D" uid="uid://c70e0cu611ud2" path="res://Assets/Coleccionables/Fragmentos/8.png" id="9_w5jcy"]
 [ext_resource type="Texture2D" uid="uid://cl8bsurcbwcd7" path="res://Assets/Coleccionables/Fragmentos/9.png" id="10_jqhl0"]
-[ext_resource type="AudioStream" uid="uid://dajhcetpbkmlv" path="res://Assets/Sonido/efectos/fracmentos/cartones/MMO_Game_Magic_Source_Paper_08_Scroll_Page_Turn_Flip.wav" id="11_si1ae"]
+[ext_resource type="AudioStream" uid="uid://dajhcetpbkmlv" path="res://Assets/Sonido/efectos/fragmentos/cartones/MMO_Game_Magic_Source_Paper_08_Scroll_Page_Turn_Flip.wav" id="11_si1ae"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2gci1"]
 size = Vector2(32, 32)

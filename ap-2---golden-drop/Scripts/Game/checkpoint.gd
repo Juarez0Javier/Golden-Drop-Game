@@ -4,14 +4,15 @@ extends Area2D
 @export var esInicio = false
 
 func _ready() -> void:
-	if esInicio == true:
-		gamestate.chekpointUlt = self
-		gamestate.inicio = self.position
+	pass
+	#if esInicio == true:
+		#gamestate.chekpointUlt = self
+		#gamestate.inicio = self.position
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == gamestate.pjcaja.name:
-		if gamestate.chekpointUlt != self:
+		if gamestate.chekpointUlt != self.position:
 			$AudioStreamPlayer2D.play()
-		gamestate.chekpointUlt = self
-		gamestate.collUlti.clear()
+			gamestate.chekpointUlt = self.position
+			gamestate.collUlti.clear()
 	pass # Replace with function body.

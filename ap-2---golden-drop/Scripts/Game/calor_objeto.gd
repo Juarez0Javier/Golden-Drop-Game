@@ -61,7 +61,7 @@ func _on_heat_sprite_animation_finished() -> void:
 		$'HeatSprite'.play("Idle Apagado")
 		if($calor):
 			$calor.visible = false
-	if $'HeatSprite'.animation == "Encender":
+	elif $'HeatSprite'.animation == "Encender":
 		$'HeatSprite'.play("Idle")
 		if($calor):
 			$calor.visible = true

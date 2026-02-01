@@ -125,7 +125,7 @@ follow_viewport_scale = -1.0
 [node name="PisoTiles" type="TileMapLayer" parent="."]
 z_index = -10
 z_as_relative = false
-tile_map_data = PackedByteArray("AAADAP7/AAAIAAAAAAAEAP7/AAAJAAAAAAAFAP7/AAAKAAAAAAAGAP7/AAALAAAAAAAAAP7/AAAFAAAAAAABAP7/AAAGAAAAAAACAP7/AAAHAAAAAAAkAP7/AAAUAAAAAAAlAP7/AAAVAAAAAAAmAP7/AAAWAAAAAAAnAP7/AAAXAAAAAAAoAP7/AAAYAAAAAAApAP7/AAAEAAAAAAAqAP7/AAAFAAAAAAArAP7/AAAGAAAAAAAsAP7/AAAHAAAAAAAtAP7/AAAIAAAAAAAuAP7/AAAJAAAAAAAvAP7/AAAKAAAAAAAwAP7/AAALAAAAAAAxAP7/AAAMAAAAAAAyAP7/AAANAAAAAAAzAP7/AAAOAAAAAAA0AP7/AAAPAAAAAAA1AP7/AAAQAAAAAAA2AP7/AAARAAAAAAA3AP7/AAASAAAAAAA4AP7/AAATAAAAAAA5AP7/AAAUAAAAAAA6AP7/AAAVAAAAAAA7AP7/AAAWAAAAAAA8AP7/AAAXAAAAAAA9AP7/AAAYAAAAAAAjAP7/AAAAAAAAAAAiAP7/AAAAAAAAAAAhAP7/AAAAAAAAAAAHAP7/AAAAAAAAAAAJAP7/AAAAAAAAAAAQAP7/AAAHAAAAAAALAP7/AAACAAAAAAANAP7/AAAEAAAAAAAPAP7/AAAEAAAAAAATAP7/AAAEAAAAAAAWAP7/AAANAAAAAAAXAP7/AAAOAAAAAAAYAP7/AAAPAAAAAAAZAP7/AAAQAAAAAAAbAP7/AAASAAAAAAAaAP7/AAARAAAAAAA=")
+tile_map_data = PackedByteArray("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")
 tile_set = SubResource("TileSet_do7p8")
 
 [node name="Lluvia Effecto" parent="." instance=ExtResource("5_xhsvb")]
@@ -139,8 +139,12 @@ layer = 10
 position = Vector2(675, -271)
 scale = Vector2(18, 8.5)
 
+[node name="Refugio12" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
+position = Vector2(4383, -748)
+scale = Vector2(8, 7)
+
 [node name="Refugio2" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
-position = Vector2(2773, -660)
+position = Vector2(2776, -687)
 scale = Vector2(1.393, 5)
 
 [node name="Refugio3" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
@@ -156,8 +160,121 @@ position = Vector2(1080, -689)
 scale = Vector2(1, 5)
 
 [node name="Refugio6" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
-position = Vector2(3709, 261)
-scale = Vector2(1, 25)
+position = Vector2(3549, -236)
+scale = Vector2(2, 10)
+
+[node name="Refugio7" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
+position = Vector2(4605, -246)
+scale = Vector2(1, 10)
+
+[node name="Refugio11" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
+position = Vector2(5749, -461)
+scale = Vector2(3, 15)
+
+[node name="Refugio8" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
+position = Vector2(-659, -1289)
+scale = Vector2(3.5, 8)
+
+[node name="Refugio9" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
+position = Vector2(-786, -783)
+scale = Vector2(2, 8)
+
+[node name="Refugio13" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
+position = Vector2(753, -1309)
+scale = Vector2(5, 9)
+
+[node name="Refugio10" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
+position = Vector2(5592, -1444)
+scale = Vector2(5, 15)
+
+[node name="Refugio15" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
+position = Vector2(3025, -1338)
+scale = Vector2(5, 10)
+
+[node name="Refugio16" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
+position = Vector2(4377, -1386)
+scale = Vector2(1, 12)
+
+[node name="Refugio14" parent="DiseñoNivel/Refugios" instance=ExtResource("12_1fnsp")]
+position = Vector2(1705, -1326)
+scale = Vector2(1, 10)
+
+[node name="Control" type="Node2D" parent="DiseñoNivel"]
+position = Vector2(0, -250)
+
+[node name="Objetivo" parent="DiseñoNivel/Control" instance=ExtResource("3_k36yq")]
+position = Vector2(5877, -1364)
+
+[node name="Checkpoint" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
+position = Vector2(4572, 148)
+esInicio = true
+
+[node name="Checkpoint2" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
+position = Vector2(526, -332)
+
+[node name="Checkpoint3" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
+position = Vector2(2746, -349)
+
+[node name="Checkpoint4" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
+position = Vector2(1812, 154)
+
+[node name="Checkpoint5" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
+position = Vector2(-724, -840)
+
+[node name="Checkpoint6" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
+position = Vector2(2982, -841)
+
+[node name="Calor" type="Node2D" parent="DiseñoNivel"]
+
+[node name="Calor (Barril)" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
+position = Vector2(2772, -592)
+
+[node name="Calor (Lampara)" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
+position = Vector2(1841, -326)
+scale = Vector2(2.37601, 1.52)
+
+[node name="Calor (Lampara)2" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
+position = Vector2(3543, -433)
+scale = Vector2(1, 2)
+
+[node name="Calor (Lampara)3" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
+position = Vector2(1997, -776)
+scale = Vector2(1, 1.24)
+
+[node name="Calor (Barril)6" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
+position = Vector2(4371, -1101)
+
+[node name="Calor (Barril)2" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
+position = Vector2(-538, -1116)
+
+[node name="Calor (Barril)3" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
+position = Vector2(4605, -99)
+
+[node name="Calor (Lampara)5" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
+position = Vector2(1077, -784)
+scale = Vector2(2, 1.2)
+
+[node name="Calor (Lampara)4" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
+position = Vector2(-781, -942)
+scale = Vector2(3, 2)
+
+[node name="Calor (Barril)4" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
+position = Vector2(5935, -126)
+
+[node name="Calor (Barril)5" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
+position = Vector2(3909, -626)
+
+[node name="Calor (Lampara)7" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
+position = Vector2(1703, -1514)
+scale = Vector2(2, 2.5)
+
+[node name="Calor (Lampara)8" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
+position = Vector2(4374, -1622)
+scale = Vector2(2, 2.5)
+
+[node name="Calor (Lampara)6" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
+position = Vector2(3011, -1519)
+scale = Vector2(2, 2.5)
 
 [node name="Plataformas" type="Node2D" parent="DiseñoNivel"]
 
@@ -165,12 +282,35 @@ scale = Vector2(1, 25)
 position = Vector2(390, -123)
 scale = Vector2(0.848123, 1.67542)
 
+[node name="Piso6" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(-328, -1037)
+
 [node name="Piso5" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 position = Vector2(662, -200)
 scale = Vector2(-0.99375, 1.69151)
 
 [node name="Piso_v" parent="DiseñoNivel/Plataformas" instance=ExtResource("7_2nr03")]
 position = Vector2(-926, -421)
+scale = Vector2(2, 5)
+
+[node name="Piso_v4" parent="DiseñoNivel/Plataformas" instance=ExtResource("7_2nr03")]
+position = Vector2(5982, -1844)
+scale = Vector2(2, 5)
+
+[node name="Piso_v5" parent="DiseñoNivel/Plataformas" instance=ExtResource("7_2nr03")]
+position = Vector2(5982, -1114)
+scale = Vector2(2, 5)
+
+[node name="Piso_v6" parent="DiseñoNivel/Plataformas" instance=ExtResource("7_2nr03")]
+position = Vector2(5981, -380)
+scale = Vector2(2, 5)
+
+[node name="Piso_v3" parent="DiseñoNivel/Plataformas" instance=ExtResource("7_2nr03")]
+position = Vector2(-928, -1888)
+scale = Vector2(2, 5)
+
+[node name="Piso_v2" parent="DiseñoNivel/Plataformas" instance=ExtResource("7_2nr03")]
+position = Vector2(-927, -1155)
 scale = Vector2(2, 5)
 
 [node name="Piso_h2" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
@@ -182,6 +322,35 @@ position = Vector2(1245, -162)
 [node name="Piso_inc4" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
 position = Vector2(2535, -558)
 
+[node name="Piso_inc11" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
+position = Vector2(963, -1462)
+rotation = -0.289725
+scale = Vector2(1, 1)
+
+[node name="Piso_inc9" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
+position = Vector2(-162, -958)
+rotation = -0.289725
+
+[node name="Piso_inc8" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
+position = Vector2(-339, -865)
+rotation = 0.00174533
+
+[node name="Piso_inc10" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
+position = Vector2(-659, -803)
+rotation = 0.148353
+
+[node name="Piso_inc7" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
+position = Vector2(-497, -727)
+rotation = 0.146608
+
+[node name="Piso_inc6" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
+position = Vector2(-281, -662)
+rotation = 0.58294
+
+[node name="Piso_inc5" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
+position = Vector2(-89, -582)
+rotation = 0.29147
+
 [node name="Piso_inc3" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
 position = Vector2(2477, -473)
 
@@ -191,28 +360,157 @@ position = Vector2(2225, -312)
 [node name="Piso_inc2" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
 position = Vector2(2372, -389)
 
+[node name="Piso_h5" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(4720, -218)
+
+[node name="Piso_h20" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(1919, -1188)
+rotation = -0.0244346
+scale = Vector2(0.999999, 0.999999)
+
+[node name="Piso_h24" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(3749, -1067)
+rotation = -0.0349066
+scale = Vector2(0.999981, 0.999981)
+
+[node name="Piso_h28" parent="DiseñoNivel/Plataformas/Piso_h24" instance=ExtResource("5_1yo8i")]
+position = Vector2(231.143, 0.0666933)
+rotation = 0.111701
+scale = Vector2(0.999981, 0.999981)
+
+[node name="Piso_h29" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(4666, -1255)
+rotation = -0.0174533
+scale = Vector2(0.999846, 0.999846)
+
+[node name="Piso_h27" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(4382, -1318)
+rotation = -0.00872665
+scale = Vector2(0.999923, 0.999923)
+
+[node name="Piso_h28" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(4945, -1211)
+rotation = -0.0261799
+scale = Vector2(0.999769, 0.999769)
+
+[node name="Piso_h26" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(4096, -1398)
+rotation = 0.0785398
+scale = Vector2(0.999962, 0.999962)
+
+[node name="Piso_h25" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(3817, -1296)
+rotation = -0.326377
+scale = Vector2(0.999981, 0.999981)
+
+[node name="Piso_h23" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(3541, -1225)
+rotation = -0.0174533
+scale = Vector2(0.99999, 0.99999)
+
+[node name="Piso_h22" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(2503, -1346)
+rotation = -0.00872665
+scale = Vector2(0.999995, 0.999995)
+
+[node name="Piso_h21" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(2218, -1274)
+rotation = -0.340339
+scale = Vector2(0.999998, 0.999998)
+
+[node name="Piso_h19" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(564, -1192)
+rotation = -0.0122173
+scale = Vector2(0.999999, 0.999999)
+
+[node name="Piso_h18" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(747, -1312)
+rotation = -0.298451
+scale = Vector2(1, 1)
+
+[node name="Piso_h17" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(5779, -199)
+rotation = -0.00349066
+scale = Vector2(1, 1)
+
+[node name="Piso_h11" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(5375, -203)
+rotation = -0.00174533
+scale = Vector2(1, 1)
+
+[node name="Piso_h10" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(5208, -323)
+rotation = 0.29147
+scale = Vector2(1, 1)
+
+[node name="Piso_h13" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(4324, -677)
+
+[node name="Piso_h14" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(3474, -679)
+
+[node name="Piso_h16" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(3180, -708)
+
+[node name="Piso_h15" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(4591, -700)
+scale = Vector2(0.5, 1)
+
+[node name="Piso_h12" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(4803, -670)
+scale = Vector2(0.5, 1)
+
+[node name="Piso_h6" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(5054, -486)
+rotation = 0.438078
+
+[node name="Piso_h4" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(4453, -289)
+
+[node name="Piso_h9" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+modulate = Color(0.827451, 0.792157, 0, 0.980392)
+position = Vector2(5223, -1217)
+
+[node name="Piso_h31" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+modulate = Color(1, 0.909804, 0, 1)
+position = Vector2(5687, -1457)
+
+[node name="Piso_h30" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+modulate = Color(1, 0.909804, 0, 1)
+position = Vector2(5536, -1371)
+
+[node name="Piso_h8" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+modulate = Color(0.827451, 0.792157, 0, 0.980392)
+position = Vector2(5392, -1295)
+
+[node name="Piso_h7" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+modulate = Color(0.827451, 0.792157, 0, 0.980392)
+position = Vector2(5799, -1539)
+
 [node name="Piso_h3" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 position = Vector2(2398, -97)
 
-[node name="Calor" type="Node2D" parent="DiseñoNivel"]
+[node name="Charcos" type="Node2D" parent="DiseñoNivel"]
 
-[node name="Calor (Barril)" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
-position = Vector2(2768, -627)
+[node name="Charco" parent="DiseñoNivel/Charcos" instance=ExtResource("14_dneqw")]
+z_index = -1
+position = Vector2(882, -91)
+scale = Vector2(5, 2.625)
 
-[node name="Calor (Lampara)" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
-position = Vector2(1841, -326)
-scale = Vector2(2.37601, 1.52)
+[node name="Charco2" parent="DiseñoNivel/Charcos" instance=ExtResource("14_dneqw")]
+z_index = -1
+position = Vector2(2855, -90)
+scale = Vector2(3, 1)
 
-[node name="Calor (Lampara)2" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
-position = Vector2(3708, -314)
-scale = Vector2(1, 2)
+[node name="Charco4" parent="DiseñoNivel/Charcos" instance=ExtResource("14_dneqw")]
+z_index = -1
+position = Vector2(4322, -599)
+scale = Vector2(5, 1)
 
-[node name="Calor (Lampara)3" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
-position = Vector2(1997, -776)
-scale = Vector2(1, 1.24)
-
-[node name="Calor (Barril)2" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
-position = Vector2(-438, -1017)
+[node name="Charco3" parent="DiseñoNivel/Charcos" instance=ExtResource("14_dneqw")]
+z_index = -1
+position = Vector2(4651, -600)
+scale = Vector2(9, 1)
 
 [node name="Colecc" type="Node2D" parent="DiseñoNivel"]
 
@@ -225,6 +523,12 @@ position = Vector2(661, -262)
 [node name="CartonItem" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(896, -214)
 
+[node name="CartonItem22" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(2201, -1330)
+
+[node name="CartonItem19" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(1038, -1628)
+
 [node name="CartonItem2" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(1244, -207)
 
@@ -232,7 +536,7 @@ position = Vector2(1244, -207)
 position = Vector2(1785, -194)
 
 [node name="CartonItem3" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(1882, -106)
+position = Vector2(1906, -107)
 
 [node name="CartonItem8" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(-181, -238)
@@ -246,36 +550,41 @@ position = Vector2(-362, -122)
 [node name="CartonItem10" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(2398, -144)
 
+[node name="CartonItem18" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(5890, -289)
+
+[node name="CartonItem14" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(5630, -171)
+
+[node name="CartonItem13" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(4457, -337)
+
 [node name="CartonItem9" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(2225, -230)
 
+[node name="CartonItem17" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(3478, -722)
+
+[node name="CartonItem16" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(3179, -751)
+
+[node name="CartonItem15" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(4046, -655)
+
+[node name="CartonItem12" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(3545, -204)
+
+[node name="CartonItem21" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(4108, -1447)
+
+[node name="CartonItem20" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(4947, -1268)
+
 [node name="CartonItem11" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(2834, -159)
+position = Vector2(2848, -164)
 
-[node name="Control" type="Node2D" parent="DiseñoNivel"]
-position = Vector2(0, -250)
-
-[node name="Checkpoint" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
-position = Vector2(-490, -394)
-esInicio = true
-
-[node name="Checkpoint2" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
-position = Vector2(-483, -455)
-
-[node name="Objetivo" parent="DiseñoNivel/Control" instance=ExtResource("3_k36yq")]
-position = Vector2(4749, -411)
-
-[node name="Charcos" type="Node2D" parent="DiseñoNivel"]
-
-[node name="Charco" parent="DiseñoNivel/Charcos" instance=ExtResource("14_dneqw")]
-z_index = -1
-position = Vector2(882, -91)
-scale = Vector2(5, 2.625)
-
-[node name="Charco2" parent="DiseñoNivel/Charcos" instance=ExtResource("14_dneqw")]
-z_index = -1
-position = Vector2(2855, -90)
-scale = Vector2(3, 1)
+[node name="GotaItem2" parent="DiseñoNivel/Colecc" instance=ExtResource("8_1p4va")]
+position = Vector2(4606, -461)
 
 [node name="HUD" parent="." instance=ExtResource("8_imjg1")]
 
@@ -295,6 +604,6 @@ autoplay = true
 bus = &"Musica"
 
 [node name="PJCaja" parent="." instance=ExtResource("1_bgcxy")]
-position = Vector2(-564, -81)
+position = Vector2(-535, -84)
 
 [connection signal="timeout" from="GameState/TimerEstado" to="GameState" method="_on_timer_estado_timeout"]

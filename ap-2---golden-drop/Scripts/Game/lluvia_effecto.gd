@@ -12,18 +12,16 @@ func _ready():
 	pass
 
 func _process(_delta: float) -> void:
-	
 	if gamestate.enRefugio:
 		##DimTexture
 		$'ParallaxLayer/LluviaSprite'.modulate = estadoLluvia["Apagada"]
-		pass
+
 	else:
 		$'ParallaxLayer/LluviaSprite'.modulate = estadoLluvia["Activa"]
-		pass
-	
-	pass
 
 func _on_timer_timeout() -> void:
 	if gamestate.enRefugio == false:
 		gamestate.aumentar_humedad(dañoLluvia)
+		
+		
 	pass # Replace with function body.

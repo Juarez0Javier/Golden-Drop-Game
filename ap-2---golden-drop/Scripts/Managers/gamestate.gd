@@ -15,22 +15,19 @@ var inputHabilitado = true
 var cartones = 0
 var gotaD = false
 var chekpointUlt = null		##Ulimo checkpoint
-var collUlti = [] 			##Lista de coleccionables hasta ultimo chekcpoint
+var collUlti = [] 			##Lista de coleccionables hasta ultimo checkpoint
 
 var meta = Vector2(0,0)
 var inicio = Vector2(0,0)
 
 func _ready():
-	
 	pjcaja.cajaAnimationFinished.connect(on_cajaAnimationFinished)
 	fadeOut.fadeOutEnd.connect(on_fadeOutEnd)
 	fadeOut.fadeOutFullBlock.connect(on_fadeOutFullBlock)
-	pass
+	chekpointUlt = pjcaja.position
 	
 func _process(_delta: float):
-	
 	##print(inputHabilitado)
-	
 	humedad = clamp(humedad,0,maxHumedad)
 	
 	if humedad == maxHumedad:
@@ -42,7 +39,9 @@ func ganar():
 	menuGanar.mostrarMenu(humedad,cartones,gotaD,get_parent().name)
 
 func reset():
-	pjcaja.position = chekpointUlt.position
+	pjcaja.position = Vector2(chekpointUlt.x, chekpointUlt.y - 200)
+	
+	print("reset: ", chekpointUlt)
 	pjcaja.velocity = Vector2(0,0)
 	
 	for coll in collUlti:
@@ -54,6 +53,7 @@ func reset():
 		
 	collUlti.clear()
 	
+	enRefugio = true
 	humedad = 0
 	pass
 	
