@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://ch3flhfcx447s"]
 
-[ext_resource type="Script" path="res://Scripts/Menus/seleccion_de_nivel.gd" id="1_4dw3r"]
+[ext_resource type="Script" uid="uid://ceoampejdth0p" path="res://Scripts/Menus/seleccion_de_nivel.gd" id="1_4dw3r"]
 [ext_resource type="Texture2D" uid="uid://beq135m00rjqw" path="res://Assets/Menu/Pinboard.png" id="1_lait2"]
 [ext_resource type="Texture2D" uid="uid://c06jcefuboao7" path="res://Assets/Menu/Borde.png" id="2_drbq6"]
 [ext_resource type="Texture2D" uid="uid://btf4ylbap3rqn" path="res://Assets/Menu/Taller.png" id="3_syy8o"]
@@ -488,8 +488,9 @@ offset_left = 361.5
 offset_top = 500.0
 offset_right = 506.5
 offset_bottom = 558.0
-theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+focus_mode = 0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
 theme_override_fonts/font = ExtResource("5_5chxn")
 theme_override_font_sizes/font_size = 50
 text = "Jugar"
@@ -503,6 +504,7 @@ offset_top = -3.0
 offset_right = 69.0
 offset_bottom = 69.0
 scale = Vector2(0.8, 0.8)
+focus_mode = 0
 icon = ExtResource("13_85foy")
 flat = true
 icon_alignment = 1
@@ -514,6 +516,7 @@ offset_left = 12.0
 offset_top = 288.0
 offset_right = 84.0
 offset_bottom = 360.0
+focus_mode = 0
 theme_override_colors/icon_hover_color = Color(1, 0.772549, 0, 1)
 icon = ExtResource("14_6jsul")
 flat = true
@@ -526,6 +529,7 @@ offset_left = 1064.0
 offset_top = 288.0
 offset_right = 1136.0
 offset_bottom = 360.0
+focus_mode = 0
 theme_override_colors/icon_hover_color = Color(1, 0.772549, 0, 1)
 icon = ExtResource("15_entxm")
 flat = true

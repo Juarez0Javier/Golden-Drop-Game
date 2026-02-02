@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c6dlo82rcx0r1"]
 
 [ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/Fuentes/Texto/Pixelcastle-Regular.otf" id="1_dlwfb"]
-[ext_resource type="Script" path="res://Scripts/Menus/menu_opciones.gd" id="1_nssq7"]
+[ext_resource type="Script" uid="uid://4bhcq1t1xdqq" path="res://Scripts/Menus/menu_opciones.gd" id="1_nssq7"]
 [ext_resource type="PackedScene" uid="uid://dxyptd6wgijmp" path="res://Escenas/Menues/barra_volumen.tscn" id="2_o17s2"]
 
 [node name="MenuOpciones" type="VBoxContainer"]
@@ -10,6 +10,12 @@ script = ExtResource("1_nssq7")
 
 [node name="General" type="Label" parent="."]
 layout_mode = 2
+theme_override_constants/line_spacing = 5
+theme_override_constants/paragraph_spacing = 5
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 5
 theme_override_fonts/font = ExtResource("1_dlwfb")
 theme_override_font_sizes/font_size = 30
 text = "
@@ -22,6 +28,12 @@ metadata/Bus = "Master"
 
 [node name="Musica" type="Label" parent="."]
 layout_mode = 2
+theme_override_constants/line_spacing = 5
+theme_override_constants/paragraph_spacing = 5
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 5
 theme_override_fonts/font = ExtResource("1_dlwfb")
 theme_override_font_sizes/font_size = 30
 text = "
@@ -34,6 +46,12 @@ metadata/Bus = "Musica"
 
 [node name="Efectos" type="Label" parent="."]
 layout_mode = 2
+theme_override_constants/line_spacing = 5
+theme_override_constants/paragraph_spacing = 5
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 5
 theme_override_fonts/font = ExtResource("1_dlwfb")
 theme_override_font_sizes/font_size = 30
 text = "
@@ -53,7 +71,13 @@ process_mode = 3
 process_priority = 1
 z_index = 1
 layout_mode = 2
+focus_mode = 0
 theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_constants/h_separation = 5
+theme_override_constants/icon_max_width = 5
+theme_override_constants/align_to_largest_stylebox = 5
+theme_override_constants/line_spacing = 5
 theme_override_fonts/font = ExtResource("1_dlwfb")
 theme_override_font_sizes/font_size = 30
 text = "Volver
