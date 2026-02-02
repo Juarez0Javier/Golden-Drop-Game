@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://ch3flhfcx447s"]
 
-[ext_resource type="Script" uid="uid://ceoampejdth0p" path="res://Scripts/Menus/seleccion_de_nivel.gd" id="1_4dw3r"]
-[ext_resource type="Texture2D" uid="uid://beq135m00rjqw" path="res://Assets/Menu/Pinboard.png" id="1_lait2"]
+[ext_resource type="Script" uid="uid://ceoampejdth0p" path="res://Scripts/menus/seleccion_de_nivel.gd" id="1_4dw3r"]
+[ext_resource type="Texture2D" uid="uid://c5i1pdp6kk1ks" path="res://Assets/Menu/Pinboard2.jpeg" id="2_3ixe4"]
 [ext_resource type="Texture2D" uid="uid://c06jcefuboao7" path="res://Assets/Menu/Borde.png" id="2_drbq6"]
 [ext_resource type="Texture2D" uid="uid://btf4ylbap3rqn" path="res://Assets/Menu/Taller.png" id="3_syy8o"]
 [ext_resource type="Texture2D" uid="uid://dabki5ckvaax2" path="res://Assets/Menu/fragmentos1.png" id="4_4bsa7"]
@@ -33,11 +33,12 @@ script = ExtResource("1_4dw3r")
 
 [node name="Board" type="Sprite2D" parent="."]
 texture_filter = 1
-scale = Vector2(3, 3)
-texture = ExtResource("1_lait2")
+position = Vector2(-1, 0)
+scale = Vector2(0.8229836, 0.85039365)
+texture = ExtResource("2_3ixe4")
 centered = false
 region_enabled = true
-region_rect = Rect2(0, 0, 384, 216)
+region_rect = Rect2(3.0386581, 2.8030071, 1401.8271, 762.01825)
 
 [node name="BordeNivel" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -48,14 +49,14 @@ centered = false
 
 [node name="BordeFragmentos" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(717, 367)
-scale = Vector2(0.6, 0.6)
+position = Vector2(716, 343)
+scale = Vector2(0.6, 0.554762)
 texture = ExtResource("2_drbq6")
 centered = false
 
 [node name="FragmentosByN" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(741, 391)
+position = Vector2(742, 373.00003)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_38ddb")
 centered = false
@@ -70,14 +71,14 @@ centered = false
 
 [node name="BordeGota" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(717, 59)
-scale = Vector2(0.6, 0.7)
+position = Vector2(715, 56.999996)
+scale = Vector2(0.6, 0.602381)
 texture = ExtResource("2_drbq6")
 centered = false
 
 [node name="GotaByN" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(747, 89)
+position = Vector2(744.00006, 84.00001)
 scale = Vector2(2.9, 2.9)
 texture = ExtResource("10_n3mc3")
 centered = false
@@ -107,13 +108,13 @@ texture = ExtResource("4_ylf3n")
 
 [node name="Pin2" type="Sprite2D" parent="Nivel 1"]
 texture_filter = 1
-position = Vector2(836, 379)
+position = Vector2(833, 356)
 scale = Vector2(2, 2)
 texture = ExtResource("9_x56qb")
 
 [node name="Pin3" type="Sprite2D" parent="Nivel 1"]
 texture_filter = 1
-position = Vector2(847, 65)
+position = Vector2(843, 62)
 scale = Vector2(2, 2)
 texture = ExtResource("11_ol6ki")
 
@@ -133,9 +134,9 @@ vertical_alignment = 1
 [node name="Fragmentos" type="Label" parent="Nivel 1"]
 texture_filter = 1
 offset_left = 768.0
-offset_top = 564.0
+offset_top = 529.0
 offset_right = 906.0
-offset_bottom = 619.0
+offset_bottom = 584.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_jq1kb")
 theme_override_font_sizes/font_size = 36
@@ -146,9 +147,9 @@ vertical_alignment = 1
 [node name="Gota" type="Label" parent="Nivel 1"]
 texture_filter = 1
 offset_left = 768.0
-offset_top = 284.0
+offset_top = 264.0
 offset_right = 906.0
-offset_bottom = 339.0
+offset_bottom = 319.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_jq1kb")
 theme_override_font_sizes/font_size = 36
@@ -189,7 +190,7 @@ texture = ExtResource("9_x56qb")
 
 [node name="Pin2" type="Sprite2D" parent="Nivel 2"]
 texture_filter = 1
-position = Vector2(847, 373)
+position = Vector2(849, 349)
 scale = Vector2(2, 2)
 texture = ExtResource("11_ol6ki")
 
@@ -214,10 +215,10 @@ vertical_alignment = 1
 
 [node name="Fragmentos" type="Label" parent="Nivel 2"]
 texture_filter = 1
-offset_left = 768.0
-offset_top = 564.0
-offset_right = 906.0
-offset_bottom = 619.0
+offset_left = 771.0
+offset_top = 533.0
+offset_right = 909.0
+offset_bottom = 588.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_jq1kb")
 theme_override_font_sizes/font_size = 36
@@ -227,10 +228,10 @@ vertical_alignment = 1
 
 [node name="Gota" type="Label" parent="Nivel 2"]
 texture_filter = 1
-offset_left = 768.0
-offset_top = 284.0
-offset_right = 906.0
-offset_bottom = 339.0
+offset_left = 767.0
+offset_top = 260.0
+offset_right = 905.0
+offset_bottom = 315.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_jq1kb")
 theme_override_font_sizes/font_size = 36
@@ -271,7 +272,7 @@ texture = ExtResource("10_b0kqx")
 
 [node name="Pin2" type="Sprite2D" parent="Nivel 3"]
 texture_filter = 1
-position = Vector2(833, 379)
+position = Vector2(832, 357)
 scale = Vector2(2, 2)
 texture = ExtResource("18_11gin")
 
@@ -296,10 +297,10 @@ vertical_alignment = 1
 
 [node name="Fragmentos" type="Label" parent="Nivel 3"]
 texture_filter = 1
-offset_left = 768.0
-offset_top = 564.0
-offset_right = 906.0
-offset_bottom = 619.0
+offset_left = 766.0
+offset_top = 526.0
+offset_right = 904.0
+offset_bottom = 581.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_jq1kb")
 theme_override_font_sizes/font_size = 36
@@ -309,10 +310,10 @@ vertical_alignment = 1
 
 [node name="Gota" type="Label" parent="Nivel 3"]
 texture_filter = 1
-offset_left = 768.0
-offset_top = 284.0
-offset_right = 906.0
-offset_bottom = 339.0
+offset_left = 763.0
+offset_top = 263.0
+offset_right = 901.0
+offset_bottom = 318.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_jq1kb")
 theme_override_font_sizes/font_size = 36
@@ -353,7 +354,7 @@ texture = ExtResource("18_11gin")
 
 [node name="Pin2" type="Sprite2D" parent="Nivel 4"]
 texture_filter = 1
-position = Vector2(846, 379)
+position = Vector2(845, 358)
 scale = Vector2(2, 2)
 texture = ExtResource("16_qshd2")
 
@@ -378,10 +379,10 @@ vertical_alignment = 1
 
 [node name="Fragmentos" type="Label" parent="Nivel 4"]
 texture_filter = 1
-offset_left = 768.0
-offset_top = 564.0
-offset_right = 906.0
-offset_bottom = 619.0
+offset_left = 766.0
+offset_top = 528.0
+offset_right = 904.0
+offset_bottom = 583.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_jq1kb")
 theme_override_font_sizes/font_size = 36
@@ -391,10 +392,10 @@ vertical_alignment = 1
 
 [node name="Gota" type="Label" parent="Nivel 4"]
 texture_filter = 1
-offset_left = 768.0
-offset_top = 284.0
-offset_right = 906.0
-offset_bottom = 339.0
+offset_left = 765.0
+offset_top = 263.0
+offset_right = 903.0
+offset_bottom = 318.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_jq1kb")
 theme_override_font_sizes/font_size = 36
@@ -435,7 +436,7 @@ texture = ExtResource("16_qshd2")
 
 [node name="Pin2" type="Sprite2D" parent="Nivel 5"]
 texture_filter = 1
-position = Vector2(847, 373)
+position = Vector2(846, 350)
 scale = Vector2(2, 2)
 texture = ExtResource("10_b0kqx")
 
@@ -458,10 +459,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Fragmentos" type="Label" parent="Nivel 5"]
-offset_left = 768.0
-offset_top = 564.0
-offset_right = 906.0
-offset_bottom = 619.0
+offset_left = 763.0
+offset_top = 525.0
+offset_right = 901.0
+offset_bottom = 580.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_jq1kb")
 theme_override_font_sizes/font_size = 36
@@ -470,10 +471,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Gota" type="Label" parent="Nivel 5"]
-offset_left = 768.0
-offset_top = 284.0
-offset_right = 906.0
-offset_bottom = 339.0
+offset_left = 769.0
+offset_top = 256.0
+offset_right = 907.0
+offset_bottom = 311.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_jq1kb")
 theme_override_font_sizes/font_size = 36
@@ -497,14 +498,16 @@ text = "Jugar"
 flat = true
 
 [node name="Salir" type="Button" parent="."]
+z_index = 1
 texture_filter = 1
 layout_mode = 0
-offset_left = -3.0
-offset_top = -3.0
-offset_right = 69.0
-offset_bottom = 69.0
-scale = Vector2(0.8, 0.8)
+offset_left = 61.0
+offset_top = 80.0
+offset_right = 133.0
+offset_bottom = 152.0
 focus_mode = 0
+theme_override_colors/font_hover_color = Color(0.8412412, 0, 0.079922475, 1)
+theme_override_colors/icon_pressed_color = Color(0.8499109, 0.6973346, 7.70092e-07, 1)
 icon = ExtResource("13_85foy")
 flat = true
 icon_alignment = 1
@@ -512,10 +515,10 @@ icon_alignment = 1
 [node name="Izquierda" type="Button" parent="."]
 texture_filter = 1
 layout_mode = 0
-offset_left = 12.0
-offset_top = 288.0
-offset_right = 84.0
-offset_bottom = 360.0
+offset_left = 68.0
+offset_top = 285.0
+offset_right = 140.0
+offset_bottom = 357.0
 focus_mode = 0
 theme_override_colors/icon_hover_color = Color(1, 0.772549, 0, 1)
 icon = ExtResource("14_6jsul")
@@ -525,15 +528,27 @@ icon_alignment = 1
 [node name="Derecha" type="Button" parent="."]
 texture_filter = 1
 layout_mode = 0
-offset_left = 1064.0
-offset_top = 288.0
-offset_right = 1136.0
-offset_bottom = 360.0
+offset_left = 1015.0
+offset_top = 285.0
+offset_right = 1087.0
+offset_bottom = 357.0
 focus_mode = 0
 theme_override_colors/icon_hover_color = Color(1, 0.772549, 0, 1)
 icon = ExtResource("15_entxm")
 flat = true
 icon_alignment = 1
+
+[node name="Pin3" type="Sprite2D" parent="."]
+z_index = 2
+texture_filter = 1
+position = Vector2(98, 74)
+scale = Vector2(2, 2)
+texture = ExtResource("16_qshd2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(96, 114.00001)
+scale = Vector2(0.2090625, 0.21190478)
+texture = ExtResource("2_drbq6")
 
 [connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]
 [connection signal="mouse_entered" from="Salir" to="." method="_on_salir_mouse_entered"]
