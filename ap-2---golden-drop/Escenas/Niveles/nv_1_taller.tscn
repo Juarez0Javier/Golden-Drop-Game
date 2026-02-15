@@ -388,7 +388,7 @@ rotation = -0.00872665
 scale = Vector2(0.999923, 0.999923)
 
 [node name="Piso_h28" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(4922, -1189)
+position = Vector2(4907, -1191)
 rotation = -0.0261799
 scale = Vector2(0.999769, 0.999769)
 
@@ -464,7 +464,7 @@ position = Vector2(4453, -289)
 
 [node name="Piso_h9" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 modulate = Color(0.827451, 0.792157, 0, 0.980392)
-position = Vector2(5193, -1251)
+position = Vector2(5207, -1245)
 
 [node name="Piso_h31" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 modulate = Color(1, 0.909804, 0, 1)

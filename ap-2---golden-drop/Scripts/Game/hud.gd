@@ -30,12 +30,14 @@ func _process(_delta: float) -> void:
 
 	
 	if gamestate.humedad >= 100:
+		vidaTextura.texture = vidaEstados[5]
+	elif gamestate.humedad >= 80:
 		vidaTextura.texture = vidaEstados[4]
-	elif gamestate.humedad >= 75:
+	elif gamestate.humedad >= 60:
 		vidaTextura.texture = vidaEstados[3]
-	elif gamestate.humedad >= 50:
+	elif gamestate.humedad >= 40:
 		vidaTextura.texture = vidaEstados[2]
-	elif gamestate.humedad >= 25:
+	elif gamestate.humedad >= 20:
 		vidaTextura.texture = vidaEstados[1]
 	else:
 		vidaTextura.texture = vidaEstados[0]
@@ -49,6 +51,6 @@ func _process(_delta: float) -> void:
 	else:
 		$"Control/GotaLabel".visible = false
 		
-	pass
+
 	
 	

@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dpn5faaoq4ags"]
 
-[ext_resource type="Script" uid="uid://doqr3st2leswm" path="res://Scripts/Menus/menu_ganar.gd" id="1_18cw5"]
+[ext_resource type="Script" path="res://Scripts/Menus/menu_ganar.gd" id="1_18cw5"]
 [ext_resource type="Texture2D" uid="uid://odyey48jyir4" path="res://Assets/Menu/Carton.png" id="1_s7q37"]
 [ext_resource type="Texture2D" uid="uid://dl6jtxmgr835i" path="res://Assets/Menu/Marco.png" id="2_u3i67"]
 [ext_resource type="FontFile" uid="uid://chpe1rmaux77" path="res://Assets/Fuentes/Texto/Pixelcastle-Regular.otf" id="2_xvrmc"]
@@ -54,7 +54,6 @@ offset_right = 505.0
 offset_bottom = 135.0
 theme_override_colors/font_color = Color(1, 0.772549, 0, 1)
 theme_override_constants/line_spacing = 10
-theme_override_constants/paragraph_spacing = 5
 theme_override_constants/shadow_offset_x = 5
 theme_override_constants/shadow_offset_y = 5
 theme_override_constants/outline_size = 5
@@ -72,7 +71,6 @@ offset_top = 205.0
 offset_right = 427.0
 offset_bottom = 238.0
 theme_override_constants/line_spacing = 5
-theme_override_constants/paragraph_spacing = 5
 theme_override_constants/shadow_offset_x = 5
 theme_override_constants/shadow_offset_y = 5
 theme_override_constants/outline_size = 5
@@ -90,7 +88,6 @@ offset_top = 5.0
 offset_right = 508.0
 offset_bottom = 29.0
 theme_override_constants/line_spacing = 5
-theme_override_constants/paragraph_spacing = 5
 theme_override_constants/shadow_offset_x = 5
 theme_override_constants/shadow_offset_y = 5
 theme_override_constants/outline_size = 5
@@ -107,7 +104,6 @@ offset_top = 274.0
 offset_right = 454.0
 offset_bottom = 307.0
 theme_override_constants/line_spacing = 5
-theme_override_constants/paragraph_spacing = 5
 theme_override_constants/shadow_offset_x = 5
 theme_override_constants/shadow_offset_y = 5
 theme_override_constants/outline_size = 5
@@ -124,7 +120,6 @@ offset_top = 6.0
 offset_right = 477.0
 offset_bottom = 30.0
 theme_override_constants/line_spacing = 5
-theme_override_constants/paragraph_spacing = 5
 theme_override_constants/shadow_offset_x = 5
 theme_override_constants/shadow_offset_y = 5
 theme_override_constants/outline_size = 5
@@ -147,7 +142,6 @@ theme_override_constants/outline_size = 5
 theme_override_constants/h_separation = 5
 theme_override_constants/icon_max_width = 5
 theme_override_constants/align_to_largest_stylebox = 5
-theme_override_constants/line_spacing = 5
 theme_override_fonts/font = ExtResource("2_xvrmc")
 theme_override_font_sizes/font_size = 30
 text = "Menu Principal"
@@ -167,7 +161,6 @@ theme_override_constants/outline_size = 5
 theme_override_constants/h_separation = 5
 theme_override_constants/icon_max_width = 5
 theme_override_constants/align_to_largest_stylebox = 5
-theme_override_constants/line_spacing = 5
 theme_override_fonts/font = ExtResource("2_xvrmc")
 theme_override_font_sizes/font_size = 30
 text = "Siguiente Nivel"

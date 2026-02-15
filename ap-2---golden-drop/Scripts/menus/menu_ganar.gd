@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 var progress = ConfigFile.new()
-var nivel : int
+#var nivel : int
 var nivel_actual
 
 @onready var gameState = get_node("../GameState")

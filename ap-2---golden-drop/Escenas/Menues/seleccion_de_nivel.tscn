@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://ch3flhfcx447s"]
 
-[ext_resource type="Script" uid="uid://ceoampejdth0p" path="res://Scripts/menus/seleccion_de_nivel.gd" id="1_4dw3r"]
+[ext_resource type="Script" path="res://Scripts/Menus/seleccion_de_nivel.gd" id="1_l8api"]
 [ext_resource type="Texture2D" uid="uid://c5i1pdp6kk1ks" path="res://Assets/Menu/Pinboard2.jpeg" id="2_3ixe4"]
 [ext_resource type="Texture2D" uid="uid://c06jcefuboao7" path="res://Assets/Menu/Borde.png" id="2_drbq6"]
 [ext_resource type="Texture2D" uid="uid://btf4ylbap3rqn" path="res://Assets/Menu/Taller.png" id="3_syy8o"]
@@ -29,16 +29,16 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_4dw3r")
+script = ExtResource("1_l8api")
 
 [node name="Board" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(-1, 0)
-scale = Vector2(0.8229836, 0.85039365)
+scale = Vector2(0.822984, 0.850394)
 texture = ExtResource("2_3ixe4")
 centered = false
 region_enabled = true
-region_rect = Rect2(3.0386581, 2.8030071, 1401.8271, 762.01825)
+region_rect = Rect2(3.03866, 2.80301, 1401.83, 762.018)
 
 [node name="BordeNivel" type="Sprite2D" parent="."]
 texture_filter = 1
@@ -56,7 +56,7 @@ centered = false
 
 [node name="FragmentosByN" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(742, 373.00003)
+position = Vector2(742, 373)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("7_38ddb")
 centered = false
@@ -71,14 +71,14 @@ centered = false
 
 [node name="BordeGota" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(715, 56.999996)
+position = Vector2(715, 57)
 scale = Vector2(0.6, 0.602381)
 texture = ExtResource("2_drbq6")
 centered = false
 
 [node name="GotaByN" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(744.00006, 84.00001)
+position = Vector2(744, 84)
 scale = Vector2(2.9, 2.9)
 texture = ExtResource("10_n3mc3")
 centered = false
@@ -490,8 +490,8 @@ offset_top = 500.0
 offset_right = 506.5
 offset_bottom = 558.0
 focus_mode = 0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(1, 0.772549, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_5chxn")
 theme_override_font_sizes/font_size = 50
 text = "Jugar"
@@ -506,8 +506,8 @@ offset_top = 80.0
 offset_right = 133.0
 offset_bottom = 152.0
 focus_mode = 0
-theme_override_colors/font_hover_color = Color(0.8412412, 0, 0.079922475, 1)
-theme_override_colors/icon_pressed_color = Color(0.8499109, 0.6973346, 7.70092e-07, 1)
+theme_override_colors/font_hover_color = Color(0.841241, 0, 0.0799225, 1)
+theme_override_colors/icon_pressed_color = Color(0.849911, 0.697335, 7.70092e-07, 1)
 icon = ExtResource("13_85foy")
 flat = true
 icon_alignment = 1
@@ -546,8 +546,8 @@ scale = Vector2(2, 2)
 texture = ExtResource("16_qshd2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(96, 114.00001)
-scale = Vector2(0.2090625, 0.21190478)
+position = Vector2(96, 114)
+scale = Vector2(0.209063, 0.211905)
 texture = ExtResource("2_drbq6")
 
 [connection signal="pressed" from="Jugar" to="." method="_on_jugar_pressed"]

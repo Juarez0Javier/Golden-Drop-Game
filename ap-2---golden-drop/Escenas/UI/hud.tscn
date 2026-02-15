@@ -1,11 +1,12 @@
-[gd_scene load_steps=20 format=3 uid="uid://lksayot4piy4"]
+[gd_scene load_steps=21 format=3 uid="uid://lksayot4piy4"]
 
-[ext_resource type="Script" uid="uid://drmi31t8apyuq" path="res://Scripts/Game/hud.gd" id="1_c028c"]
+[ext_resource type="Script" path="res://Scripts/Game/hud.gd" id="1_c028c"]
 [ext_resource type="Texture2D" uid="uid://csk6k86f5uisb" path="res://Assets/HUD/vida/DiscoVacio.png" id="2_c8sco"]
 [ext_resource type="Texture2D" uid="uid://wvcawtwmunk4" path="res://Assets/prota/daño/2.png" id="3_bk8p4"]
 [ext_resource type="Texture2D" uid="uid://bjjpace172neu" path="res://Assets/HUD/vida/DiscoLleno.png" id="3_f4bwj"]
 [ext_resource type="Texture2D" uid="uid://b5n6r0omrxqla" path="res://Assets/prota/daño/4.png" id="4_ofcne"]
 [ext_resource type="Texture2D" uid="uid://cron7uuri1ri6" path="res://Assets/prota/daño/1.png" id="4_qlqao"]
+[ext_resource type="Texture2D" uid="uid://bj58epckfdeac" path="res://Assets/prota/daño/3.png" id="4_x6o3r"]
 [ext_resource type="Texture2D" uid="uid://ba7vybse4ud31" path="res://Assets/prota/daño/5.png" id="5_53q0t"]
 [ext_resource type="Texture2D" uid="uid://crjtsfw63lu6o" path="res://Assets/prota/daño/6.png" id="6_rcf0h"]
 [ext_resource type="Texture2D" uid="uid://h5203gnak5mv" path="res://Assets/HUD/cartones obtenidos/1.png" id="7_gelwp"]
@@ -60,7 +61,7 @@ animations = [{
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_c028c")
-vidaEstados = Array[Texture]([ExtResource("4_qlqao"), ExtResource("3_bk8p4"), ExtResource("4_ofcne"), ExtResource("5_53q0t"), ExtResource("6_rcf0h")])
+vidaEstados = Array[Texture]([ExtResource("4_qlqao"), ExtResource("3_bk8p4"), ExtResource("4_x6o3r"), ExtResource("4_ofcne"), ExtResource("5_53q0t"), ExtResource("6_rcf0h")])
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3

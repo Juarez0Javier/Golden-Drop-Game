@@ -1,58 +1,99 @@
-[gd_scene load_steps=10 format=3 uid="uid://eqfrg75et5ho"]
+[gd_scene load_steps=18 format=3 uid="uid://eqfrg75et5ho"]
 
 [ext_resource type="Script" path="res://Scripts/Game/calor_objeto.gd" id="2_3i5l6"]
-[ext_resource type="Texture2D" uid="uid://bm2buroit48n" path="res://Assets/Objetos/Fuentes de Calor/luz/1.png" id="2_mpe3m"]
-[ext_resource type="Texture2D" uid="uid://7qhqrhfjxyqi" path="res://Assets/Objetos/Fuentes de Calor/luz/4.png" id="3_ykjg1"]
-[ext_resource type="Texture2D" uid="uid://dnty4wus15grv" path="res://Assets/Objetos/Fuentes de Calor/luz/3.png" id="4_hfj0n"]
-[ext_resource type="Texture2D" uid="uid://dqnfdb87n7i2d" path="res://Assets/Objetos/Fuentes de Calor/luz/2.png" id="5_nnxup"]
+[ext_resource type="Texture2D" uid="uid://cdgunafw460j3" path="res://Assets/Objetos/Fuentes de Calor/luz/luz.png" id="2_bwx5x"]
 [ext_resource type="AudioStream" uid="uid://c16cbdugqt4jm" path="res://Assets/Sonido/efectos/fuentes de calor/luz/Lamp Buzz Sound Effect _ No Copyright.wav" id="6_3ih6b"]
 [ext_resource type="Texture2D" uid="uid://d188hppewv40l" path="res://Assets/Objetos/Fuentes de Calor/degradado.png" id="7_l7mqf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bojns"]
 size = Vector2(60, 177.5)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ybkw5"]
+atlas = ExtResource("2_bwx5x")
+region = Rect2(0, 0, 62, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bn02q"]
+atlas = ExtResource("2_bwx5x")
+region = Rect2(62, 0, 62, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukf3m"]
+atlas = ExtResource("2_bwx5x")
+region = Rect2(124, 0, 62, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xddqx"]
+atlas = ExtResource("2_bwx5x")
+region = Rect2(186, 0, 62, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jurtr"]
+atlas = ExtResource("2_bwx5x")
+region = Rect2(248, 0, 62, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gax6x"]
+atlas = ExtResource("2_bwx5x")
+region = Rect2(248, 0, 62, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hsef"]
+atlas = ExtResource("2_bwx5x")
+region = Rect2(0, 0, 62, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6r766"]
+atlas = ExtResource("2_bwx5x")
+region = Rect2(62, 0, 62, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2hvrm"]
+atlas = ExtResource("2_bwx5x")
+region = Rect2(124, 0, 62, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qyj3r"]
+atlas = ExtResource("2_bwx5x")
+region = Rect2(0, 0, 62, 49)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xsvvb"]
+atlas = ExtResource("2_bwx5x")
+region = Rect2(248, 0, 62, 49)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_p5cdf"]
 animations = [{
 "frames": [{
-"duration": 0.5,
-"texture": ExtResource("3_ykjg1")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ybkw5")
 }, {
-"duration": 0.5,
-"texture": ExtResource("2_mpe3m")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bn02q")
 }, {
-"duration": 0.5,
-"texture": ExtResource("4_hfj0n")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukf3m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xddqx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jurtr")
 }],
 "loop": false,
 "name": &"Apagar",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 0.5,
-"texture": ExtResource("5_nnxup")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gax6x")
 }, {
-"duration": 0.5,
-"texture": ExtResource("2_mpe3m")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8hsef")
 }, {
-"duration": 0.5,
-"texture": ExtResource("3_ykjg1")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6r766")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2hvrm")
 }],
 "loop": false,
 "name": &"Encender",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 30.0,
-"texture": ExtResource("2_mpe3m")
-}, {
-"duration": 0.5,
-"texture": ExtResource("5_nnxup")
-}, {
-"duration": 0.5,
-"texture": ExtResource("2_mpe3m")
-}, {
-"duration": 0.5,
-"texture": ExtResource("3_ykjg1")
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qyj3r")
 }],
 "loop": true,
 "name": &"Idle",
@@ -60,7 +101,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_nnxup")
+"texture": SubResource("AtlasTexture_xsvvb")
 }],
 "loop": true,
 "name": &"Idle Apagado",
@@ -84,8 +125,8 @@ animation = &"Idle Apagado"
 
 [node name="calor" type="Sprite2D" parent="."]
 self_modulate = Color(1, 1, 1, 0.2)
-position = Vector2(1.5, 93.5)
-scale = Vector2(0.0539648, 0.477143)
+position = Vector2(1.5, 100)
+scale = Vector2(0.0517621, 0.477143)
 texture = ExtResource("7_l7mqf")
 flip_v = true
 
@@ -99,6 +140,7 @@ stream = ExtResource("6_3ih6b")
 autoplay = true
 max_distance = 500.0
 attenuation = 0.5
+bus = &"Efectos"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
