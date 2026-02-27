@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://c0lnvrk15bewb"]
+[gd_scene load_steps=27 format=4 uid="uid://c0lnvrk15bewb"]
 
 [ext_resource type="Script" path="res://Scripts/Managers/gamestate.gd" id="1_7gv3n"]
 [ext_resource type="PackedScene" uid="uid://pyucq8e7ng6d" path="res://Escenas/Personajes/pj_caja.tscn" id="1_bgcxy"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://i48jg2hh8775" path="res://Escenas/Objetos/checkpoint.tscn" id="9_i1yvd"]
 [ext_resource type="PackedScene" uid="uid://cyykw8k17qyam" path="res://Escenas/Objetos/carton_item.tscn" id="9_upa4b"]
 [ext_resource type="PackedScene" uid="uid://hqja60f7ac2r" path="res://Escenas/Ambientes/refugio.tscn" id="12_1fnsp"]
+[ext_resource type="Texture2D" uid="uid://kv0odqic272v" path="res://Assets/Plataformas/Cajas/c1.png" id="13_n3fhy"]
 [ext_resource type="PackedScene" uid="uid://bxb6j3hivooxc" path="res://Escenas/Objetos/charco.tscn" id="14_dneqw"]
 [ext_resource type="PackedScene" uid="uid://bfvqdj22tkgqg" path="res://Escenas/Menues/menu_pausa.tscn" id="15_wcamq"]
 [ext_resource type="PackedScene" uid="uid://dpn5faaoq4ags" path="res://Escenas/Menues/menu_ganar.tscn" id="16_abf5i"]
@@ -109,6 +110,124 @@ terrain_set_0/mode = 2
 terrain_set_0/terrain_0/name = "PisoTaller"
 terrain_set_0/terrain_0/color = Color(0.329158, 0.329158, 0.329158, 1)
 sources/0 = SubResource("TileSetAtlasSource_ndqu3")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_icrdj"]
+texture = ExtResource("13_n3fhy")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(6.0546, -8, 6.25, 8, 8, 8, 8, -8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -1, -8, -1.125, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(6.25, -8, 6.25, 8, 8, 8, 8, -8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-1.375, -8, -1.125, 8, -8, 8, -8, -8)
+18:1/0 = 0
+19:1/0 = 0
+22:1/0 = 0
+23:1/0 = 0
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.09359, -8, 8, -8, 8, 8, -3, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+22:2/0 = 0
+23:2/0 = 0
+24:2/0 = 0
+25:2/0 = 0
+27:2/0 = 0
+28:2/0 = 0
+29:2/0 = 0
+30:2/0 = 0
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 4.5962, -8, 4.41942, 8, -8, 8)
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+21:3/0 = 0
+22:3/0 = 0
+23:3/0 = 0
+24:3/0 = 0
+25:3/0 = 0
+27:3/0 = 0
+28:3/0 = 0
+29:3/0 = 0
+30:3/0 = 0
+32:3/0 = 0
+33:3/0 = 0
+34:3/0 = 0
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+22:4/0 = 0
+23:4/0 = 0
+24:4/0 = 0
+25:4/0 = 0
+26:4/0 = 0
+27:4/0 = 0
+28:4/0 = 0
+29:4/0 = 0
+30:4/0 = 0
+32:4/0 = 0
+33:4/0 = 0
+34:4/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_cxdbd"]
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_icrdj")
 
 [node name="Nv1Taller" type="Node2D"]
 
@@ -277,10 +396,6 @@ position = Vector2(3011, -1519)
 scale = Vector2(2, 2.5)
 
 [node name="Plataformas" type="Node2D" parent="DiseñoNivel"]
-
-[node name="Piso3" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(390, -123)
-scale = Vector2(0.848123, 1.67542)
 
 [node name="Piso6" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 position = Vector2(-328, -1037)
@@ -484,6 +599,12 @@ position = Vector2(5799, -1539)
 
 [node name="Piso_h3" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 position = Vector2(2398, -97)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="DiseñoNivel/Plataformas"]
+position = Vector2(-29, 11)
+tile_map_data = PackedByteArray("AAAaAPj/AQAFAAMAAAAbAPj/AQAGAAMAAAAVAPX/AQAAAAAAAAAVAPb/AQAAAAEAAAAVAPj/AQAAAAMAAAAVAPn/AQAAAAQAAAAWAPX/AQABAAAAAAAWAPb/AQABAAEAAAAWAPf/AQABAAIAAAAWAPj/AQABAAMAAAAWAPn/AQABAAQAAAAXAPX/AQACAAAAAAAXAPb/AQACAAEAAAAXAPf/AQACAAIAAAAXAPj/AQACAAMAAAAXAPn/AQACAAQAAAAYAPX/AQADAAAAAAAYAPb/AQADAAEAAAAYAPf/AQADAAIAAAAYAPj/AQADAAMAAAAYAPn/AQADAAQAAAAZAPf/AQAEAAIAAAAZAPj/AQAEAAMAAAAZAPn/AQAEAAQAAAAaAPf/AQAFAAIAAAAaAPn/AQAFAAQAAAAbAPf/AQAGAAIAAAAbAPn/AQAGAAQAAAAcAPf/AQAHAAIAAAAcAPj/AQAHAAMAAAAcAPn/AQAHAAQAAAAdAPf/AQAIAAIAAAAdAPj/AQAIAAMAAAAdAPn/AQAIAAQAAAAeAPj/AQAJAAMAAAAeAPn/AQAJAAQAAAAfAPj/AQAKAAMAAAAfAPn/AQAKAAQAAAAgAPj/AQALAAMAAAAgAPn/AQALAAQAAAAhAPj/AQAMAAMAAAAhAPn/AQAMAAQAAAAiAPn/AQANAAQAAAA=")
+tile_set = SubResource("TileSet_cxdbd")
+collision_visibility_mode = 1
 
 [node name="Charcos" type="Node2D" parent="DiseñoNivel"]
 
