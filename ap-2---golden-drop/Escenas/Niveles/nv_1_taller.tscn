@@ -126,101 +126,143 @@ texture = ExtResource("13_n3fhy")
 1:1/0 = 0
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:1/0 = 0
-2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:1/0 = 0
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-1.375, -8, -1.125, 8, -8, 8, -8, -8)
 18:1/0 = 0
+18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.75, 5, -6, 8, 8, 8, 8, 5.125)
 19:1/0 = 0
+19:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4.75, -3.25, 5.25, -3.375, 8, -8, 8)
 22:1/0 = 0
+22:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.5, 4.25, 0.25, 8, 8, 8, 8, 4.125)
 23:1/0 = 0
+23:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 4, -0.125, 4.25, -0.125, 8, -8, 8)
 1:2/0 = 0
 1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.09359, -8, 8, -8, 8, 8, -3, 8)
 2:2/0 = 0
-2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:2/0 = 0
 4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.125, 0.875, 8, 1, 8, 8, 0.0625, 8)
 5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.125, 8, 1.125, 8, 8, -8, 8)
 6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.25, 8, 0.875, 8, 8, -8, 8)
 7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1, 8, 0.795495, 8, 8, -8, 8)
 8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.75, -4, 1, -4.25, 8, -8, 8)
 18:2/0 = 0
+18:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.625, -8, 8, -8, 8, 8, -5.5, 8)
 19:2/0 = 0
+19:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, -3.125, 8, -3.25, -8)
 22:2/0 = 0
+22:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.176777, -8, -0.353552, 8, 8, 8, 8, -8)
 23:2/0 = 0
+23:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -0.353552, -8, -0.353552, -4.41942, 8, -4.5962, 8, 8, -8, 8)
 24:2/0 = 0
+24:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -4.875, 8, -4.625, 8, 8, -8, 8)
 25:2/0 = 0
+25:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -5.25, -5.25, -4.5, -4.875, 8, -8, 8)
 27:2/0 = 0
+27:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(3.5, -2.75, 3.5, 8, 8, 8, 8, -2.75)
 28:2/0 = 0
+28:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -2.875, 8, -3.125, 8, 8, -8, 8)
 29:2/0 = 0
+29:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -2.625, 8, -2.875, 8, 8, -8, 8)
 30:2/0 = 0
+30:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -3.125, -4.125, -3, -4.125, 8, -8, 8)
 0:3/0 = 0
 0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:3/0 = 0
-1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:3/0 = 0
-2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:3/0 = 0
 3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 4.5962, -8, 4.41942, 8, -8, 8)
 4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.125, -8, -0.25, 8, 8, 8, 8, -8)
 5:3/0 = 0
 6:3/0 = 0
 7:3/0 = 0
 8:3/0 = 0
+8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4.125, -8, -4, 8, -8, 8, -8, -8)
 9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -4.75, 8, -4.875, 8, 8, -8, 8)
 10:3/0 = 0
+10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 3.25, 8, 3.25, 8, 8, -8, 8)
 11:3/0 = 0
+11:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 6.71751, 8, 6.89429, 8, 8, -8, 8)
 12:3/0 = 0
 16:3/0 = 0
+16:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.875, 1, 8, 1, 8, 8, -6.75, 8)
 17:3/0 = 0
+17:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1.375, -4.75, 1.375, -4.625, 8, -8, 8)
 18:3/0 = 0
+18:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.5, -8, -6.25, 8, 8, 8, 8, -8)
 19:3/0 = 0
+19:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -3, -8, -3.25, 8, -8, 8)
 20:3/0 = 0
+20:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.75, 0.5, 1.125, 8, 8, 8, 8, 1)
 21:3/0 = 0
+21:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 1, 2.75, 1.125, 2.875, 8, -8, 8)
 22:3/0 = 0
+22:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-0.125, -8, 0.375, 8, 8, 8, 8, -8)
 23:3/0 = 0
 24:3/0 = 0
 25:3/0 = 0
+25:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -5.12652, -8, -5.3033, 8, -8, 8)
 27:3/0 = 0
+27:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(3.375, -8, 3.75, 8, 8, 8, 8, -8)
 28:3/0 = 0
 29:3/0 = 0
 30:3/0 = 0
+30:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -5, -8, -4.75, 8, -8, 8)
 32:3/0 = 0
 33:3/0 = 0
 34:3/0 = 0
 0:4/0 = 0
 0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
 1:4/0 = 0
-1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
 2:4/0 = 0
-2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:4/0 = 0
 3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.5, -8, 1.375, 8, 8, 8, 8, -8)
 5:4/0 = 0
 6:4/0 = 0
 7:4/0 = 0
 8:4/0 = 0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 0.353554, -8)
 9:4/0 = 0
+9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
 10:4/0 = 0
 11:4/0 = 0
 12:4/0 = 0
+12:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -6.18718, -8, -5.65685, 0.530329, 8, 0.353552, 8, 8, -8, 8)
 13:4/0 = 0
+13:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -0.125, 0.125, -0.125, -0.125, 8, -8, 8)
 15:4/0 = 0
+15:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(0.375, -1.875, 8, -1.75, 8, 8, -0.125, 8)
 16:4/0 = 0
 17:4/0 = 0
 18:4/0 = 0
 19:4/0 = 0
 20:4/0 = 0
+20:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -1.875, -8, 8, 8, 8, 8, -8, 1.25, -8, 1.25, -2.125)
 21:4/0 = 0
+21:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 2.65165, -8, 2.2981, -1.94454, 8, -1.76777, 8, 8, -8, 8)
 22:4/0 = 0
 23:4/0 = 0
 24:4/0 = 0
 25:4/0 = 0
+25:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 26:4/0 = 0
+26:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -5.12652, -8, -5.3033, 8, -8, 8)
 27:4/0 = 0
+27:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.875, -8, 3, -2.25, 8, -2.125, 8, -8)
 28:4/0 = 0
+28:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -2.625, -5.5, -2.375, -5.5, 8, 8, 8, 8, -8, -8, -8)
 29:4/0 = 0
+29:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -2.5, 5.5, -2.5, 5.25, 8, -8, 8, -8, -8, 8, -8)
 30:4/0 = 0
+30:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -2.625, -4, -2.625, -4, -8, -8, -8)
 32:4/0 = 0
 33:4/0 = 0
 34:4/0 = 0
@@ -325,7 +367,7 @@ position = Vector2(0, -250)
 position = Vector2(5877, -1364)
 
 [node name="Checkpoint" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
-position = Vector2(4572, 148)
+position = Vector2(4604.42, 148)
 esInicio = true
 
 [node name="Checkpoint2" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
@@ -335,21 +377,24 @@ position = Vector2(526, -332)
 position = Vector2(2746, -349)
 
 [node name="Checkpoint4" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
-position = Vector2(1812, 154)
+position = Vector2(1833.8, 154)
 
 [node name="Checkpoint5" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
-position = Vector2(-724, -840)
+position = Vector2(-515, -846)
 
 [node name="Checkpoint6" parent="DiseñoNivel/Control" instance=ExtResource("9_i1yvd")]
 position = Vector2(2982, -841)
 
 [node name="Calor" type="Node2D" parent="DiseñoNivel"]
 
+[node name="Calor (Barril)7" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
+position = Vector2(5285, -1112)
+
 [node name="Calor (Barril)" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
 position = Vector2(2772, -592)
 
 [node name="Calor (Lampara)" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
-position = Vector2(1841, -326)
+position = Vector2(1836, -335)
 scale = Vector2(2.37601, 1.52)
 
 [node name="Calor (Lampara)2" parent="DiseñoNivel/Calor" instance=ExtResource("6_e8imf")]
@@ -363,8 +408,11 @@ scale = Vector2(1, 1.24)
 [node name="Calor (Barril)6" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
 position = Vector2(4371, -1101)
 
+[node name="Calor (Barril)8" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
+position = Vector2(971, -1122)
+
 [node name="Calor (Barril)2" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
-position = Vector2(-538, -1116)
+position = Vector2(-656, -1118)
 
 [node name="Calor (Barril)3" parent="DiseñoNivel/Calor" instance=ExtResource("5_127x2")]
 position = Vector2(4605, -99)
@@ -438,15 +486,15 @@ position = Vector2(1245, -162)
 position = Vector2(2535, -558)
 
 [node name="Piso_inc11" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
-position = Vector2(963, -1462)
-rotation = -0.289725
+position = Vector2(875, -1406)
+rotation = 0.148353
 
 [node name="Piso_inc9" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
 position = Vector2(-162, -958)
 rotation = -0.289725
 
 [node name="Piso_inc8" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
-position = Vector2(-339, -865)
+position = Vector2(-346, -845)
 rotation = 0.00174533
 
 [node name="Piso_inc10" parent="DiseñoNivel/Plataformas" instance=ExtResource("8_2ibb4")]
@@ -482,18 +530,18 @@ position = Vector2(1919, -1188)
 rotation = -0.0244346
 scale = Vector2(0.999999, 0.999999)
 
+[node name="Piso_h32" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(3980, -1075)
+rotation = 0.0767944
+scale = Vector2(0.999962, 0.999962)
+
 [node name="Piso_h24" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 position = Vector2(3749, -1067)
 rotation = -0.0349066
 scale = Vector2(0.999981, 0.999981)
 
-[node name="Piso_h28" parent="DiseñoNivel/Plataformas/Piso_h24" instance=ExtResource("5_1yo8i")]
-position = Vector2(231.143, 0.0666933)
-rotation = 0.111701
-scale = Vector2(0.999981, 0.999981)
-
 [node name="Piso_h29" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(4666, -1255)
+position = Vector2(4660, -1321)
 rotation = -0.0174533
 scale = Vector2(0.999846, 0.999846)
 
@@ -502,8 +550,13 @@ position = Vector2(4382, -1318)
 rotation = -0.00872665
 scale = Vector2(0.999923, 0.999923)
 
+[node name="Piso_h33" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
+position = Vector2(4803, -1058)
+rotation = -0.0523598
+scale = Vector2(0.999538, 0.999538)
+
 [node name="Piso_h28" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(4907, -1191)
+position = Vector2(4919, -1256)
 rotation = -0.0261799
 scale = Vector2(0.999769, 0.999769)
 
@@ -533,13 +586,13 @@ rotation = -0.340339
 scale = Vector2(0.999998, 0.999998)
 
 [node name="Piso_h19" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(564, -1192)
+position = Vector2(473, -1188)
 rotation = -0.0122173
 scale = Vector2(0.999999, 0.999999)
 
 [node name="Piso_h18" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(747, -1312)
-rotation = -0.298451
+position = Vector2(678, -1299)
+rotation = -0.151844
 
 [node name="Piso_h17" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 position = Vector2(5779, -199)
@@ -579,7 +632,7 @@ position = Vector2(4453, -289)
 
 [node name="Piso_h9" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 modulate = Color(0.827451, 0.792157, 0, 0.980392)
-position = Vector2(5207, -1245)
+position = Vector2(5202, -1258)
 
 [node name="Piso_h31" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
 modulate = Color(1, 0.909804, 0, 1)
@@ -597,14 +650,10 @@ position = Vector2(5392, -1295)
 modulate = Color(0.827451, 0.792157, 0, 0.980392)
 position = Vector2(5799, -1539)
 
-[node name="Piso_h3" parent="DiseñoNivel/Plataformas" instance=ExtResource("5_1yo8i")]
-position = Vector2(2398, -97)
-
 [node name="TileMapLayer" type="TileMapLayer" parent="DiseñoNivel/Plataformas"]
 position = Vector2(-29, 11)
-tile_map_data = PackedByteArray("AAAaAPj/AQAFAAMAAAAbAPj/AQAGAAMAAAAVAPX/AQAAAAAAAAAVAPb/AQAAAAEAAAAVAPj/AQAAAAMAAAAVAPn/AQAAAAQAAAAWAPX/AQABAAAAAAAWAPb/AQABAAEAAAAWAPf/AQABAAIAAAAWAPj/AQABAAMAAAAWAPn/AQABAAQAAAAXAPX/AQACAAAAAAAXAPb/AQACAAEAAAAXAPf/AQACAAIAAAAXAPj/AQACAAMAAAAXAPn/AQACAAQAAAAYAPX/AQADAAAAAAAYAPb/AQADAAEAAAAYAPf/AQADAAIAAAAYAPj/AQADAAMAAAAYAPn/AQADAAQAAAAZAPf/AQAEAAIAAAAZAPj/AQAEAAMAAAAZAPn/AQAEAAQAAAAaAPf/AQAFAAIAAAAaAPn/AQAFAAQAAAAbAPf/AQAGAAIAAAAbAPn/AQAGAAQAAAAcAPf/AQAHAAIAAAAcAPj/AQAHAAMAAAAcAPn/AQAHAAQAAAAdAPf/AQAIAAIAAAAdAPj/AQAIAAMAAAAdAPn/AQAIAAQAAAAeAPj/AQAJAAMAAAAeAPn/AQAJAAQAAAAfAPj/AQAKAAMAAAAfAPn/AQAKAAQAAAAgAPj/AQALAAMAAAAgAPn/AQALAAQAAAAhAPj/AQAMAAMAAAAhAPn/AQAMAAQAAAAiAPn/AQANAAQAAAA=")
+tile_map_data = PackedByteArray("AAAaAPj/AQAFAAMAAAAbAPj/AQAGAAMAAAAVAPX/AQAAAAAAAAAVAPb/AQAAAAEAAAAVAPj/AQAAAAMAAAAVAPn/AQAAAAQAAAAWAPX/AQABAAAAAAAWAPb/AQABAAEAAAAWAPf/AQABAAIAAAAWAPj/AQABAAMAAAAWAPn/AQABAAQAAAAXAPX/AQACAAAAAAAXAPb/AQACAAEAAAAXAPf/AQACAAIAAAAXAPj/AQACAAMAAAAXAPn/AQACAAQAAAAYAPX/AQADAAAAAAAYAPb/AQADAAEAAAAYAPf/AQADAAIAAAAYAPj/AQADAAMAAAAYAPn/AQADAAQAAAAZAPf/AQAEAAIAAAAZAPj/AQAEAAMAAAAZAPn/AQAEAAQAAAAaAPf/AQAFAAIAAAAaAPn/AQAFAAQAAAAbAPf/AQAGAAIAAAAbAPn/AQAGAAQAAAAcAPf/AQAHAAIAAAAcAPj/AQAHAAMAAAAcAPn/AQAHAAQAAAAdAPf/AQAIAAIAAAAdAPj/AQAIAAMAAAAdAPn/AQAIAAQAAACWAPf/AQAJAAMAAACWAPj/AQAJAAQAAACXAPf/AQAKAAMAAACXAPj/AQAKAAQAAACYAPf/AQALAAMAAACYAPj/AQALAAQAAACZAPf/AQAMAAMAAACZAPj/AQAMAAQAAACaAPj/AQANAAQAAABPAbn/AQAUAAMAAABPAbr/AQAUAAQAAABQAbn/AQAVAAMAAABQAbr/AQAVAAQAAABRAbf/AQAWAAEAAABRAbj/AQAWAAIAAABRAbn/AQAWAAMAAABRAbr/AQAWAAQAAABSAbf/AQAXAAEAAABSAbj/AQAXAAIAAABSAbn/AQAXAAMAAABSAbr/AQAXAAQAAABTAbj/AQAYAAIAAABTAbn/AQAYAAMAAABTAbr/AQAYAAQAAABUAbj/AQAZAAIAAABUAbn/AQAZAAMAAABUAbr/AQAZAAQAAABWAbj/AQAbAAIAAABWAbn/AQAbAAMAAABWAbr/AQAbAAQAAABXAbj/AQAcAAIAAABXAbn/AQAcAAMAAABXAbr/AQAcAAQAAABYAbj/AQAdAAIAAABYAbn/AQAdAAMAAABYAbr/AQAdAAQAAABZAbj/AQAeAAIAAABZAbn/AQAeAAMAAABZAbr/AQAeAAQAAABbAbb/AQAAAAAAAABbAbf/AQAAAAEAAABbAbn/AQAAAAMAAABbAbr/AQAAAAQAAABcAbb/AQABAAAAAABcAbf/AQABAAEAAABcAbj/AQABAAIAAABcAbn/AQABAAMAAABcAbr/AQABAAQAAABdAbb/AQACAAAAAABdAbf/AQACAAEAAABdAbj/AQACAAIAAABdAbn/AQACAAMAAABdAbr/AQACAAQAAABeAbb/AQADAAAAAABeAbf/AQADAAEAAABeAbj/AQADAAIAAABeAbn/AQADAAMAAABeAbr/AQADAAQAAABfAbj/AQAEAAIAAABfAbn/AQAEAAMAAABfAbr/AQAEAAQAAABgAbj/AQAFAAIAAABgAbn/AQAFAAMAAABgAbr/AQAFAAQAAABhAbj/AQAGAAIAAABhAbn/AQAGAAMAAABhAbr/AQAGAAQAAABiAbj/AQAHAAIAAABiAbn/AQAHAAMAAABiAbr/AQAHAAQAAABjAbj/AQAIAAIAAABjAbn/AQAIAAMAAABjAbr/AQAIAAQAAABkAbn/AQAJAAMAAABkAbr/AQAJAAQAAABlAbn/AQAKAAMAAABlAbr/AQAKAAQAAABmAbn/AQALAAMAAABmAbr/AQALAAQAAABnAbn/AQAMAAMAAABnAbr/AQAMAAQAAABoAbr/AQANAAQAAABqAbf/AQASAAEAAABqAbj/AQASAAIAAABqAbn/AQASAAMAAABqAbr/AQASAAQAAABrAbf/AQATAAEAAABrAbj/AQATAAIAAABrAbn/AQATAAMAAABrAbr/AQATAAQAAABsAbn/AQAUAAMAAABsAbr/AQAUAAQAAABtAbn/AQAVAAMAAABtAbr/AQAVAAQAAABvAbj/AQAbAAIAAABvAbn/AQAbAAMAAABvAbr/AQAbAAQAAABwAbj/AQAcAAIAAABwAbn/AQAcAAMAAABwAbr/AQAcAAQAAABxAbj/AQAdAAIAAABxAbn/AQAdAAMAAABxAbr/AQAdAAQAAAByAbj/AQAeAAIAAAByAbn/AQAeAAMAAAByAbr/AQAeAAQAAADS//j/AQAbAAIAAADS//n/AQAbAAMAAADS//r/AQAbAAQAAADT//j/AQAcAAIAAADT//n/AQAcAAMAAADT//r/AQAcAAQAAADU//j/AQAdAAIAAADU//n/AQAdAAMAAADU//r/AQAdAAQAAADV//j/AQAeAAIAAADV//n/AQAeAAMAAADV//r/AQAeAAQAAADK//n/AQAUAAMAAADK//r/AQAUAAQAAADL//n/AQAVAAMAAADL//r/AQAVAAQAAADM//f/AQAWAAEAAADM//j/AQAWAAIAAADM//n/AQAWAAMAAADM//r/AQAWAAQAAADN//f/AQAXAAEAAADN//j/AQAXAAIAAADN//n/AQAXAAMAAADN//r/AQAXAAQAAADO//j/AQAYAAIAAADO//n/AQAYAAMAAADO//r/AQAYAAQAAADP//j/AQAZAAIAAADP//n/AQAZAAMAAADP//r/AQAZAAQAAAA=")
 tile_set = SubResource("TileSet_cxdbd")
-collision_visibility_mode = 1
 
 [node name="Charcos" type="Node2D" parent="DiseñoNivel"]
 
@@ -639,11 +688,17 @@ position = Vector2(661, -262)
 [node name="CartonItem" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(896, -214)
 
+[node name="CartonItem33" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(3522, -1293)
+
+[node name="CartonItem32" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(2782, -1131)
+
 [node name="CartonItem22" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(2201, -1330)
 
 [node name="CartonItem19" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(1038, -1628)
+position = Vector2(-812, -1123)
 
 [node name="CartonItem2" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(1244, -207)
@@ -654,20 +709,53 @@ position = Vector2(1785, -194)
 [node name="CartonItem3" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(1906, -107)
 
+[node name="CartonItem31" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(1706, -1184)
+
+[node name="CartonItem30" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(1430, -1125)
+
+[node name="CartonItem29" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(817, -1120)
+
+[node name="CartonItem28" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(883, -1458)
+
+[node name="CartonItem25" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(469, -1234)
+
+[node name="CartonItem27" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(561, -1118)
+
+[node name="CartonItem26" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(82, -1134)
+
+[node name="CartonItem23" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(-334, -1113)
+
+[node name="CartonItem24" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(-66, -630)
+
 [node name="CartonItem8" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(-181, -238)
 
 [node name="CartonItem7" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(-883, -164)
+position = Vector2(-860, -168)
 
 [node name="CartonItem6" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(-362, -122)
 
 [node name="CartonItem10" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(2398, -144)
+position = Vector2(2406, -150)
 
 [node name="CartonItem18" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(5890, -289)
+
+[node name="CartonItem37" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(4593, -747)
+
+[node name="CartonItem36" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(5243, -397)
 
 [node name="CartonItem14" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(5630, -171)
@@ -675,8 +763,20 @@ position = Vector2(5630, -171)
 [node name="CartonItem13" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(4457, -337)
 
+[node name="CartonItem41" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(4718, -258)
+
+[node name="CartonItem39" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(4039, -158)
+
+[node name="CartonItem40" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(3145, -120)
+
+[node name="CartonItem38" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(2077, -229)
+
 [node name="CartonItem9" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(2225, -230)
+position = Vector2(2072, -108)
 
 [node name="CartonItem17" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(3478, -722)
@@ -693,8 +793,14 @@ position = Vector2(3545, -204)
 [node name="CartonItem21" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(4108, -1447)
 
+[node name="CartonItem34" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(4836, -1391)
+
+[node name="CartonItem35" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
+position = Vector2(5200, -1309)
+
 [node name="CartonItem20" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
-position = Vector2(4913, -1239)
+position = Vector2(4914, -1306)
 
 [node name="CartonItem11" parent="DiseñoNivel/Colecc" instance=ExtResource("9_upa4b")]
 position = Vector2(2848, -164)

@@ -55,24 +55,24 @@ func reset():
 	
 	enRefugio = true
 	humedad = 0
-	pass
+	
 	
 func on_cajaAnimationFinished(animName):
 	if animName == "Muerte":
 		fadeOut.playFadeOut()
-	pass
+	
 
 func on_fadeOutFullBlock():
 	print("Reset!")
 	reset()
-	pass
+	
 	
 func on_fadeOutEnd():
 	print("End")
 	inputHabilitado = true
-	pass
 	
-func aumentar_humedad(daño: int):
+	
+func aumentar_humedad(daño: float):
 	humedad += daño
 	pjcaja.modulate = Color.DEEP_SKY_BLUE
 	timerEstado.start()
